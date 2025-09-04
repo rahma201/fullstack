@@ -1,7 +1,6 @@
 FROM nginx:alpine
 
-# نسخ كل المشاريع الفرعية إلى مجلد html
+# نسخ كل مجلدات Front مباشرة إلى nginx html
 COPY . /usr/share/nginx/html
 
-# نغير البورت الداخلي إلى 8080
 EXPOSE 8080
