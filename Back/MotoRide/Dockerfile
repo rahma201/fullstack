@@ -1,20 +1,21 @@
-# Build stage
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+# استخدم صورة .NET Runtime لتشغيل التطبيق
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-
-COPY *.sln .
-COPY MotoRide/*.csproj ./MotoRide/
-RUN dotnet restore
-
-COPY MotoRide/. ./MotoRide/
-WORKDIR /app/MotoRide
-RUN dotnet publish -c Release -o out
-
-# Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
-WORKDIR /app
-COPY --from=build /app/MotoRide/out .
-
-# نغير البورت الداخلي إلى 5000
 EXPOSE 5000
-ENTRYPOINT ["dotnet", "MotoRide.dll", "--urls", "http://+:5000"]
+
+# استخدم صورة SDK للبناء
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /src
+COPY ["MotoRide.sln", "./"]
+COPY ["MotoRide/", "MotoRide/"]
+
+# استعادة الحزم وبناء التطبيق
+RUN dotnet restore "MotoRide/MotoRide.csproj"
+RUN dotnet build "MotoRide/MotoRide.csproj" -c Release -o /app/build
+RUN dotnet publish "MotoRide/MotoRide.csproj" -c Release -o /app/publish
+
+# نسخة نهائية للتشغيل
+FROM base AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "MotoRide.dll"]
