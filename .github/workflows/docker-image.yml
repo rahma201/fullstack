@@ -62,13 +62,13 @@ jobs:
       - name: Build Front-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./front/Events         # تأكد أن هذا مسار Dockerfile الصحيح
+          context: ./front/Events
           file: ./front/Events/Dockerfile
           push: true
           tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
   back_stage:
-    name: Build Back-end
+    name: Build Back-end (.NET 8)
     runs-on: ubuntu-latest
     needs: front_stage
     steps:
@@ -108,9 +108,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            echo "Creating Docker network if not exists..."
-            docker network inspect moto-net >/dev/null 2>&1 || docker network create moto-net
-
             echo "Stopping old containers..."
             docker rm -f moto-back moto-front || true
 
@@ -119,7 +116,7 @@ jobs:
             docker pull ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
             echo "Starting Front-end..."
-            docker run -d --restart unless-stopped --network moto-net -p 80:80 --name moto-front ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+            docker run -d --restart unless-stopped -p 80:80 --name moto-front ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
             echo "Starting Back-end..."
-            docker run -d --restart unless-stopped --network moto-net -p 5000:5000 --name moto-back ${{ env.BACK_IMAGE }}:${{ env.TAG }}
+            docker run -d --restart unless-stopped -p 5000:5000 --name moto-back ${{ env.BACK_IMAGE }}:${{ env.TAG }}
