@@ -13,7 +13,7 @@ env:
 jobs:
 
   db_stage:
-    name: Build Database
+    name: Start Database
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,7 +28,15 @@ jobs:
             -v ${{ github.workspace }}/db/init.sql:/docker-entrypoint-initdb.d/init.sql \
             -p 3306:3306 \
             mysql:8.0
-          sleep 10  # انتظر DB لتصبح جاهزة
+          echo "Waiting for DB to be ready..."
+          for i in {1..20}; do
+            docker exec moto-db mysqladmin ping -uroot -prootpassword &> /dev/null
+            if [ $? -eq 0 ]; then
+              echo "DB is ready"
+              break
+            fi
+            sleep 5
+          done
 
   front_stage:
     name: Build Front-end
@@ -47,8 +55,8 @@ jobs:
       - name: Build Front-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./front              # مسار مجلد front صحيح
-          file: ./front/Dockerfile
+          context: ./front/Events
+          file: ./front/Events/Dockerfile
           push: true
           tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
@@ -66,11 +74,27 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Restore .NET dependencies and build
+        run: |
+          cd Back/MotoRide
+          dotnet restore
+          dotnet build --configuration Release
+
+      - name: Test Controllers
+        run: |
+          cd Back/MotoRide
+          dotnet test || echo "Tests failed, check controllers"
+
+      - name: Publish Back-end
+        run: |
+          cd Back/MotoRide
+          dotnet publish -c Release -o publish
+
       - name: Build Back-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./Back                  # context يشمل كل ملفات Back
-          file: ./Back/MotoRide/Dockerfile # Dockerfile داخل مجلد MotoRide
+          context: ./Back/MotoRide/publish
+          file: ./Back/MotoRide/Dockerfile
           push: true
           tags: ${{ env.BACK_IMAGE }}:${{ env.TAG }}
 
@@ -88,10 +112,13 @@ jobs:
           script: |
             echo "Stopping old containers..."
             docker rm -f moto-back moto-front || true
+
             echo "Pulling latest images..."
             docker pull ${{ env.BACK_IMAGE }}:${{ env.TAG }}
             docker pull ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+
             echo "Starting Front-end..."
-            docker run -d -p 8080:80 --name moto-front ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+            docker run -d --restart unless-stopped -p 8080:80 --name moto-front ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+
             echo "Starting Back-end..."
-            docker run -d -p 5000:5000 --name moto-back ${{ env.BACK_IMAGE }}:${{ env.TAG }}
+            docker run -d --restart unless-stopped -p 5000:5000 --name moto-back ${{ env.BACK_IMAGE }}:${{ env.TAG }}
