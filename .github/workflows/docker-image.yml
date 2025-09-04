@@ -47,8 +47,8 @@ jobs:
       - name: Build Front-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./front              # تم تعديل الاسم هنا
-          file: ./front/Dockerfile      # تم تعديل الاسم هنا
+          context: ./front              # مسار مجلد front صحيح
+          file: ./front/Dockerfile
           push: true
           tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
@@ -69,7 +69,7 @@ jobs:
       - name: Build Back-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./Back/MotoRide
+          context: ./Back/MotoRide      # مسار Back-end صحيح
           file: ./Back/MotoRide/Dockerfile
           push: true
           tags: ${{ env.BACK_IMAGE }}:${{ env.TAG }}
