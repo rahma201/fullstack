@@ -69,8 +69,8 @@ jobs:
       - name: Build Back-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./Back/MotoRide      # مسار Back-end صحيح
-          file: ./Back/MotoRide/Dockerfile
+          context: ./Back                  # context يشمل كل ملفات Back
+          file: ./Back/MotoRide/Dockerfile # Dockerfile داخل مجلد MotoRide
           push: true
           tags: ${{ env.BACK_IMAGE }}:${{ env.TAG }}
 
