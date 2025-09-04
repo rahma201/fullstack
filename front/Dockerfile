@@ -1,6 +1,8 @@
 FROM nginx:alpine
 
-# نسخ كل مجلدات Front مباشرة إلى nginx html
+# نسخ كل ملفات Front-end إلى Nginx
 COPY . /usr/share/nginx/html
 
-EXPOSE 8080
+# اعرض الصفحة الرئيسية index.html تلقائيًا
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
