@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: moto-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: MotoRideDB
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  back:
+    build:
+      context: ./Back/MotoRide
+    container_name: moto-back
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=db;Database=MotoRideDB;User=root;Password=rootpassword;"
+
+  front:
+    build:
+      context: ./Front
+    container_name: moto-front
+    ports:
+      - "8080:8080"
+    depends_on:
+      - back
