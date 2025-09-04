@@ -1,4 +1,4 @@
-# صورة ASP.NET Runtime لتشغيل التطبيق
+# صورة تشغيل التطبيق
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 5000
@@ -7,11 +7,10 @@ EXPOSE 5000
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# نسخ الحل والمشروع
+# نسخ الملفات حسب مكان Dockerfile
 COPY ["MotoRide.sln", "./"]
 COPY ["MotoRide/", "MotoRide/"]
 
-# استعادة الحزم وبناء التطبيق
 RUN dotnet restore "MotoRide/MotoRide.csproj"
 RUN dotnet build "MotoRide/MotoRide.csproj" -c Release -o /app/build
 RUN dotnet publish "MotoRide/MotoRide.csproj" -c Release -o /app/publish
