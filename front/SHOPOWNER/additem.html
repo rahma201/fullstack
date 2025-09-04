@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--  Title --->
+    <title>MotoRide</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />
+        <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- Prism Js -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/prismjs/themes/prism-okaidia.min.css">
+
+
+
+    <!-- --------------------------------------------------- -->
+    <!-- Datatable -->
+    <!-- --------------------------------------------------- -->
+     
+    <link rel="stylesheet" href="dist/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <!-- Core Css -->
+    <link  rel="stylesheet" href="dist/css/style.min.css" />
+    <link rel="stylesheet" href="../diest/css/Dashbordcss.css">
+
+    <style>
+        #editColorPickerContainer {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between color pickers */
+        }
+        
+    </style>
+</head>
+<body>
+   <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+               
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar scroll-sidebar" data-simplebar>
+                     <ul id="sidebarnav">
+                       
+                  
+                         <li class="sidebar-item "   >
+                                           <img src="../diest/img/Logo.jpeg" width="220px" />
+
+                           
+                        </li>
+                <li class="sidebar-item">
+                            <a class="sidebar-link" href="HomeShop.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-user-circle"></i>
+                                </span>
+                                <span class="hide-menu">Home</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="additem.html" aria-expanded="false">
+                                <span>
+   <i class="ti ti-topology-star-3"></i>
+                                </span>
+                                <span class="hide-menu">item</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="category.html" aria-expanded="false">
+                                <span>
+<i class="ti ti-aperture"></i>                                </span>
+                                <span class="hide-menu">category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="order.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">Order</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link" href="review.html" aria-expanded="false">
+                                <span>
+                                  <i class="ti ti-file-text"></i>
+                                </span>
+                                <span class="hide-menu">Reviw</span>
+                              </a>
+                            </a>
+                        </li>
+                        
+
+</ul>
+                </nav>
+
+</div>
+            <!-- End Sidebar navigation -->
+   
+    <!-- End Sidebar scroll-->
+    </aside> 
+</div>
+            <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                    <h1>
+                    <img src="../diest/img/Logo.jpeg" width="220px" />
+                    </h1>
+
+                </ul>
+                <ul class="navbar-nav quick-links d-none d-lg-flex">
+                </ul>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="p-2">
+                        <i class="ti ti-dots fs-7"></i>
+          
+                    </span>
+                </button>
+            
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                            <i class="ti ti-align-justified fs-7"></i>
+                        </a>
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+                            <a href="#" class="logout-link" title="logout icons">
+                             <img src="../diest/img/logout.png" width="50px" />
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+
+            <div  style="height: 70%;">
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: 100%; display: flex;">
+                    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link active w-100 text-start py-3 fs-5" id="moto-tab" data-bs-toggle="tab" data-bs-target="#moto" type="button" role="tab" aria-controls="moto" aria-selected="true">
+                            Moto
+                        </button>
+                    </li>
+                    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link w-100 text-start py-3 fs-5" id="card-products-tab" data-bs-toggle="tab" data-bs-target="#card-products" type="button" role="tab" aria-controls="card-products" aria-selected="false">
+                            Card Products
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Moto Tab -->
+                    <div class="tab-pane fade show active" id="moto" role="tabpanel" aria-labelledby="moto-tab">
+                        <div class="container mt-1">
+                            <div class="text-end">
+                                <button class="btn btn-primary button" id="addNewMoto">
+                                    Add New Moto
+                                </button>
+                            </div>
+                            <div class="table-responsive">
+                                <table id="card_moto_table" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th># </th>
+                                            <th>Name</th>
+                                            <th>Images</th>
+                                            <th>Price</th>
+                                            <th>quantity</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Rows will be added dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Product Tab -->
+                    <div class="tab-pane fade" id="card-products" role="tabpanel" aria-labelledby="card-products-tab">
+                        <div class="container  mt-1">
+                            <div class="text-end">
+                                <button class="btn btn-primary button" id="addNewProduct">
+                                    Add New Product
+                                </button>
+                            </div>
+                            <div class="table-responsive">
+                                <table id="card_product_table" class="table table-bordered table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th># </th>
+                                            <th>Name</th>
+                                            <th>Images</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Rows will be added dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade addProductModal" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Product Name & Description -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="productName" class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="productName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="productDescription" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="productDescription" required>
+                                </div>
+        
+                                <!-- Price & Category -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="productPrice" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="productPrice" step="0.01" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="productCategory" class="form-label">Category</label>
+                                    <select class="form-select productCategory" name="productCategory">
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="productQuantity" class="form-label"> Quantity</label>
+                                    <input type="number" class="form-control" id="productQuantity" required>
+                                </div>
+        <!--  Images -->
+        <div class="col-md-6 mb-3">
+        <label for="productImages" class="form-label">Product Images</label>
+        <input type="file" class="form-control" id="productImages" accept="image/*" multiple required>
+        </div>
+                                <!-- Colors Section -->
+                           
+        
+        
+                         
+                            <!-- Sizes  -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Size</label>
+                                <div id="sizeContainer" class="d-flex flex-wrap gap-2">
+                                    <input type="text" class="form-control" id="SizeInput" placeholder="Enter Size (e.g., S, XL, Big)">
+                                    <button type="button" class="btn btn-primary" id="addSize">Add Size</button>
+                                </div>
+                                <ul id="SizeList" class="list-group mt-2"></ul>
+                            </div>
+                              
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Colors</label>
+                                <div id="colorPickerContainer" class="d-flex flex-wrap gap-2">
+                                    <input type="color" class="form-control form-control-color color-picker" value="#ff0000">
+                                </div>
+                                <button type="button" class="btn btn-sm btn-secondary mt-2" id="addColor">Add Another Color</button>
+                            </div>
+        </div>
+        
+                        </div>
+                        <div class="modal-footer">
+                      
+                    <div class="d-flex justify-content-between">
+                        <button id="saveProduct" class="btn btn-primary">Save Product</button>
+        
+                        <button type="button  m-6" class="btn btnModel-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Modal to Edit Product -->
+            <div class="modal fade" id="editeProductModal" tabindex="-1" aria-labelledby="editeProductModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editeProductModalLabel">Edit Product</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Product Name & Description -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="editProductName" class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="editProductName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="editProductDescription" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="editProductDescription" required>
+                                </div>
+
+                                <!-- Price & Category -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="editProductPrice" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="editProductPrice" step="0.01" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="editProductCategory" class="form-label">Category</label>
+                                    <select class="form-select productCategory" id="editProductCategory"></select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="editProductQuantity" class="form-label">Quantity</label>
+                                    <input type="number" class="form-control" id="editProductQuantity" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="editProductImages" class="form-label">Product Images</label>
+                                    <input type="file" class="form-control" id="editProductImages" accept="image/*">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Colors</label>
+                                    <div id="editColorPickerContainer" class="d-flex flex-wrap gap-2">
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-secondary mt-2" id="editeColor">Add Another Color</button>
+                                </div>
+
+                                <!-- Colors Section -->
+                              
+                                <!-- Images -->
+                              
+
+                                <!-- Sizes -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Size</label>
+                                    <div id="editSizeContainer" class="d-flex flex-wrap gap-2">
+                                        <input type="text" class="form-control" id="editSizeInput" placeholder="Enter Size (e.g., S, XL, Big)">
+                                        <button type="button" class="btn btn-primary" id="addEditSize">Add Size</button>
+                                    </div>
+                                    <ul id="editSizeList" class="list-group mt-2"></ul>
+                                </div>                                <button class="btn btn-primary w-100" id="saveEditedProduct">Save Changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal to View Product (Read-only Mode) -->
+            <div class="modal fade" id="viewProductModal" tabindex="-1" aria-labelledby="viewProductModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="viewProductModalLabel">View Product</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Product Name & Description -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="viewProductName" class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="viewProductName" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="viewProductDescription" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="viewProductDescription" readonly>
+                                </div>
+
+                                <!-- Price & Category -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="viewProductPrice" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="viewProductPrice" step="0.01" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="viewProductCategory" class="form-label">Category</label>
+                                    <select class="form-select productCategory" id="viewProductCategory" disabled></select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="viewProductQuantity" class="form-label">Quantity</label>
+                                    <input type="number" class="form-control" id="viewProductQuantity" readonly>
+                                    <label class="form-label ">Size</label>
+
+                                    <ul id="viewSizeList" class="list-group mt-2"></ul>
+                                    <label class="form-labelmt-3">Colors</label>
+                                    <div id="viewColorPickerContainer" class="d-flex flex-wrap gap-2 viewColorPickerContainer">
+                                        <!-- Colors will be populated dynamically -->
+                                    </div>
+                            
+                                   
+                                </div>
+                                <!-- Images -->
+                                <!-- Images Section -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="viewProductImages" class="form-label">Images</label>
+                                    <div id="viewProductImagesContainer" class="d-flex flex-wrap gap-2">
+                                        <!-- Images will be populated dynamically here -->
+                                    </div>
+                                </div>
+
+             <!-- Colors Section -->
+                               
+
+                                <!-- Close Button -->
+                                <button class="btn btn-secondary w-100" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+         <!-- Modal to Edit MOTO -->
+        <div class="modal fade editMotoModal" id="editeMotoModals" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editItemModalLabel">Edit Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="itemName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="editMotoName" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="engineType" class="form-label">Engine Type</label>
+                        <input type="text" class="form-control" id="editEngineType" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="year" class="form-label">Year</label>
+                        <input type="number" class="form-control" id="editYear" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="mileage" class="form-label">Mileage (km)</label>
+                        <input type="number" class="form-control" id="editMileage" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="condition" class="form-label">Condition</label>
+                        <select class="form-control" id="editCondition" required>
+                            <option value="New">New</option>
+                            <option value="Used">Used</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="editMotoPrice" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="stockQuantity" class="form-label">Stock Quantity</label>
+                        <input type="number" class="form-control" id="editStockQuantity" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="itemImages" class="form-label">Images</label>
+                        <input type="file" class="form-control" id="editImagesMoto" accept="image/*"  required>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="addMotoBrand" class="form-label">Brand</label>
+                   <input type="text" class="form-control" id="editMotoBrand" required>
+                </div>
+                <!-- Colors Section -->
+                <div class="col-12 mb-3">
+                    <label class="form-label">Colors</label>
+                    <div id="editColorPickerContainerMoto" class="d-flex flex-wrap gap-2">
+                    </div>
+                    <button type="button" class="btn btn-sm btn-secondary mt-2" id="editColorMoto">Add Another Color</button>
+                </div>
+
+                <div class="mb-3">
+                    <label for="motoDescription" class="form-label">Description</label>
+                    <textarea class="form-control" id="editMotoDescription" rows="3" required></textarea>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button id="saveEditMoto" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+       <!-- Modal to View MOTO (Read-only Mode) -->
+        <div class="modal fade" id="viewMotoModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewItemModalLabel">View Item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="itemName" class="form-label">Item Name</label>
+                                <input type="text" class="form-control" id="viewMotoName" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="engineType" class="form-label">Engine Type</label>
+                                <input type="text" class="form-control" id="viewEngineType" readonly>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="year" class="form-label">Year</label>
+                                <input type="number" class="form-control" id="viewYear" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="mileage" class="form-label">Mileage (km)</label>
+                                <input type="number" class="form-control" id="viewMileage" readonly>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="condition" class="form-label">Condition</label>
+                                <select class="form-control" id="viewCondition" disabled>
+                                    <option value="New">New</option>
+                                    <option value="Used">Used</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="number" class="form-control" id="viewMotoPrice" readonly>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="stockQuantity" class="form-label">Stock Quantity</label>
+                                <input type="number" class="form-control" id="viewStockQuantity" readonly>
+                                <label for="addMotoBrand" class="form-label">Brand</label>
+                                <input type="text" class="form-control" id="getMotoBrand" required>
+                                <label class="form-label mt-3">Colors</label>
+                                <div id="viewColorPickerContainerMoto" class="d-flex flex-wrap gap-2 viewColorPickerContainerMoto">
+                                    <!-- Colors will be displayed here -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3" >
+                                <label for="itemImages" class="form-label">Images</label>
+                                <div id="viewMotoImagesContainer"></div>
+                                </div>
+                              
+                        <!-- Colors Section -->
+                   
+
+                        <div class="mb-3">
+                            <label for="motoDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="viewMotoDescription" rows="3" readonly></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Modal to Add Item -->
+            <div class="modal fade addMotoModel" id="addMotoModel" tabindex="-1" aria-labelledby="addMotoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addMotoLabel">Add New moto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoName" class="form-label">Item Name</label>
+                                    <input type="text" class="form-control" id="addMotoName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoEngineType" class="form-label">Engine Type</label>
+                                   <input type="text" class="form-control" id="addMotoEngineType" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoBrand" class="form-label">Brand</label>
+                                   <input type="text" class="form-control" id="addMotoBrand" required>
+                                </div>
+                         
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoYear" class="form-label">Year</label>
+                                    <input type="number" class="form-control" id="addMotoYear" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoMileage" class="form-label">Mileage (km)</label>
+                                    <input type="number" class="form-control" id="addMotoMileage" required>
+                                </div>
+            
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoCondition" class="form-label">Condition</label>
+                                    <select class="form-control" id="addMotoCondition" required>
+                                        <option value="New">New</option>
+                                        <option value="Used">Used</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoPrice" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="addMotoPrice" required>
+                                </div>
+            
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoStockQuantity" class="form-label">Stock Quantity</label>
+                                    <input type="number" class="form-control" id="addMotoStockQuantity" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="addMotoImages" class="form-label">Images</label>
+                                    <input type="file" class="form-control" id="addMotoImages" accept="image/*"  required>
+                                </div>
+            
+                            <!-- Colors Section -->
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Colors</label>
+                                <div id="colorPickerContainerMoto" class="d-flex flex-wrap gap-2">
+                                    <input type="color" class="form-control form-control-color color-pickerMoto" value="#ff0000">
+                                </div>
+                                <button type="button" class="btn btn-sm btn-secondary mt-2" id="addColorMoto">Add Another Color</button>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="addMotoDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="addMotoDescription" rows="3" required></textarea>
+                            </div>
+            
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button id="MotoSave" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <script>
+                document.getElementById('addSize').addEventListener('click', function () {
+                    const sizeInput = document.getElementById('SizeInput');
+                    const sizeList = document.getElementById('SizeList');
+
+                    if (sizeInput.value.trim() !== '') {
+                        const listItem = document.createElement('li');
+                        listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                        listItem.textContent = sizeInput.value;
+
+                        const removeButton = document.createElement('button');
+                        removeButton.className = 'btn btn-danger btn-sm';
+                        removeButton.textContent = 'Remove';
+                        removeButton.onclick = function () {
+                            sizeList.removeChild(listItem);
+                        };
+
+                        listItem.appendChild(removeButton);
+                        sizeList.appendChild(listItem);
+                        sizeInput.value = ''; // Clear input after adding
+                    }
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                    var table = $("#item_table").DataTable();
+                    var editingRow = null;
+
+
+                    $("#addColor").click(function () {
+                        var newColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                        if (!$(`#colorPickerContainer input[value='${newColor}']`).length) {
+                            $("#colorPickerContainer").append(`<input type="color" class="form-control form-control-color color-picker mt-1" value="${newColor}">`);
+                        }
+                    }); 
+
+                    
+                    $("#addColorMoto").click(function () {
+                        var newColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                        if (!$(`#colorPickerContainerMoto input[value='${newColor}']`).length) {
+                            $("#colorPickerContainerMoto").append(`<input type="color" class="form-control form-control-color color-pickerMoto mt-1" value="${newColor}">`);
+                        }
+                    }); 
+
+                    
+                    $("#editeColor").click(function () {
+                        var newColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                        if (!$(`#editColorPickerContainer input[value='${newColor}']`).length) {
+                            $("#editColorPickerContainer").append(`<input type="color" class="form-control form-control-color edit-color-picker mt-1" value="${newColor}">`);
+                        }
+                    });
+                    
+                    $("#editColorMoto").click(function () {
+    var newColor = "#" + Math.floor(Math.random() * 16777215).toString(16); // توليد لون عشوائي
+
+    // التأكد من عدم تكرار اللون
+    var existingColors = $(".edit-moto-color-picker").map(function () {
+        return $(this).val();
+    }).get();
+
+    if (!existingColors.includes(newColor)) {
+        $("#editColorPickerContainerMoto").append(
+            `<input type="color" class="form-control form-control-color edit-moto-color-picker mt-1" value="${newColor}">`
+        );
+    }
+
+
+});
+
+                    document.getElementById('addEditSize').addEventListener('click', function () {
+                        const sizeInput = document.getElementById('editSizeInput');
+                        const sizeList = document.getElementById('editSizeList');
+
+                        if (sizeInput.value.trim() !== '') {
+                            // Create a new list item
+                            const listItem = document.createElement('li');
+                            listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                            listItem.textContent = sizeInput.value;
+
+                            // Create remove button
+                            const removeButton = document.createElement('button');
+                            removeButton.className = 'btn btn-danger btn-sm';
+                            removeButton.textContent = 'Remove';
+                            removeButton.onclick = function () {
+                                sizeList.removeChild(listItem);
+                            };
+
+                            listItem.appendChild(removeButton);
+                            sizeList.appendChild(listItem);
+                            sizeInput.value = ''; // Clear input after adding
+                        }
+                    });
+
+                });
+            </script>
+
+
+
+
+           
+
+
+
+
+
+
+            <div class="dark-transparent sidebartoggler"></div>
+            <div class="dark-transparent sidebartoggler"></div>
+        </div>
+
+    <!--  Shopping Cart -->
+    <div class="offcanvas offcanvas-end shopping-cart" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header py-4">
+            <h5 class="offcanvas-title fs-5 fw-semibold" id="offcanvasRightLabel">Shopping Cart</h5>
+            <span class="badge bg-primary rounded-4 px-3 py-1 lh-sm">5 new</span>
+        </div>
+        <div class="offcanvas-body h-100 px-4 pt-0" data-simplebar>
+            <ul class="mb-0">
+                <li class="pb-7">
+                    <div class="d-flex align-items-center">
+                        <img src="dist/images/products/product-1.jpg" width="95" height="75" class="rounded-1 me-9 flex-shrink-0" alt="" />
+                        <div>
+                            <h6 class="mb-1">Supreme toys cooker</h6>
+                            <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
+                                <div class="input-group input-group-sm w-50">
+                                    <button class="btn border-0 round-20 minus p-0 bg-light-success text-success " type="button" id="add1"> - </button>
+                                    <input type="text" class="form-control round-20 bg-transparent text-muted fs-2 border-0  text-center qty" placeholder="" aria-label="Example text with button addon" aria-describedby="add1" value="1" />
+                                    <button class="btn text-success bg-light-success  p-0 round-20 border-0 add" type="button" id="addo2"> + </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pb-7">
+                    <div class="d-flex align-items-center">
+                        <img src="dist/images/products/product-2.jpg" width="95" height="75" class="rounded-1 me-9 flex-shrink-0" alt="" />
+                        <div>
+                            <h6 class="mb-1">Supreme toys cooker</h6>
+                            <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
+                                <div class="input-group input-group-sm w-50">
+                                    <button class="btn border-0 round-20 minus p-0 bg-light-success text-success " type="button" id="add2"> - </button>
+                                    <input type="text" class="form-control round-20 bg-transparent text-muted fs-2 border-0  text-center qty" placeholder="" aria-label="Example text with button addon" aria-describedby="add2" value="1" />
+                                    <button class="btn text-success bg-light-success  p-0 round-20 border-0 add" type="button" id="addon34"> + </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pb-7">
+                    <div class="d-flex align-items-center">
+                        <img src="dist/images/products/product-3.jpg" width="95" height="75" class="rounded-1 me-9 flex-shrink-0" alt="" />
+                        <div>
+                            <h6 class="mb-1">Supreme toys cooker</h6>
+                            <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
+                                <div class="input-group input-group-sm w-50">
+                                    <button class="btn border-0 round-20 minus p-0 bg-light-success text-success " type="button" id="add3"> - </button>
+                                    <input type="text" class="form-control round-20 bg-transparent text-muted fs-2 border-0  text-center qty" placeholder="" aria-label="Example text with button addon" aria-describedby="add3" value="1" />
+                                    <button class="btn text-success bg-light-success  p-0 round-20 border-0 add" type="button" id="addon3"> + </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="align-bottom">
+                <div class="d-flex align-items-center pb-7">
+                    <span class="text-dark fs-3">Sub Total</span>
+                    <div class="ms-auto">
+                        <span class="text-dark fw-semibold fs-3">$2530</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pb-7">
+                    <span class="text-dark fs-3">Total</span>
+                    <div class="ms-auto">
+                        <span class="text-dark fw-semibold fs-3">$6830</span>
+                    </div>
+                </div>
+                <a href="./eco-checkout.html" class="btn btn-outline-primary w-100">Go to shopping cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!--  Mobilenavbar -->
+     <!--  Mobilenavbar -->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobilenavbar" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <nav class="sidebar-nav scroll-sidebar">
+            <div class="offcanvas-header justify-content-between">
+                <img src="../diest/img/Logo.jpeg" width="190px" width="50px" alt="" class="img-fluid">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body profile-dropdown mobile-navbar" data-simplebar="" data-simplebar>
+              <ul id="sidebarnav">
+                        <!-- ============================= -->
+                        <!-- Home -->
+                        <!-- ============================= -->
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu"></span>
+                        </li>
+                        <!-- =================== -->
+                        <!-- Dashboard -->
+                        <!-- =================== -->
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="HomeShop.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-user-circle"></i>
+                                </span>
+                                <span class="hide-menu">Home</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="additem.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-aperture"></i>
+                                </span>
+                                <span class="hide-menu">item</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="category.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="order.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">Order</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link" href="review.html" aria-expanded="false">
+                                <span>
+                                  <i class="ti ti-file-text"></i>
+                                </span>
+                                <span class="hide-menu">Reviw</span>
+                              </a>
+                            </a>
+                        </li>
+                        </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <script src="dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  core files -->
+    <script src="dist/js/app.min.js"></script>
+    <script src="dist/js/app.init.js"></script>
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/sidebarmenu.js"></script>
+    <script src="dist/js/custom.js"></script>
+    <script src="dist/libs/prismjs/prism.js"></script>
+
+    <!--  current page js files -->
+    <script src="dist/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <script src="dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/datatable/datatable-basic.init.js"></script>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.js"></script>
+    <script src="../diest/Logout.js"></script>
+
+    <script src="Item.js"></script>
+    <script src="motocycle.js"></script>
+</body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MotoRide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+    <!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="../diest/img/helmet.png" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../diest/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../diest/css/main.css">
+<link rel="stylesheet" href="Shopcss/full.css">
+	<!--===============================================================================================-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- Swiper CSS -->
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="/Events/css/font-awesome.css">
+	<link rel="stylesheet" href="/Events/css/swiper.css">
+	
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    
+
+	<style>
+		body{
+
+background-color: black !important ;
+}
+.quickView{
+	color: #ffffff !important;
+	cursor: pointer !important;
+}
+	</style>
+	
+
+	
+
+    
+  
+</head>
+<body>
+		<!-- Header -->
+	<header class="header-v2" id="withLogin">
+    <!-- Header desktop -->
+    <div class="container-menu-desktop trans-03">
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop p-l-45">
+
+                <!-- Logo desktop -->
+                <a href="home.html" class="logo">
+                    <img src="../diest/img/logo.png" alt="IMG-LOGO">
+                </a>
+
+                <!-- Menu desktop -->
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+                        </li>
+                        <li>
+                            <a href="../Events/index.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="About/About.html">About</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m h-full">
+                    <div class="flex-c-m h-full p-l-18 p-r-25 LoginButtonModel" id="LoginButtonModel">
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+                            <i class="login-icon fas fa-sign-in-alt"></i> Login
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Mobile -->
+  <!-- Mobile Menu -->
+<div class="wrap-header-mobile">
+    <div class="logo-mobile">
+        <img src="../diest/img/logo.png" alt="IMG-LOGO">
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="menu-mobile">
+        <ul class="main-menu-m">
+            <li class="active-menu">
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li >
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Mobile Header Icons -->
+    <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+        <!-- Dropdown Button -->
+    <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i> 
+</div>
+
+        <!-- Dropdown Menu -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../maintenance/user/HomeWorkShops.html">Work Shop</a></li>
+            <li><a class="dropdown-item" href="../Events/index.html">Events</a></li>
+            <li><a class="dropdown-item" href="About/About.html">About</a></li>
+</ul>
+    </div>
+
+    <!-- Login Button -->
+  
+</div>
+
+<!-- Mobile Menu Toggle Button -->
+
+
+<!-- Collapsing Navigation Content -->
+<div class="collapse " id="navbarToggleExternalContent">
+    <div class=" p-4 wrap-header-mobile " >
+        <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                        </li> 
+                        <li>
+                            <a href="Shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+                        </li >
+                        <li >
+                            <a href="../Events/index.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="About/About.html">About</a>
+                        </li>
+                        <div class="wrap-icon-header flex-w flex-r-m h-full">
+        <div class="flex-c-m h-full p-l-18 p-r-25 LoginButtonModel" id="LoginButtonModel">
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+                <i class="login-icon fas fa-sign-in-alt"></i> Login
+            </div>
+        </div>
+    </div>
+                    </ul>
+    </div>
+
+    </div>
+
+
+
+
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="main-menu-m">
+            <li class="active-menu">
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li >
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+       
+        <div class="container-search-header">
+            <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                <img src="images/icons/icon-close2.png" alt="CLOSE">
+            </button>
+
+            <form class="wrap-search-header flex-w p-l-15">
+                <button class="flex-c-m trans-04">
+                    <i class="zmdi zmdi-search"></i>
+                </button>
+                <input class="plh3" type="text" name="search" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+	</header>
+
+<!-- Header2 -->
+    <header class="header-v2" style="display: none;" id="withoutLogin">
+    <!-- Header desktop -->
+    <div class="container-menu-desktop trans-03">
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop p-l-45">
+
+                <!-- Logo desktop -->
+                <a href="home.html" class="logo">
+                    <img src="../diest/img/logo.png" alt="IMG-LOGO">
+                </a>
+
+                <!-- Menu desktop -->
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li >
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+                        </li>
+                        <li >
+                            <a href="../Events/index.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="About/About.html">About</a>
+                        </li>
+                        <li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m" id="Cart">
+                 
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" id="getProfile">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </a>
+                    <a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Mobile -->
+    <div class="wrap-header-mobile">
+        <ul class="main-menu">
+            <li >
+                <a href="home.html">Home</a>
+            </li>
+            <li >
+                <a href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li class="active-menu">
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+            <li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+            </li>
+        </ul>
+        <!-- Icon header -->
+        <div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+            
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                <i class="zmdi zmdi-search"></i>
+            </div>
+            <a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti">
+                <i class="zmdi zmdi-shopping-cart"></i>
+            </a>
+            <a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" >
+                <i class="zmdi zmdi-favorite-outline"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="main-menu-m">
+            <li >
+                <a href="home.html">Home</a>
+            </li>
+            <li >
+                <a href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li class="active-menu">
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+            <li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+            </li>
+        </ul>
+    </div>
+  </header>
+
+
+        <!-- Sidebar -->
+        <aside class="wrap-sidebar js-sidebar">
+            <div class="s-full js-hide-sidebar"></div>
+    
+        </aside>
+    <div class="swiper-container hero-slider">
+			    <div class="swiper-slide" data-date="2018/05/01" style="background: url('/diest/img/header-bg (3).png')    ;background-size: cover ;background-position:center center ;height: 700px;">
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col flex flex-column justify-content-center">
+                                <div class="entry-header">
+                                    <div class="countdown flex align-items-center">
+                                        <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dday"></span>
+                                            <label>Days</label>
+                                        </div><!-- .countdown-holder -->
+
+                                        <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dhour"></span>
+                                            <label>Hours</label>
+                                        </div><!-- .countdown-holder -->
+
+                                        <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dmin"></span>
+                                            <label>Minutes</label>
+                                        </div><!-- .countdown-holder -->
+
+                                        <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dsec"></span>
+                                            <label>Seconds</label>
+                                        </div><!-- .countdown-holder -->
+                                    </div><!-- .countdown -->
+                                    <br> 
+                                    <br>
+                                    <div> We have the best events. <br> <br> Get your ticket now!</div>
+                                </div><!--- .entry-header -->
+
+                                <div class="entry-footer">
+                                    <button class="btn gradient-bg detalis"  id="detalis">detalis</button>
+                                </div><!-- .entry-footer" -->
+                            </div><!-- .col -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content -->
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+
+         
+	
+	
+			
+		</div><!-- .swiper-container -->
+	<div class="container  mt-4" >
+	<section class="bg0  p-b-140  m-3">	<h2 class=" best-Product mb-4" style="color: #ffff;font-size: xx-large;">Best Selling Product</h2>
+
+	
+
+		
+
+			<div class="row isotope-grid " id="ListCardItem">
+
+
+			</div>
+</section>
+		</div>
+	
+    <div class="container">
+	<section class="bg0  p-b-140  m-3">	<h2 class=" best-motorcycle  mb-4" style="color: #ffff;font-size: xx-large; "; >Best Selling Motorcycle</h2>
+
+		
+
+			
+
+
+
+				
+
+
+
+			
+<div class="row isotope-grid  mb-4" id="ListCardMotorcycle">
+
+				</div>
+
+		
+
+		</div>
+	</section>
+
+		<div class="container ">
+	<section class="bg0  p-b-140  m-3"><h2 class=" best-maintenence mb-4" style="color: #ffff;font-size: xx-large;text-align: center;">The most popular maintenance stores</h2>
+	
+		<div class="row isotope-grid" id="ListCardMaintaince">
+
+
+			</div>
+
+		
+	</section>
+</div>
+
+
+<div class="modal fade LoginModal" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content user-login">
+			
+			<div class="modal-header" style="border-bottom: 0px !important;padding:  0px !important;">
+				<ul class="nav nav-tabs w-100" id="authTabs" role="tablist">
+					<li class="nav-item w-25 text-center">
+						<a class="nav-link active" id="login-tab" data-toggle="tab" href="#loginTab" role="tab">Login</a>
+					</li>
+					<li class="nav-item w-25 text-center">
+						<a class="nav-link" id="signup-tab" data-toggle="tab" href="#signupTab" role="tab">Sign Up</a>
+					</li>
+					<li class="nav-item w-25 text-center">
+						<a class="nav-link" id="shop-tab" data-toggle="tab" href="#shopTab" role="tab">Store</a>
+					</li>
+					<li class="nav-item w-25 text-center"><a class="nav-link" id="maintenance-tab" data-toggle="tab" href="#maintenanceTab" role="tab">Maintenance</a>
+					</li>
+				</ul>
+			</div>
+			<div class="modal-body tab-content" style="border-top: 0px;">
+				<!-- Login Tab -->
+				<div class="tab-pane fade show active" id="loginTab" role="tabpanel">
+					<input type="text" name="usernameLogin" id="usernameLogin" class="usernameLogin" placeholder="UserName" required>
+					<input type="password" name="passwordLogin" id="passwordLogin" class="passwordLogin" placeholder="Password" required>
+					<button id="Login" class="Login">Login</button>
+				</div>
+
+				<!-- Sign Up Tab -->
+				<div class="tab-pane fade" id="signupTab" role="tabpanel">
+					<input type="text" name="txt" class="UserNameSignup" placeholder="User name" id="UserNameSignup" required>
+					<input type="email" name="email" class="emailSignup" placeholder="Email" id="emailSignup" required>
+					<input type="password" name="pswd" class="passwordSignup" placeholder="Password" id="passwordSignup" required>
+					<button id="SignUp" class="SignUp">Sign up</button>
+				</div>
+
+				<!-- Shop Owner Sign Up Tab -->
+				<div class="tab-pane fade" id="shopTab" role="tabpanel">
+					<input type="text" name="shopName" class="userNameSignupShop" placeholder="Shop Name" id="userNameSignupShop" required>
+					<input type="email" name="email" class="emailSignupShop" placeholder="Email" id="emailSignupShop" required>
+					<input type="password" name="pswd" class="passwordSignupShop" placeholder="Password" id="passwordSignupShop" required>
+					<input type="text" name="location" class="locationSignupShop" placeholder="Location" id="locationSignupShop" required>
+					<input type="text" name="phone" class="phonesingupShop" placeholder="Phone Number"  id="phonesingupShop" required>
+					<input type="file" name="license" class="licenseSignupShop" placeholder="Upload License" id="licenseSignupShop" required>
+					<button id="SignUpShop" class="SignUpShop">Sign Up</button>
+				</div>
+
+				<!-- Maintenance Sign Up Tab -->
+				<div class="tab-pane fade" id="maintenanceTab" role="tabpanel">
+					<input type="text" name="maintenanceName" class="userNameSignupMaintenance" placeholder="Name" id="userNameSignupMaintenance" required>
+					<input type="email" name="email" class="emailSignupMaintenance" placeholder="Email" id="emailSignupMaintenance" required>
+					<input type="password" name="pswd" class="passwordSignupMaintenance" placeholder="Password" id="passwordSignupMaintenance" required>
+					<input type="text" name="location" class="locationSignupMaintenance" placeholder="Location" id="locationSignupMaintenance" required>
+					<input type="text" name="phone" class="phonesingupMaintenance" placeholder="Phone Number" id="phonesingupMaintenance" required>
+					<input type="file" name="license" class="licenseSignupMaintenance" placeholder="Upload License" id="licenseSignupMaintenance" required>
+					<button id="SignUpMaintenance" class="SignUpMaintenance">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- Forgot Password Modal -->
+	<div class="modal fade" id="forgotPasswordModal" class="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="forgotPasswordModalLabel" class="forgotPasswordModalLabel">Reset Password</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div id="resetPasswordForm">
+						<div class="mb-3">
+							<input type="text" class="form-control" id="resetUsername" class="resetUsername" placeholder="UserName" required>
+						</div>
+						<div class="mb-3">
+							<input type="email" class="form-control" id="resetEmail" class="resetEmail" placeholder="Email" required>
+						</div>
+						<div class="mb-3">
+							<input type="password" class="form-control" id="resetPassword" class="resetPassword" placeholder="Password" required>
+						</div>
+						<div class="mb-3">
+							<input type="password" class="form-control" id="confirmResetPassword" class="confirmResetPassword" placeholder="Confirm Password" required>
+							<div id="passwordMatchMessage" class="passwordMatchMessage" style="color: red; font-size: 0.9em; margin-top: 5px;"></div>
+						</div>
+
+						<button class="btn btn-primary" id="resetPasswordbutton" class="resetPasswordbutton" >save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- Slider -->
+	<!-- Banner -->
+	<!-- Product -->
+	<!-- Blog -->
+	<!-- Footer -->
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+<script>
+	function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none"; // إخفاء القائمة إذا كانت ظاهرة
+    } else {
+        dropdown.style.display = "block"; // إظهار القائمة إذا كانت مخفية
+    }
+}
+
+function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+    // إغلاق جميع القوائم المفتوحة بعد اختيار اللغة
+    var dropdowns = document.querySelectorAll('.language-dropdown');
+    dropdowns.forEach(function(dropdown) {
+        dropdown.style.display = "none"; // إخفاء كل القوائم بعد اختيار اللغة
+    });
+
+    // تنفيذ منطق تغيير اللغة هنا
+    if (language === 'en') {
+        console.log("Switching to English");
+        // ضع هنا منطق تغيير المحتوى إلى الإنجليزية
+    } else if (language === 'ar') {
+        console.log("Switching to Arabic");
+        // ضع هنا منطق تغيير المحتوى إلى العربية
+    }
+}
+
+
+
+
+</script><script>
+    // Close the dropdown when a menu item is clicked
+    $(".dropdown-item").click(function() {
+        $(".collapse").collapse('hide');
+    });
+
+    // Optionally, close the dropdown if clicking outside of it
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.navbar-toggler').length && !$(event.target).closest('.dropdown-menu').length) {
+            $(".collapse").collapse('hide');
+        }
+    });
+</script>
+
+
+	<!-- Modal1 -->
+	<!--===============================================================================================-->
+    <script src="dist/libs/jquery/dist/jquery.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+	<script>
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.gallery-lb').each(function () { // the containers for all your galleries
+			$(this).magnificPopup({
+				delegate: 'a', // the selector for gallery item
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				mainClass: 'mfp-fade'
+			});
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script>
+		$('.js-addwish-b2').on('click', function (e) {
+			e.preventDefault();
+		});
+
+		$('.js-addwish-b2').each(function () {
+			var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+			$(this).on('click', function () {
+				swal(nameProduct, "is added to wishlist !", "success");
+
+				$(this).addClass('js-addedwish-b2');
+				$(this).off('click');
+			});
+		});
+
+		$('.js-addwish-detail').each(function () {
+			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+			$(this).on('click', function () {
+				swal(nameProduct, "is added to wishlist !", "success");
+
+				$(this).addClass('js-addedwish-detail');
+				$(this).off('click');
+			});
+		});
+
+		/*---------------------------------------------*/
+
+		$('.js-addcart-detail').each(function () {
+			var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+			$(this).on('click', function () {
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function () {
+			$(this).css('position', 'relative');
+			$(this).css('overflow', 'hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function () {
+				ps.update();
+			})
+		});
+	</script>
+
+
+
+
+
+
+<script>
+	$(document).ready(function () {
+		$('#confirmResetPassword, #resetPassword').on('input', function () {
+			const password = $('#resetPassword').val();
+			const confirmPassword = $('#confirmResetPassword').val();
+			const message = $('#passwordMatchMessage');
+
+			if (confirmPassword === '') {
+				message.text('');
+				$('#resetPasswordbutton').prop('disabled', false); 
+			} else if (password !== confirmPassword) {
+				message.text('Passwords do not match.');
+				$('#resetPasswordbutton').prop('disabled', false); 
+
+			} else {
+				message.text(''); // Or: message.text('Passwords match.').css('color', 'green');
+			}
+		});
+	});
+</script>
+
+
+	<!--===============================================================================================-->
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../SHOP/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type='text/javascript' src='../Events/js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='../Events/js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='../Events/js/swiper.min.js'></script>
+<script type='text/javascript' src='../Events/js/circle-progress.min.js'></script>
+<script type='text/javascript' src='../Events/js/jquery.countTo.min.js'></script>
+	<script src="ShopJs/Login.js"></script>
+	<script src="ShopJs/Home.js"></script>
+
+</body>
+</html>

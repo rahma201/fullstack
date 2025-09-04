@@ -1,0 +1,346 @@
+
+		.circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+  vertical-align: middle;
+  border:3px solid #000 ;
+}
+
+		.logo img {
+			width: 150px; /* تعديل الحجم حسب الحاجة */
+			height: auto;
+			border-radius: 15px; /* يجعل الزوايا دائرية */
+			display: block;
+			margin: auto;
+		}
+        
+
+		.btn-primary {
+            background-color: #fff !important;
+
+            border: #ffff !important;
+
+
+		}
+		.wrap-icon-header {
+			margin-right: 40px !important; /* تحريك الديف 20px إلى اليسار */
+		}
+
+		body {
+			color: #000;
+			overflow-x: hidden;
+			height: auto;
+			background-color: #000;
+			background-repeat: no-repeat;
+		}
+
+		.card {
+			z-index: 0;
+			background-color: black;
+			padding-bottom: 20px;
+			margin-top: 90px;
+			color: #ffffff;
+			margin-bottom: 90px;
+			border-radius: 10px;
+		}
+
+		.top {
+			color: #ffffff;
+
+			padding-top: 40px;
+			padding-left: 13% !important;
+			padding-right: 13% !important;
+		}
+
+		/*Icon progressbar*/
+		#progressbar {
+			margin-bottom: 30px;
+			overflow: hidden;
+			color: #455A64;
+			padding-left: 0px;
+			margin-top: 30px;
+		}
+
+			#progressbar li {
+				list-style-type: none;
+				font-size: 17x;
+				width: 25%;
+				float: left;
+				position: relative;
+				font-weight: 400;
+			}
+
+			#progressbar .step0:before {
+				font-family: FontAwesome;
+				content: "\f10c";
+				color: #fff;
+			}
+
+			#progressbar li:before {
+				width: 40px;
+				height: 40px;
+				line-height: 45px;
+				display: block;
+				font-size: 20px;
+				background: #C5CAE9;
+				border-radius: 50%;
+				margin: auto;
+				padding: 0px;
+			}
+
+			/*ProgressBar connectors*/
+			#progressbar li:after {
+				content: '';
+				width: 100%;
+				height: 12px;
+				background: #C5CAE9;
+				position: absolute;
+				left: 0;
+				top: 16px;
+				z-index: -1;
+			}
+
+			#progressbar li:last-child:after {
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				position: absolute;
+				left: -50%;
+			}
+
+			#progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after {
+				left: -50%;
+			}
+
+			#progressbar li:first-child:after {
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				position: absolute;
+				left: 50%;
+			}
+
+			#progressbar li:last-child:after {
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+
+			#progressbar li:first-child:after {
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+
+			/*Color number of the step and the connector before it*/
+			#progressbar li.active:before, #progressbar li.active:after {
+				background: #ff1f1f;
+			}
+
+			#progressbar li.active:before {
+				font-family: FontAwesome;
+				content: "\f00c";
+			}
+
+		.icon {
+			width: 60px;
+			height: 60px;
+			margin-right: 15px;
+		}
+	
+		.icon-content {
+			padding-bottom: 20px;
+		}
+
+		@media screen and (max-width: 992px) {
+			.icon-content {
+				width: 50%;
+			}
+			
+			.btn-shop-now {
+        display: inline-block;
+        background-color: #b35252;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-shop-now:hover {
+        background-color: #000;
+		color: white;
+        transform: translateY(-5px);
+    }
+
+    .btn-shop-now:active {
+        transform: translateY(2px);
+    }
+
+		}
+	/* Import Google Font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300&display=swap');
+
+/* Apply Poppins font more broadly if needed, or specifically to modal */
+/* body { font-family: 'Poppins', sans-serif; } */ /* Optional: if not already set */
+
+/* ================================================== */
+/* START: Review Modal CSS (Adapted to User Styles)   */
+/* ================================================== */
+
+/* Basic Modal Styles (Overlay & Hiding) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place, cover viewport */
+  z-index: 1050; /* Sit on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if modal content gets too long */
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
+  padding-top: 50px; /* Space from top */
+  box-sizing: border-box;
+}
+
+/* Modal Content Box - Adapted from user's .container */
+.modal-content {
+  font-family: 'Poppins', sans-serif; /* Apply font here */
+  width: 22rem; /* User's specified width */
+  background-color: #242323; /* User's purple background */
+  border-radius: .5rem; /* User's border radius */
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .3); /* User's box shadow */
+  overflow: hidden; /* User's overflow style */
+  position: relative; /* Keep for close button positioning */
+  margin: 5% auto; /* Keep for centering */
+  padding: 1.5rem 1rem; /* Add some internal padding */
+  box-sizing: border-box;
+  text-align: center; /* Center content */
+}
+
+/* Close Button ('x') - Styled for dark background */
+.close-modal-btn {
+  color: #eee; /* Light color for visibility */
+  opacity: 0.7;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  color: #fff; /* Brighter on hover */
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header Text - Adapted from user's .text */
+.modal-content p.text {
+  margin-bottom: 1.5rem; /* More space after text */
+  font-size: 1.1em; /* Slightly larger */
+  color: #fdfdfd; /* User's light color */
+  text-align: center;
+  font-weight: 300; /* Match Poppins weight */
+}
+
+/* Emoji Container - Adapted from user's .emoji */
+.modal-content .emoji {
+  font-size: 1.8em; /* Slightly larger emojis */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem; /* Space after emojis */
+}
+
+/* Individual Emojis - Adapted from user's .emoji > div */
+.modal-content .emoji > div {
+  cursor: pointer;
+  transition: transform .2s ease-in;
+  padding: 0 5px; /* Add slight horizontal padding for selection border */
+  border: 3px solid transparent; /* Placeholder for selected border */
+  border-radius: 50%;
+}
+
+.modal-content .emoji > div:not(:first-child) {
+  margin-left: .8rem; /* Adjusted spacing */
+}
+
+/* Emoji Hover - Adapted from user's .emoji > div:hover */
+.modal-content .emoji > div:hover {
+  transform: scale(1.2); /* Adjusted scale slightly */
+}
+
+/* Style for the SELECTED emoji */
+.modal-content .emoji div.selected-rating {
+  transform: scale(1.3); /* Make selected larger */
+  border: 3px solid #eee; /* White border for visibility */
+  /* Optional: Add background or shadow if desired */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+/* Review Comment Textarea - Adapted from user's .textarea */
+#reviewComment { /* Targeting the specific ID */
+  width: 95%; /* Slightly less than full width for padding */
+  display: block;
+  margin: 0 auto 1.5rem auto; /* Center block element and add bottom margin */
+  background-color: rgb(0, 0, 0); /* User's dark purple */
+  color: #eee; /* User's light text color */
+  border: none; /* User style */
+  outline: none; /* User style */
+  resize: vertical; /* Allow vertical resize, disable horizontal */
+  padding: 1rem; /* Apply padding */
+  height: 6rem; /* Set default height */
+  border-radius: 4px; /* Add slight rounding */
+  font-family: 'Poppins', sans-serif; /* Ensure font */
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+/* Submit Button - Adapted from user's .btn */
+#submitReviewBtn { /* Targeting the specific ID */
+  display: inline-block; /* Make it visible by default */
+  text-decoration: none; /* User style */
+  color: #eee; /* User style */
+  padding: .6rem 1.5rem; /* Slightly larger padding */
+  border-radius: 4px; /* User style */
+  background-color: #D21312; /* User style */
+  border: none; /* Ensure no default border */
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Ensure font */
+  font-size: 0.95em;
+  transition: background-color 0.2s ease;
+  /* Removed position: absolute - let it flow normally */
+}
+
+#submitReviewBtn:hover {
+  background-color: #000; /* Darker purple on hover */
+}
+
+#submitReviewBtn:disabled {
+  background-color: #a07777; /* Lighter/greyer purple when disabled */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Style for the "Thanks" message */
+.review-thank-you {
+    color: #D21312; /* Green color for success */
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline-block;
+    padding: 5px 0;
+}
+.stars div {
+  color: #ccc;
+  transition: color 0.2s;
+}
+.stars div.selected-rating {
+  color: gold;
+}

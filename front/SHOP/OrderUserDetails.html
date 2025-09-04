@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MotoRide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<!--===============================================================================================-->
+ <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../diest/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../diest/css/main.css">
+
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="dist/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+	<link  rel="stylesheet" href="dist/css/style.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+		<link rel="stylesheet" type="text/css" href="Shopcss/orderDetails.css">
+
+</head>
+<body class="animsition">
+
+		<!-- Header -->
+		<header class="header-v2">
+			<!-- Header desktop -->
+			<div class="container-menu-desktop trans-03">
+				<div class="wrap-menu-desktop">
+					<nav class="limiter-menu-desktop p-l-45">
+	
+						<!-- Logo desktop -->
+						<a href="home.html" class="logo">
+							<img src="../diest/img/logo.png" alt="IMG-LOGO">
+						</a>
+	
+						<!-- Menu desktop -->
+						<div class="menu-desktop">
+							<ul class="main-menu">
+								<li >
+									<a href="home.html">Home</a>
+	
+								</li>
+	
+								<li class="active-menu">
+									<a href="shop.html">Shop</a>
+								</li>
+	
+								<li >
+									<a href="../maintenance/user/HomeWorkShops.html">Maintenance</a>
+								</li>
+	
+								
+							  
+								<li>
+									<a href="About/About.html">About</a>
+								</li>
+	
+								<li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+								</li>
+	
+							</ul>
+						</div>
+	
+						<!-- Icon header -->
+						<div class="wrap-icon-header flex-w flex-r-m" id="Cart">
+	
+							<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 " id="getProfile">
+								<i class="fa-solid fa-circle-user"></i>
+							</div>
+	
+							<a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 " >
+								<i class="zmdi zmdi-shopping-cart"></i>
+							</a>
+	
+							<a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+								<i class="zmdi zmdi-favorite-outline"></i>
+							</a>
+						</div>
+	
+	
+	
+					</nav>
+				</div>
+			</div>
+	
+			<!-- Header Mobile -->
+			<div class="wrap-header-mobile">
+				<!-- Logo moblie -->
+			
+				<ul class="main-menu">
+					<li >
+						<a href="home.html">Home</a>
+	
+					</li>
+	
+					<li class="active-menu">
+						<a href="shop.html">Shop</a>
+					</li>
+	
+				
+					<li >
+						<a href="../maintenance/MaintenanceHome.html.html">Maintenance</a>
+					</li>
+					<li>
+						<a href="About/About.html">About</a>
+					</li>
+	
+					<li>
+						<a href="">Logout</a>
+					</li>
+					
+				</ul>
+				<!-- Icon header -->
+				<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+					<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+						<i class="zmdi zmdi-search"></i>
+					</div>
+	
+					<a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
+						<i class="zmdi zmdi-shopping-cart"></i>
+					</a>
+	
+					<a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
+						<i class="zmdi zmdi-favorite-outline"></i>
+					</a>
+				</div>
+	
+				<!-- Button show menu -->
+	
+			</div>
+	
+	
+			<!-- Menu Mobile -->
+			<div class="menu-mobile">
+				<ul class="main-menu-m">
+					<li>
+						<a href="index.html">Home</a>
+						
+					</li>
+	
+					<li class="active-menu">
+						<a href="Shop.html">Shop</a>
+					</li>
+	
+					
+					<li >
+						<a href="../maintenance/MaintenanceHome.html.html">Maintenance</a>
+					</li>
+					<li>
+						<a href="About/About.html">About</a>
+					</li>
+	
+					<li>
+						                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+					</li>
+	
+				</ul>
+			</div>
+	
+			<!-- Modal Search -->
+			<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+				<div class="container-search-header">
+					<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+						<img src="images/icons/icon-close2.png" alt="CLOSE">
+					</button>
+	
+					<form class="wrap-search-header flex-w p-l-15">
+						<button class="flex-c-m trans-04">
+							<i class="zmdi zmdi-search"></i>
+						</button>
+						<input class="plh3" type="text" name="search" placeholder="Search...">
+					</form>
+				</div>
+			</div>
+		</header>
+	
+	<!-- Cart -->
+	<!-- breadcrumb -->
+	<!-- Product Detail -->
+	 <div class="container">
+		<div id="reviewModal" class="modal">
+			<div class="modal-content">
+				<span class="close-modal-btn">&times;</span>
+		
+				<p class="text" style="font-size: 1.2em; font-weight: bold; margin-bottom: 15px;">
+					How Would You Rate This Product?
+				</p>
+		
+				<div class="stars" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; font-size: 2.5rem; cursor: pointer;">
+  <div data-rating="1" title="Terrible">★</div>
+  <div data-rating="2" title="Bad">★</div>
+  <div data-rating="3" title="Okay">★</div>
+  <div data-rating="4" title="Good">★</div>
+  <div data-rating="5" title="Excellent">★</div>
+</div>
+		
+				<textarea id="reviewComment" class="textarea" cols="30" rows="4"
+						  placeholder="Write your review here (optional)"
+						  style="width: 95%; max-width: 450px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;"></textarea>
+		
+				<button id="submitReviewBtn" class="btn btn-success" style="padding: 10px 25px; font-size: 1em;">
+					Send Review
+				</button>
+		
+				<input type="hidden" id="modalProductId" value="">
+				<input type="hidden" id="modalMotorcycleId" value="">
+				<input type="hidden" id="modalStoreId" value="">
+		
+			</div> </div>
+
+		<div class="card ">
+			<div class="row d-flex justify-content-between px-3 top">
+				<div class="d-flex">
+					<h3 style="color: #ffffff;">ORDER <span class="text-primary font-weight-bold orderId" ></span></h3>
+				</div>
+				<div class="d-flex flex-column text-sm-right ">
+					<p class="mb-5">Expected Arrival <span class="orderDate"></span></p>
+				</div>
+			</div>
+			<div class="m-lr-0-xl">
+				<div class="wrap-table-shopping-cart">
+					<table class="table-shopping-cart"  style="background-color: #ECEFF1;">
+						<tr class="table_head">
+							<th class="column-1">Product</th>
+							<th class="column-1"></th>
+							<th class="column-2">Price</th>
+							<th class="column-3">Size&Color</th>
+							<th class="column-4">Quantity</th>
+							<th class="column-5">Total</th>
+							<th class="column-6">Review</th>
+
+						</tr>
+						<tbody id="ListOfItemInCart"></tbody>
+
+					</table>
+				</div>
+
+		
+			</div>
+			
+		</div>
+	</div>
+	<!-- Related Products -->
+	<!-- Footer -->
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+
+	<!-- Modal1 -->
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+	<script>
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.gallery-lb').each(function () { // the containers for all your galleries
+			$(this).magnificPopup({
+				delegate: 'a', // the selector for gallery item
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				mainClass: 'mfp-fade'
+			});
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+
+	<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function () {
+			$(this).css('position', 'relative');
+			$(this).css('overflow', 'hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function () {
+				ps.update();
+			})
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="ShopJs/OrderDetails.js"></script>
+	<!-- ---------------------------------------------- -->
+
+
+	<script src="dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="dist/js/datatable/datatable-basic.init.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MotoRide</title>
+  <link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" type="image/png" href="../../diest/img/helmet.png" />
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="mainscreen">
+    <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
+      <div class="card"  style="margin-top: 9%;">
+        <div class="leftside" >
+          <img
+            src="ChatGPT Image Apr 19, 2025, 02_48_40 PM.png"
+            class="product"
+            alt="Shoes"
+          />
+        </div>
+        <div class="rightside">
+            <h1>CheckOut</h1>
+            <p>Order Name</p>
+            <input type="text" class="inputbox" name="name"  id="title" required />
+
+            <p>Card Type</p>
+            <select class="inputbox" name="StatusPayment" id="StatusPayment" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="RuPay">RuPay</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Cash">Cash</option>
+            </select>
+          
+
+            <p class="expcvv_text2">Reciving Order Date</p>
+            
+            <input type="date" class="inputbox" name="recivingDate" id="recivingDate" required />
+         
+            <button  class="button" id="CheckOut">CheckOut</button>
+
+
+        </div>
+           
+        <div class="rightside infoside m-6">
+          <p class="expcvv_text2">Total Price</p>
+          <input type="text" class="inputbox" name="totalPrice" id="totalPrice" disabled />
+          
+          <p>your Phone</p>
+          <input type="text" class="inputbox" name="Phone"  id="Phone" required />
+
+       
+        
+
+          <p class="expcvv_text2">your Location</p>
+          
+          <input type="text" class="inputbox" name="Location" id="Location" required />
+          <p class="expcvv_text2">your note</p>
+            <input type="text" class="inputbox" name="note" id="note"  />
+          
+       
+
+      </div>
+         
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js2/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="CheckOut.js"></script>
+
+</body>
+</html>

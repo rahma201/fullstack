@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MotoRide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--=.==============================================================================================-->
+	<link rel="shortcut icon" type="image/png" href="../../diest/img/helmet.png">
+		<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../fonts/linearicons-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/slick/slick.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/MagnificPopup/magnific-popup.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../diest/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../diest/css/main.css">
+	<link rel="stylesheet"  type="text/css" href="../css/Maintenance.css">
+
+	<!--===============================================================================================-->
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="../../SHOP/Shopcss/full.css">
+
+</head>
+<body class="animsition">
+    <!-- Preloader -->
+  
+	<!-- Header -->
+	<header class="header-v2" id="withLogin">
+		<!-- Header desktop -->
+		<div class="container-menu-desktop trans-03">
+			<div class="wrap-menu-desktop">
+				<nav class="limiter-menu-desktop p-l-45">
+	
+					<!-- Logo desktop -->
+					<a href="home.html" class="logo">
+						<img src="/diest/img/logo.png" alt="IMG-LOGO">
+					</a>
+	
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu">
+							<li >
+								<a href="/SHOP/home.html">Home</a>
+							</li>
+							<li>
+								<a href="/SHOP/Shop.html">Shop</a>
+							</li>
+							<li class="active-menu">
+								<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+							</li>
+							<li>
+								<a href="/Events/index.html">Events</a>
+							</li>
+							<li>
+								<a href="/SHOP/About/About.html">About</a>
+							</li>
+						  
+						</ul>
+					</div>
+	
+					<!-- Icon header -->
+					<div class="wrap-icon-header flex-w flex-r-m h-full">
+						<div class="flex-c-m h-full p-l-18 p-r-25 LoginButtonModel " id="LoginButtonModel">
+							<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+								<i class="login-icon fas fa-sign-in-alt"></i> Login
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+		<!-- Header Mobile -->
+	  <!-- Mobile Menu -->
+	<div class="wrap-header-mobile">
+		<div class="logo-mobile">
+			<img src="/diest/img/logo.png" alt="IMG-LOGO">
+		</div>
+	
+		<!-- Mobile Navigation Menu -->
+		<div class="menu-mobile">
+			<ul class="main-menu-m">
+				<li >
+					<a href="/SHOP/home.html">Home</a>
+				</li>
+				<li>
+					<a href="/SHOP/Shop.html">Shop</a>
+				</li>
+<li class="active-menu">
+					<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+				</li>
+				<li>
+					<a href="/Events/index.html">Events</a>
+				</li>
+				<li>
+					<a href="/SHOP/About/About.html">About</a>
+				</li>
+			</ul>
+		</div>
+	
+		<!-- Mobile Header Icons -->
+		<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+			<!-- Dropdown Button -->
+		<div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i> 
+	</div>
+	
+			<!-- Dropdown Menu -->
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<li><a class="dropdown-item" href="../maintenance/user/HomeWorkShops.html">Work Shop</a></li>
+				<li><a class="dropdown-item" href="../Events/index.html">Events</a></li>
+				<li><a class="dropdown-item" href="About/About.html">About</a></li>
+	</ul>
+		</div>
+	
+		<!-- Login Button -->
+	  
+	</div>
+	
+	<!-- Mobile Menu Toggle Button -->
+	
+	
+	<!-- Collapsing Navigation Content -->
+	<div class="collapse " id="navbarToggleExternalContent">
+		<div class=" p-4 wrap-header-mobile " >
+			<ul class="main-menu">
+							<li >
+								<a href="/SHOP/home.html">Home</a>
+							</li> 
+							<li>
+								<a href="/SHOP/Shop.html">Shop</a>
+							</li>
+							<li class="active-menu">
+								<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+							</li>
+							<li>
+								<a href="/Events/index.html">Events</a>
+							</li>
+							<li>
+								<a href="/SHOP/About/About.html">About</a>
+							</li>
+							<div class="wrap-icon-header flex-w flex-r-m h-full">
+			<div class="flex-c-m h-full p-l-18 p-r-25 LoginButtonModel " id="LoginButtonModel">
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+					<i class="login-icon fas fa-sign-in-alt"></i> Login
+				</div>
+			</div>
+		</div>
+						</ul>
+		</div>
+	
+		</div>
+	
+	
+	
+	
+	
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="main-menu-m">
+				<li >
+					<a href="/SHOP/home.html">Home</a>
+				</li>
+				<li>
+					<a href="/SHOP/Shop.html">Shop</a>
+				</li>
+							<li class="active-menu">
+					<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+				</li>
+				<li>
+					<a href="/Events/index.html">Events</a>
+				</li>
+				<li>
+					<a href="/SHOP/About/About.html">About</a>
+				</li>
+				
+			</ul>
+		</div>
+	
+		<!-- Modal Search -->
+		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+		   
+			<div class="container-search-header">
+				<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+					<img src="images/icons/icon-close2.png" alt="CLOSE">
+				</button>
+	
+				<form class="wrap-search-header flex-w p-l-15">
+					<button class="flex-c-m trans-04">
+						<i class="zmdi zmdi-search"></i>
+					</button>
+					<input class="plh3" type="text" name="search" placeholder="Search...">
+				</form>
+			</div>
+		</div>
+		</header>
+	
+	<!-- Header2 -->
+		<header class="header-v2" style="display: none;" id="withoutLogin">
+		<!-- Header desktop -->
+		<div class="container-menu-desktop trans-03">
+			<div class="wrap-menu-desktop">
+				<nav class="limiter-menu-desktop p-l-45">
+	
+					<!-- Logo desktop -->
+					<a href="home.html" class="logo">
+						<img src="/diest/img/logo.png" alt="IMG-LOGO">
+					</a>
+	
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu">
+							<li>
+								<a href="/SHOP/home.html">Home</a>
+							</li>
+							<li >
+								<a href="/SHOP/Shop.html">Shop</a>
+							</li>
+							<li class="active-menu">
+								<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+							</li>
+							<li>
+								<a href="/Events/index.html">Events</a>
+							</li>
+							<li>
+								<a href="/SHOP/About/About.html">About</a>
+							</li>
+							<li>
+								                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+							</li>
+						</ul>
+					</div>
+	
+					<!-- Icon header -->
+					<div class="wrap-icon-header flex-w flex-r-m" id="Cart">
+					 
+							<a href="../../SHOP/Profile.html" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" id="getProfile">
+							<i class="fa-solid fa-circle-user"></i>
+							</a>
+						<a href="../../SHOP/Shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+							<i class="zmdi zmdi-shopping-cart"></i>
+						</a>
+						<a href="../../SHOP/Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+							<i class="zmdi zmdi-favorite-outline"></i>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+		<!-- Header Mobile -->
+		<div class="wrap-header-mobile">
+			<ul class="main-menu">
+				<li>
+					<a href="/SHOP/home.html">Home</a>
+				</li>
+				<li>
+					<a href="/SHOP/Shop.html">Shop</a>
+				</li>
+							<li class="active-menu">
+					<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+				</li>
+				<li>
+					<a href="/Events/index.html">Events</a>
+				</li>
+				<li>
+					<a href="/SHOP/About/About.html">About</a>
+				</li>
+				<li>
+					                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+				</li>
+			</ul>
+			<!-- Icon header -->
+			<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+				
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+					<i class="zmdi zmdi-search"></i>
+				</div>
+				<a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti">
+					<i class="zmdi zmdi-shopping-cart"></i>
+				</a>
+				<a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" >
+					<i class="zmdi zmdi-favorite-outline"></i>
+				</a>
+			</div>
+		</div>
+	
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="main-menu-m">
+				<li>
+					<a href="/SHOP/home.html">Home</a>
+				</li>
+				<li>
+					<a href="/SHOP/Shop.html">Shop</a>
+				</li>
+							<li class="active-menu">
+					<a href="/maintenance/user/HomeWorkShops.html">Work Shop</a>
+				</li>
+				<li>
+					<a href="/Events/index.html">Events</a>
+				</li>
+				<li>
+					<a href="/SHOP/About/About.html">About</a>
+				</li>
+				<li>
+					                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+				</li>
+			</ul>
+		</div>
+	  </header>
+	
+	
+	
+
+	<!-- Cart -->
+	<!-- Slider -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1" style="background-image: url(../img/ChatGPT\ Image\ Apr\ 19\,\ 2025\,\ 03_31_51\ PM.png);">
+					<div class="container h-full">
+						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+								<span class="ltext-101 cl2 respon2">
+									Maintenance motorcycle
+                                 </span>
+							</div>
+
+							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+									Less squeak, more speed. Stay road-ready
+									</h2>
+									
+						</div>
+						<div class="layer-slick1  visible-false" data-appear="zoomIn" data-delay="0">
+							<a  class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04" id="requestMaintenance">
+								Maintenance request
+							</a>
+						</div>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- Banner -->
+	<!-- Modal -->
+	<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content authenticationCard">
+				<div class="modal-header">
+					<h5 class="modal-title" id="authModalLabel">Welcome</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+	<div>
+		<section class="py-5 overflow-hidden" >
+			<div class="container-lg">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-header d-flex flex-wrap justify-content-between ">
+							<h2 class="section-title">Servies</h2>
+							<div class="d-flex align-items-center">
+								<a  class="btn  me-9" style="background-color: #D21312  ; color: white !important;display: none;">View All</a>
+								<div class="swiper-buttons">
+									<button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
+									<button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="category-carousel swiper">
+							<div class="swiper-wrapper" id="MaintenanceCategores">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	
+
+
+
+	<!-- Product -->
+	<section class="bg0  p-b-140  m-3">
+		<div class="container">
+
+			<div class="flex-w flex-sb-m ">
+				<div class="flex-w flex-l-m filter-tope-group m-tb-10" id="GetAllSubCategory">
+
+
+
+				</div>
+
+				<div class="flex-w flex-c-m  ">
+				
+
+					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search ">
+						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi iconsearch zmdi-search"></i>
+						Search
+					</div>
+				</div>
+
+				<!-- Search product -->
+				<div class="dis-none panel-search w-full p-t-10 p-b-15">
+					<div class="bor8 dis-flex p-l-15">
+						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 search trans-04" id="searchMaintenanceButton" >
+							<i class="zmdi zmdi-search iconsearch"></i>
+						</button>
+
+						<input class="mtext-107 cl2 size-114 plh2 p-r-15  me-2 search" id="searchMaintenance" type="text" name="search-product" placeholder="Search">
+					</div>
+				</div>
+
+			
+			</div>
+
+
+			<div class="row isotope-grid" id="ListCardMaintaince">
+
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+
+	<!-- Modal1 -->
+
+
+	<!-- Modal1 -->
+
+
+
+	<div class="modal fade m-t-50" id="MaintenanceModal" tabindex="-1" aria-labelledby="maintenanceModalLabel" aria-hidden="true" ">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content shadow-lg rounded-4">
+				<div class="modal-header " style="background-color: #D21312;">
+					<h5 class="modal-title" id="maintenanceModalLabel">
+						<i class="bi bi-tools me-2"></i> Add Motorcycle Maintenance
+					</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+	
+				<div class="modal-body " style="background-color: black; padding: 20px;  " !important>
+					<div class="row g-3 ">
+						<div class="col-md-6 mb-3">
+							<label for="bikeType" class="form-label">Motorcycle Type</label>
+							<input type="text" class="form-control" id="bikeType" name="bikeType" placeholder="e.g., Yamaha MT-07">
+							<div class="invalid-feedback">Please enter the motorcycle type.</div>
+						</div>
+	
+	
+					  
+	
+						<div class="col-md-6 mb-3">
+							<label for="bikeImage" class="form-label">Motorcycle Image</label>
+							<input type="file" class="form-control" id="bikeImage" name="bikeImage" accept="image/*">
+							<div class="invalid-feedback">Please upload an image.</div>
+						</div>
+						
+	<div class="col-md-6 mb-3">
+							<label for="date" class="form-label">Preferred Date</label>
+							<input type="date" class="form-control" id="date" name="date">
+						</div>
+						
+	
+						<div class="col-md-6 mb-3">
+							<label for="location" class="form-label">Location</label>
+							<input type="text" class="form-control" id="location" name="location" placeholder="Workshop or pickup address">
+						</div>
+						
+						<div class="col-md-6 mb-3">
+							<label for="location" class="form-label">Name of booking</label>
+							<input type="text" class="form-control" id="titleMoto" name="location" placeholder="Workshop or pickup Booking">
+						</div>
+	
+						<div class="col-md-6 mb-3">
+							<label for="maintenanceType" class="form-label">Maintenance Type</label>
+							<select class="form-select" id="maintenanceType" name="maintenanceType" style="width: 100%;
+							padding: 12px;
+							margin-bottom: 15px;
+							border: 1px solid #ccc;
+							border-radius: 6px;
+							font-size: 16px;
+							color: #333;
+							outline: none;">
+								<option value="" class="form-control">-- Select Type --</option>
+								<option value="Quick Maintenance" class="form-control">Quick Maintenance</option>
+								<option value="Full Maintenance" class="form-control">Full Maintenance</option>
+							</select>
+							<div class="invalid-feedback">Please select a maintenance type.</div>
+						</div>
+				</div>
+				<div class="col-md-12 mb-3">
+							<label for="description" class="form-label">Customer Note</label>
+							<textarea class="form-control" id="description" name="description" rows="3" placeholder="Describe the issue or request..."></textarea>
+							<div class="invalid-feedback">Please enter a description.</div>
+						</div>
+	
+				<div class="modal-footer "  style="background-color: black;">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary" id="saveMaintainceBtn">
+						<i class="bi bi-save me-1"></i> Save Booking
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+</div>
+<div class="modal fade LoginModal" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content user-login">
+			
+			<div class="modal-header" style="border-bottom: 0px !important;padding:  0px !important;">
+				<ul class="nav nav-tabs w-100" id="authTabs" role="tablist">
+					<li class="nav-item w-25 text-center">
+						<a class="nav-link active" id="login-tab" data-toggle="tab" href="#loginTab" role="tab">Login</a>
+					</li>
+					<li class="nav-item w-25 text-center">
+						<a class="nav-link" id="signup-tab" data-toggle="tab" href="#signupTab" role="tab">Sign Up</a>
+					</li>
+					<li class="nav-item w-25 text-center">
+						<a class="nav-link" id="shop-tab" data-toggle="tab" href="#shopTab" role="tab">Store</a>
+					</li>
+					<li class="nav-item w-25 text-center"><a class="nav-link" id="maintenance-tab" data-toggle="tab" href="#maintenanceTab" role="tab">Maintenance</a>
+					</li>
+				</ul>
+			</div>
+			<div class="modal-body tab-content" style="border-top: 0px;">
+				<!-- Login Tab -->
+				<div class="tab-pane fade show active" id="loginTab" role="tabpanel">
+					<input type="text" name="usernameLogin" id="usernameLogin" class="usernameLogin" placeholder="UserName" required>
+					<input type="password" name="passwordLogin" id="passwordLogin" class="passwordLogin" placeholder="Password" required>
+					<button id="Login" class="Login">Login</button>
+				</div>
+
+				<!-- Sign Up Tab -->
+				<div class="tab-pane fade" id="signupTab" role="tabpanel">
+					<input type="text" name="txt" class="UserNameSignup" placeholder="User name" id="UserNameSignup" required>
+					<input type="email" name="email" class="emailSignup" placeholder="Email" id="emailSignup" required>
+					<input type="password" name="pswd" class="passwordSignup" placeholder="Password" id="passwordSignup" required>
+					<button id="SignUp" class="SignUp">Sign up</button>
+				</div>
+
+				<!-- Shop Owner Sign Up Tab -->
+				<div class="tab-pane fade" id="shopTab" role="tabpanel">
+					<input type="text" name="shopName" class="userNameSignupShop" placeholder="Shop Name" id="userNameSignupShop" required>
+					<input type="email" name="email" class="emailSignupShop" placeholder="Email" id="emailSignupShop" required>
+					<input type="password" name="pswd" class="passwordSignupShop" placeholder="Password" id="passwordSignupShop" required>
+					<input type="text" name="location" class="locationSignupShop" placeholder="Location" id="locationSignupShop" required>
+					<input type="text" name="phone" class="phonesingupShop" placeholder="Phone Number"  id="phonesingupShop" required>
+					<input type="file" name="license" class="licenseSignupShop" placeholder="Upload License" id="licenseSignupShop" required>
+					<button id="SignUpShop" class="SignUpShop">Sign Up</button>
+				</div>
+
+				<!-- Maintenance Sign Up Tab -->
+				<div class="tab-pane fade" id="maintenanceTab" role="tabpanel">
+					<input type="text" name="maintenanceName" class="userNameSignupMaintenance" placeholder="Name" id="userNameSignupMaintenance" required>
+					<input type="email" name="email" class="emailSignupMaintenance" placeholder="Email" id="emailSignupMaintenance" required>
+					<input type="password" name="pswd" class="passwordSignupMaintenance" placeholder="Password" id="passwordSignupMaintenance" required>
+					<input type="text" name="location" class="locationSignupMaintenance" placeholder="Location" id="locationSignupMaintenance" required>
+					<input type="text" name="phone" class="phonesingupMaintenance" placeholder="Phone Number" id="phonesingupMaintenance" required>
+					<input type="file" name="license" class="licenseSignupMaintenance" placeholder="Upload License" id="licenseSignupMaintenance" required>
+					<button id="SignUpMaintenance" class="SignUpMaintenance">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	
+	<script>
+		function toggleDropdown(dropdownId) {
+		var dropdown = document.getElementById(dropdownId);
+		if (dropdown.style.display === "block") {
+			dropdown.style.display = "none"; // إخفاء القائمة إذا كانت ظاهرة
+		} else {
+			dropdown.style.display = "block"; // إظهار القائمة إذا كانت مخفية
+		}
+	}
+	
+	function changeLanguage(language) {
+		console.log("Language changed to: " + language);
+		// إغلاق جميع القوائم المفتوحة بعد اختيار اللغة
+		var dropdowns = document.querySelectorAll('.language-dropdown');
+		dropdowns.forEach(function(dropdown) {
+			dropdown.style.display = "none"; // إخفاء كل القوائم بعد اختيار اللغة
+		});
+	
+		// تنفيذ منطق تغيير اللغة هنا
+		if (language === 'en') {
+			console.log("Switching to English");
+			// ضع هنا منطق تغيير المحتوى إلى الإنجليزية
+		} else if (language === 'ar') {
+			console.log("Switching to Arabic");
+			// ضع هنا منطق تغيير المحتوى إلى العربية
+		}
+	}
+	
+	
+	
+	
+	</script>
+		<!--===============================================================================================-->
+		<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+		<!--===============================================================================================-->
+		<script src="../vendor/animsition/js/animsition.min.js"></script>
+		<!--===============================================================================================-->
+		<script src="../vendor/bootstrap/js/popper.js"></script>
+		<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+		<!--===============================================================================================-->
+		<script src="../vendor/select2/select2.min.js"></script>
+		<script>
+			$(".js-select2").each(function () {
+				$(this).select2({
+					minimumResultsForSearch: 20,
+					dropdownParent: $(this).next('.dropDownSelect2')
+				});
+			})
+		</script>
+		<!--===============================================================================================-->
+		<script src="../vendor/daterangepicker/moment.min.js"></script>
+		<script src="../vendor/daterangepicker/daterangepicker.js"></script>
+		<!--===============================================================================================-->
+		<script src="../vendor/slick/slick.min.js"></script>
+		<script src="../js/slick-custom.js"></script>
+		<!--===============================================================================================-->
+		<script src="../vendor/parallax100/parallax100.js"></script>
+		<script>
+			$('.parallax100').parallax100();
+		</script>
+		<!--===============================================================================================-->
+		<script src="../vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+		<script>
+			$('.gallery-lb').each(function () { // the containers for all your galleries
+				$(this).magnificPopup({
+					delegate: 'a', // the selector for gallery item
+					type: 'image',
+					gallery: {
+						enabled: true
+					},
+					mainClass: 'mfp-fade'
+				});
+			});
+		</script>
+		<!--===============================================================================================-->
+		<script src="../vendor/isotope/isotope.pkgd.min.js"></script>
+		<!--===============================================================================================-->
+		<script src="../vendor/sweetalert/sweetalert.min.js"></script>
+	
+		<!--===============================================================================================-->
+		<script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script>
+			$('.js-pscroll').each(function () {
+				$(this).css('position', 'relative');
+				$(this).css('overflow', 'hidden');
+				var ps = new PerfectScrollbar(this, {
+					wheelSpeed: 1,
+					scrollingThreshold: 1000,
+					wheelPropagation: false,
+				});
+	
+				$(window).on('resize', function () {
+					ps.update();
+				})
+			});
+		</script>
+	
+		<script>
+			const swiper = new Swiper('.category-carousel', {
+				slidesPerView: 4,  // عرض 4 عناصر في نفس الوقت
+				spaceBetween: 20,   // المسافة بين العناصر
+				navigation: {
+					nextEl: '.swiper-next',
+					prevEl: '.swiper-prev',
+				},
+				loop: true,  // التكرار اللانهائي
+			});
+		</script>
+	
+	
+		<script src="../js/main.js"></script>
+		<script src="js2/jquery-1.11.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+		<script src="dist/libs/jquery/dist/jquery.min.js"></script>
+		<script src="../dist/libs/simplebar/dist/simplebar.min.js"></script>
+		<script src="../dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js2/script.js"></script>
+	
+	
+	
+	<script>
+		document.getElementById('forgotPasswordBtn').addEventListener('click', function () {
+			var myModal = new bootstrap.Modal(document.getElementById('forgotPasswordModal'));
+			myModal.show();
+		});
+	</script>
+	
+	
+	<script>
+		$(document).ready(function () {
+			$('#confirmResetPassword, #resetPassword').on('input', function () {
+				const password = $('#resetPassword').val();
+				const confirmPassword = $('#confirmResetPassword').val();
+				const message = $('#passwordMatchMessage');
+	
+				if (confirmPassword === '') {
+					message.text('');
+					$('#resetPasswordbutton').prop('disabled', false); 
+				} else if (password !== confirmPassword) {
+					message.text('Passwords do not match.');
+					$('#resetPasswordbutton').prop('disabled', false); 
+	
+				} else {
+					message.text(''); // Or: message.text('Passwords match.').css('color', 'green');
+				}
+			});
+		});
+	</script>
+	
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+		<script src="../js/plugins.js"></script>
+		<script src="../js/script.js"></script>
+	
+		<script src="../js/main.js"></script>
+			<script src="../../SHOP/ShopJs/Login.js"></script>
+		<script src="../MaintenanceJs/maintenanceHome.js"></script>	
+
+		<script>
+			// إغلاق المودال عند الضغط على زر الإغلاق
+		
+	
+			// إغلاق المودال عند الضغط خارج المودال
+			window.addEventListener("click", function (event) {
+				var modal = document.getElementById("LoginModal");
+				// إذا تم الضغط خارج المودال
+				if (event.target === modal) {
+					modal.style.display = "none";
+				}
+			});
+	
+		</script>		
+	</body>
+	</html>
+	
+	
+	

@@ -1,0 +1,49 @@
+
+.wrap-icon-header {
+    margin-right: 40px !important; /* تحريك الديف 20px إلى اليسار */
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+/* إذا كنت تستخدم صورة */
+.login-icon-img {
+    width: 84px; /* الحجم المناسب للصورة */
+    height: 84px;
+}
+
+.card p {
+    padding: 10px 0;
+}
+.sec-product-detailinfo {
+    padding: 15px;
+    padding-top: 30px;
+
+    box-shadow: #bebebe 0px 0px 30px;
+}
+.review{
+box-shadow: 0 0 30px rgba(232, 232, 232, 0.6); /* Red glow */
+background-color: rgba(218, 218, 218, 0.2); /* Transparent red */
+
+}
+
+.color-container{
+    background: color #1c1c1c !important; ;
+}
+.price{
+    font-size: 30px;
+    color: #D21312;
+    text-align: center;
+}
+.js-addwish-detail:hover {
+    color: #D21312 !important;
+}
+
+.fa-expand{
+    color: white !important;
+}

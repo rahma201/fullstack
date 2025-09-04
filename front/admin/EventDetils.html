@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--  Title -->
+		<title>Motoride</title>
+		<!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- Prism Js -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/prismjs/themes/prism-okaidia.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="../diest/css/Dashbordcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- --------------------------------------------------- -->
+    <!-- Datatable -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <!-- Core Css -->
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <!-- --------------------------------------------------- -->
+
+ 
+    <!-- Core Css -->    <link rel="stylesheet" href="../diest/css/Dashbordcss.css" />
+	 <style>
+		.start {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.end.usercount {
+    font-size: 30px;
+    color: red; /* Green color to represent the count */
+    font-weight: bold;
+}
+
+	 </style>
+	</head>
+	
+<body>
+   <!-- Preloader -->
+     <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+               
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar scroll-sidebar" data-simplebar>
+                    <ul id="sidebarnav">
+                        <!-- ============================= -->
+                        <!-- Home -->
+                        <!-- ============================= -->
+                     <li class="sidebar-item "   >
+                                           <img src="../diest/img/Logo.jpeg" width="220px" />
+
+                           
+                        </li>
+                        <li class="sidebar-item mt-8">
+                            <a class="sidebar-link" href="Home.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-aperture"></i>  
+                                </span>
+                                <span class="hide-menu">Home</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="user.html" aria-expanded="false">
+                                <span class="sidebar-icon">
+                                  <i class="ti ti-user-circle"></i>
+                                </span>
+                                <span class="hide-menu">User</span>
+                            </a>
+                        </li>
+                          <li class="sidebar-item">
+                            <a class="sidebar-link" href="SreviceOfMaintenance.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-topology-star-3"></i>
+                                </span>
+                                <span class="hide-menu">Srevice Workshop</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="order.html" aria-expanded="false">
+                                <span class="sidebar-icon">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">Order</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href="Maintance.html" aria-expanded="false">
+                              <span class="rounded-3">
+                                <i class="ti ti-settings"></i>
+                              </span>
+                              <span class="hide-menu">Workshop</span>
+                            </a>
+                          </li>
+
+                       
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="Notifications.html" aria-expanded="false">
+                                <span class="sidebar-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="hide-menu">Notifications</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link" href="Events.html" aria-expanded="false">
+                                <span class="sidebar-icon">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </span>
+                                <span class="hide-menu">Events</span>
+                            </a>
+                        </li>
+                        
+
+</ul>
+                </nav>
+
+</div>
+            <!-- End Sidebar navigation -->
+   
+    <!-- End Sidebar scroll-->
+    </aside> 
+</div>
+            <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                    <h1>
+                    <img src="../diest/img/Logo.jpeg" width="220px" />
+                    </h1>
+
+                </ul>
+                <ul class="navbar-nav quick-links d-none d-lg-flex">
+                </ul>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="p-2">
+                        <i class="ti ti-dots fs-7"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                            <i class="ti ti-align-justified fs-7"></i>
+                        </a>
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+<a href="#" class="logout-link" title="logout icons">
+                             <img src="../diest/img/logout.png" width="50px" />
+                            </a>
+                      
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+	<div class="container">
+
+		<div class="  mt-4">
+			
+
+			<!-- Tab Content -->
+			<div class="tab-content mt-4">
+				<!--Maintenance request Tab -->
+				<div class="tab-pane fade show active"  role="tabpanel" >
+					<div class="container mt-4">
+
+						<div class="table-responsive">
+							<div class="container-fluid">
+								<div class="card bg-light-info shadow-none position-relative overflow-hidden">
+
+								</div>
+								<div class="widget-content searchable-container list">
+									<!-- --------------------- start Contact ---------------- -->
+								<div >
+						<h1 class="start">User Join this Event: <span class="end usercount" style="display: inline-block;">0</span></h1>
+
+									
+									<div class="card card-body">
+										<div class="table-responsive">
+											<table class="table search-table align-middle text-nowrap" id="eventdetils" >
+												<thead class="header-item">
+												<th>
+													<div class="n-chk align-self-center text-center">
+														<div class="form-check">
+															<input type="checkbox" class="form-check-input primary" id="contact-check-all" />
+															<label class="form-check-label" for="contact-check-all"></label>
+															<span class="new-control-indicator"></span>
+														</div>
+													</div>
+												</th>
+												<th>Name</th>
+												<th>Phone</th>
+												<th>Number of guests</th>
+
+												</thead>
+												<tbody>
+													<!-- start row -->
+													
+													<!-- end row -->
+													<!-- start row -->
+
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+									
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="dark-transparent sidebartoggler"></div>
+		<div class="dark-transparent sidebartoggler"></div>
+
+	</div>
+	
+<!-- Modal to show booking details -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="bookingModalLabel">Booking Maintenance Details</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  <div class="row">
+			<div class="mb-3 col-md-6">
+			  <label for="name-booking" class="form-label">Name of Booking</label>
+			  <input type="text" class="form-control" id="name-booking" readonly>
+			</div>
+  
+			<div class="mb-3 col-md-6">
+			  <label for="preferred-date" class="form-label">Preferred Date</label>
+			  <input type="date" class="form-control" id="preferred-date" readonly>
+			</div>
+  
+			<div class="mb-3 col-md-6">
+			  <label for="motorcycle-type" class="form-label">Motorcycle Type</label>
+			  <input type="text" class="form-control" id="motorcycle-type" readonly>
+			</div>
+  
+			<div class="mb-3 col-md-6">
+			  <img src="" alt="Motorcycle Image" id="motorcycle-image" class="img-fluid">
+			</div>
+  
+			<div class="mb-3 col-md-12">
+			  <label for="customer-note" class="form-label">Customer Note</label>
+			  <textarea class="form-control" id="customer-note" rows="3" readonly></textarea>
+			</div>
+  
+			<div class="mb-3 col-md-6">
+			  <label for="maintenance-type" class="form-label">Maintenance Type</label>
+			  <input type="text" class="form-control" id="maintenance-type" readonly>
+			</div>
+  
+			<div class="mb-3 col-md-6">
+			  <label for="location" class="form-label">Location</label>
+			  <input type="text" class="form-control" id="location" readonly>
+			</div>
+  
+			<div class="mb-3 col-md-12">
+			  <label for="admin-description" class="form-label">Admin Description</label>
+			  <textarea class="form-control" id="admin-description" rows="3" readonly></textarea>
+			</div>
+  
+			<div class="mb-3 col-md-6">
+			  <label for="maintenance-price" class="form-label">Maintenance Price</label>
+			  <input type="text" class="form-control" id="maintenance-price" readonly>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobilenavbar" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <nav class="sidebar-nav scroll-sidebar">
+            <div class="offcanvas-header justify-content-between">
+                <img src="../diest/img/Logo.jpeg" width="150px" alt="" class="img-fluid">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body profile-dropdown mobile-navbar" data-simplebar="" data-simplebar>
+                <ul id="sidebarnav">
+                    
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="Home.html" aria-expanded="false">
+                            <span>
+                                <i class="ti ti-user-circle"></i>
+                            </span>
+                            <span class="hide-menu">Home</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="user.html" aria-expanded="false">
+                            <span class="sidebar-icon">
+                                <i class="ti ti-aperture"></i>
+                            </span>
+                            <span class="hide-menu">User</span>
+                        </a>
+                    </li>
+                     <li class="sidebar-item">
+                            <a class="sidebar-link" href="SreviceOfMaintenance.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-topology-star-3"></i>
+                                </span>
+                                <span class="hide-menu">Srevice Of Maintenance.html</span>
+                            </a>
+                        </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="order.html" aria-expanded="false">
+                            <span class="sidebar-icon">
+                                <i class="ti ti-shopping-cart"></i>
+                            </span>
+                            <span class="hide-menu">Order</span>
+                        </a>
+                    </li>
+                     <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href="Maintance.html" aria-expanded="false">
+                              <span class="rounded-3">
+                                <i class="ti ti-settings"></i>
+                              </span>
+                              <span class="hide-menu">Maintenance</span>
+                            </a>
+                          </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="Events.html" aria-expanded="false">
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-calendar"></i>
+                            </span>
+                            <span class="hide-menu">Events</span>
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="Notifications.html" aria-expanded="false">
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="hide-menu">Notifications</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+  
+
+        <script src="../admin/dist/libs/jquery/dist/jquery.min.js"></script>
+        <script src="../admin/dist/libs/simplebar/dist/simplebar.min.js"></script>
+        <script src="../admin/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!--  core files -->
+        <script src="dist/js/app.min.js"></script>
+        <script src="dist/js/app.init.js"></script>
+        <script src="dist/js/app-style-switcher.js"></script>
+        <script src="dist/js/sidebarmenu.js"></script>
+        <script src="dist/js/custom.js"></script>
+        <script src="dist/libs/prismjs/prism.js"></script>
+
+        <!--  current page js files -->
+    <script src="../diest/Logout.js"></script>
+
+        <script src="../admin/dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+       
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.js"></script>
+
+        <script src="AdmainJs/EventDetils.js"></script>
+
+</body>
+
+
+</html>

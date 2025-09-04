@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <!--  Title -->
+    <title>MotoRide</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="MotoRide" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="MotoRide" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />
+    <link rel="stylesheet" href="dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- Prism Js -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/prismjs/themes/prism-okaidia.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+    <!-- --------------------------------------------------- -->
+    <!-- Datatable -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <!-- Core Css -->
+    <link id="themeColors" rel="stylesheet" href="dist/css/style.min.css" />
+    <link rel="stylesheet" href="../diest/css/Dashbordcss.css">
+
+    <style>
+        .items  th {
+            text-align: center;
+          background-color: #C9D6DF  ;
+
+color:black ;
+        }
+
+
+        </style>
+</head>
+<body>
+   <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+               
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar scroll-sidebar" data-simplebar>
+                    <ul id="sidebarnav">
+                       
+                  
+                         <li class="sidebar-item "   >
+                                           <img src="../diest/img/Logo.jpeg" width="220px" />
+
+                           
+                        </li>
+                <li class="sidebar-item">
+                            <a class="sidebar-link" href="HomeShop.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-user-circle"></i>
+                                </span>
+                                <span class="hide-menu">Home</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="additem.html" aria-expanded="false">
+                                <span>
+   <i class="ti ti-topology-star-3"></i>
+                                </span>
+                                <span class="hide-menu">item</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="category.html" aria-expanded="false">
+                                <span>
+<i class="ti ti-aperture"></i>                                </span>
+                                <span class="hide-menu">category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="order.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">Order</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link" href="review.html" aria-expanded="false">
+                                <span>
+                                  <i class="ti ti-file-text"></i>
+                                </span>
+                                <span class="hide-menu">Reviw</span>
+                              </a>
+                            </a>
+                        </li>
+                        
+
+</ul>
+                </nav>
+
+</div>
+            <!-- End Sidebar navigation -->
+   
+    <!-- End Sidebar scroll-->
+    </aside> 
+</div>
+            <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                    <h1>
+                    <img src="../diest/img/Logo.jpeg" width="220px" />
+                    </h1>
+
+                </ul>
+                <ul class="navbar-nav quick-links d-none d-lg-flex">
+                </ul>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="p-2">
+                        <i class="ti ti-dots fs-7"></i>
+          
+                    </span>
+                </button>
+            
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                            <i class="ti ti-align-justified fs-7"></i>
+                        </a>
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+                            <a href="#" class="logout-link" title="logout icons">
+                             <img src="../diest/img/logout.png" width="50px" />
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!--  Main wrapper -->
+    <div class="body-wrapper mt-4">
+ 
+        <div class="container">
+
+            <div class="container " style="height: 70%;">
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: 100%; display: flex;">
+                    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link active w-100 text-start py-3 fs-5" id="Received-tab" data-bs-toggle="tab" data-bs-target="#moto" type="button" role="tab" aria-controls="moto" aria-selected="true">
+                            Order Received
+                        </button>
+                    </li>
+                    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link w-100 text-start py-3 fs-5" id="NotReceived-tab" data-bs-toggle="tab" data-bs-target="#card-products" type="button" role="tab" aria-controls="card-products" aria-selected="false">
+                            Order not Received
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content ">
+                    <!-- Moto Tab -->
+                    <div class="tab-pane fade show active" id="moto" role="tabpanel" aria-labelledby="moto-tab">
+                        <div class="container mt-4">
+                        
+                            <div class="table-responsive">
+                                <table id="cardOrderReceivedTable" class="table table-bordered table-striped tableOrderReciverd">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Order Name</th>
+                                            <th>Date Of Order</th>
+                                            <th>Total Price</th>
+                                            <th>statusPayment</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Rows will be added dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Product Tab -->
+                    <div class="tab-pane fade" id="card-products" role="tabpanel" aria-labelledby="card-products-tab">
+                        <div class="container mt-4">
+                
+                
+                            <div class="table-responsive">
+                                <table id="cardOrderNotReceivedTable" class="table table-bordered table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Order Name</th>
+                                            <th>Date Of Order</th>
+                                            <th>Total Price</th>
+                                            <th>statusPayment</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Rows will be added dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Modal to Add New Product -->
+            <div class="modal fade" id="getOrderModal" tabindex="-1" aria-labelledby="getOrderModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                        <div class="modal-body">
+                            <form id="newItemForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="newTitle" class="form-label">Title</label>
+                                        <input type="text" class="form-control" id="newTitle" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="newTotalPrice" class="form-label">Total Price</label>
+                                        <input type="number" class="form-control" id="newTotalPrice" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="newDate" class="form-label">Date</label>
+                                        <input type="date" class="form-control" id="newDate" required>
+                                    </div>
+                                    <!-- Keep additional fields, but don't show them in the table -->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="newFee" class="form-label">Fee</label>
+                                        <input type="number" class="form-control" id="newFee" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newCustomerNote" class="form-label">Customer Note</label>
+                                    <textarea class="form-control" id="newCustomerNote" rows="2" required></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="newStatusDelivery" class="form-label">Status Delivery</label>
+                                        <select class="form-control" id="newStatusDelivery" required>
+                                            <option value="Pending">Pending</option>
+                                            <option value="Shipped">Shipped</option>
+                                            <option value="Delivered">Delivered</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="newShopOwnerId" class="form-label">Shop Owner ID</label>
+                                        <input type="text" class="form-control" id="newShopOwnerId" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newCustomer" class="form-label">Customer</label>
+                                    <input type="text" class="form-control" id="newCustomer" required>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- Add Modal -->
+            <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addItemModalLabel">Add New order</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="itemForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="title" class="form-label">Title</label>
+                                        <input type="text" class="form-control" id="title" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="totalPrice" class="form-label">Total Price</label>
+                                        <input type="number" class="form-control" id="totalPrice" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="date" class="form-label">Date</label>
+                                        <input type="date" class="form-control" id="date" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="fee" class="form-label">Fee</label>
+                                        <input type="number" class="form-control" id="fee" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="customerNote" class="form-label">Customer Note</label>
+                                    <textarea class="form-control" id="customerNote" rows="2" required></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="statusDelivery" class="form-label">Status Delivery</label>
+                                        <select class="form-control" id="statusDelivery" required>
+                                            <option value="Pending">Pending</option>
+                                            <option value="Shipped">Shipped</option>
+                                            <option value="Delivered">Delivered</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="shopOwnerId" class="form-label">Shop Owner ID</label>
+                                        <input type="text" class="form-control" id="shopOwnerId" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="customer" class="form-label">Customer</label>
+                                    <input type="text" class="form-control" id="customer" required>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                $(document).ready(function () {
+                    var table = $("#item_table").DataTable();
+                    var editingRow = null; // متغير لتتبع الصف الذي يتم تعديله
+
+                    // Function to Add or Edit Item
+                    function saveItem() {
+                        var title = $("#title").val();
+                        var totalPrice = $("#totalPrice").val();
+                        var date = $("#date").val();
+
+                        // Check if any field is empty
+                        if (!title || !totalPrice || !date) {
+                            alert("Please fill all fields!");
+                            return;
+                        }
+
+                        // إذا كان المستخدم يقوم بتعديل صف موجود
+                        if (editingRow) {
+                            table.row(editingRow).data([
+                                title,
+                                `$${totalPrice}`,
+                                date,
+                                `<button class="btn btn-info btn-sm info-btn">Info</button>
+                                                             <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                                                             <button class="btn btn-danger btn-sm delete-btn">Delete</button>`
+                            ]).draw(false);
+                            editingRow = null; // إعادة التهيئة بعد التعديل
+                        } else {
+                            // إضافة صف جديد
+                            table.row.add([
+                                title,
+                                `$${totalPrice}`,
+                                date,
+                                `<button class="btn btn-info btn-sm info-btn">Info</button>
+                                                             <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                                                             <button class="btn btn-danger btn-sm delete-btn">Delete</button>`
+                            ]).draw(false);
+                        }
+
+                        // Reset Form & Close Modal
+                        $("#itemForm")[0].reset();
+                        editingRow = null;
+                        $("#addItemModal").modal('hide');
+                    }
+
+                    // Handle Form Submission
+                    $("#itemForm").submit(function (event) {
+                        event.preventDefault();
+                        saveItem();
+                    });
+
+                    // Handle Delete Button Click
+                    $("#item_table tbody").on("click", ".delete-btn", function () {
+                        table.row($(this).parents("tr")).remove().draw();
+                    });
+
+                    // Handle Edit Button Click
+                    $("#item_table tbody").on("click", ".edit-btn", function () {
+                        editingRow = table.row($(this).parents("tr"));
+                        var rowData = editingRow.data();
+
+                        $("#title").val(rowData[0]);
+                        $("#totalPrice").val(parseFloat(rowData[1].replace("$", "")));
+                        $("#date").val(rowData[2]);
+
+                        $("#addItemModal").modal('show');
+                    });
+
+                    // Handle Info Button Click
+                    $("#item_table tbody").on("click", ".info-btn", function () {
+                        $("#itemForm")[0].reset(); // تفريغ الحقول
+                        $("#addItemModal").modal('show');
+                    });
+                });
+
+                $(document).ready(function () {
+                    var table = $("#card_product_table").DataTable();
+                    var editingRow = null; // متغير لتتبع الصف الذي يتم تعديله
+
+                    // Function to Add or Edit Product
+                    function saveProduct() {
+                        var title = $("#newTitle").val();
+                        var totalPrice = $("#newTotalPrice").val();
+                        var date = $("#newDate").val();
+
+                        // Check if any required field is empty
+                        if (!title || !totalPrice || !date) {
+                            alert("Please fill all fields!");
+                            return;
+                        }
+
+                        // If user is editing an existing row
+                        if (editingRow) {
+                            table.row(editingRow).data([
+                                title,
+                                `$${totalPrice}`,
+                                date,
+                                `<button class="btn btn-info btn-sm info-btn">Info</button>
+                                                             <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                                                             <button class="btn btn-danger btn-sm delete-btn">Delete</button>`
+                            ]).draw(false);
+                            editingRow = null; // Reset after editing
+                        } else {
+                            // Add a new row with only the 3 fields to show in the table
+                            table.row.add([
+                                title,
+                                `$${totalPrice}`,
+                                date,
+                                `<button class="btn btn-info btn-sm info-btn">Info</button>
+                                                             <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                                                             <button class="btn btn-danger btn-sm delete-btn">Delete</button>`
+                            ]).draw(false);
+                        }
+
+                        // Reset Form & Close Modal
+                        $("#newItemForm")[0].reset();
+                        editingRow = null;
+                        $("#addProductModal").modal('hide');
+                    }
+
+                    // Handle Form Submission
+                    $("#newItemForm").submit(function (event) {
+                        event.preventDefault();
+                        saveProduct();
+                    });
+
+                    // Handle Delete Button Click
+                    $("#card_product_table tbody").on("click", ".delete-btn", function () {
+                        table.row($(this).parents("tr")).remove().draw();
+                    });
+
+                    // Handle Edit Button Click
+                    $("#card_product_table tbody").on("click", ".edit-btn", function () {
+                        editingRow = table.row($(this).parents("tr"));
+                        var rowData = editingRow.data();
+
+                        // Fill the form with row data
+                        $("#newTitle").val(rowData[0]);
+                        $("#newTotalPrice").val(parseFloat(rowData[1].replace("$", "")));
+                        $("#newDate").val(rowData[2]);
+
+                        // Show the modal with more fields for editing
+                        $("#addProductModal").modal('show');
+                    });
+
+                    // Handle Info Button Click
+                    $("#card_product_table tbody").on("click", ".info-btn", function () {
+                        // Empty the fields of the form
+                        $("#newItemForm")[0].reset(); // Clear all fields
+
+                        // Show the modal with empty fields
+                        $("#addProductModal").modal('show');
+                    });
+                });
+
+
+
+            </script>
+
+
+
+
+
+            <div class="dark-transparent sidebartoggler"></div>
+            <div class="dark-transparent sidebartoggler"></div>
+        </div>
+    </div>
+
+
+    <!--  Shopping Cart -->
+
+
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Order Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+    
+                    <!-- User Info Section -->
+                    <h6 class="mb-3">User Information</h6>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">User </label>
+                            <input type="text" class="form-control" placeholder="User Name" id="user-name" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone-number" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">Location</label>
+                            <input type="text" class="form-control" placeholder="Location" id="location" readonly>
+                        </div>
+                    </div>
+    
+    
+                    <!-- Item Info Section -->
+                    <h6 class="mb-3">Order Information</h6>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">Name</label>
+
+                            <input type="text" class="form-control" placeholder="Item Name" id="item-name" readonly>
+                        </div>         
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">Reciving Date</label>
+                            <input type="text" class="form-control" placeholder="Color" id="recivingDate" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">Total Price</label>
+                            <input type="number" class="form-control" placeholder="Total" id="total" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="productName" class="form-label">Customer Notes</label>
+                            <input type="text" class="form-control"  id="Customer_nots" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label d-block" for="receivedOrder">Received the order?</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="receivedOrder" id="receivedYes" value="yes">
+                                <label class="form-check-label" for="receivedYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="receivedOrder" id="receivedNo" value="no">
+                                <label class="form-check-label" for="receivedNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <!-- Empty area -->
+                    <div class="col-12">
+                        <div class="border p-3" style="min-height: 100px;">
+                            <div class="table-responsive">
+                                <table id="demo-foo-addrow" class="table table-bordered m-t-30 table-hover contact-list footable footable-5 footable-paging footable-paging-center breakpoint-lg" data-paging="true" data-paging-size="7">
+                                    <thead >
+                                        <tr class="footable-header items">
+                                            <th class="footable-first-visible">#</th>
+                                            <th>Item Name</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Size</th>
+                                            <th>Color</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="orderItem">
+                                    </tbody>
+    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="SaveOrderItemRecived" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+    
+                
+    
+            </div>
+        </div>
+        <div class="modal fade" id="orderRecivedModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orderModalLabel">Order Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+        
+                    <div class="modal-body">
+        
+                        <!-- User Info Section -->
+                        <h6 class="mb-3">User Information</h6>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_user-name" class="form-label">User</label>
+                                <input type="text" class="form-control" placeholder="User Name" id="ReceivedOrder_user-name" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_phone-number" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="ReceivedOrder_phone-number" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_location" class="form-label">Location</label>
+                                <input type="text" class="form-control" placeholder="Location" id="ReceivedOrder_location" readonly>
+                            </div>
+                        </div>
+        
+                        <!-- Item Info Section -->
+                        <h6 class="mb-3">Order Information</h6>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_item-name" class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Item Name" id="ReceivedOrder_item-name" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_recivingDate" class="form-label">Reciving Date</label>
+                                <input type="text" class="form-control" placeholder="Reciving Date" id="ReceivedOrder_recivingDate" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_total" class="form-label">Total Price</label>
+                                <input type="number" class="form-control" placeholder="Total" id="ReceivedOrder_total" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ReceivedOrder_Customer_nots" class="form-label">Customer Notes</label>
+                                <input type="text" class="form-control" id="ReceivedOrder_Customer_nots" readonly>
+                            </div>
+                        </div>
+        
+                        <!-- Table -->
+                        <div class="col-12">
+                            <div class="border p-3" style="min-height: 100px;">
+                                <div class="table-responsive">
+                                    <table id="ReceivedOrder_demo-foo-addrow" class="table table-bordered m-t-30 table-hover contact-list footable footable-5 footable-paging footable-paging-center breakpoint-lg" data-paging="true" data-paging-size="7">
+                                        <thead>
+                                            <tr class="footable-header items">
+                                                <th class="footable-first-visible">#</th>
+                                                <th>Item Name</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Size</th>
+                                                <th>Color</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- سيتم تعبئته من خلال الجافاسكربت -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+           <!--  Mobilenavbar -->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobilenavbar" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <nav class="sidebar-nav scroll-sidebar">
+            <div class="offcanvas-header justify-content-between">
+                <img src="../diest/img/Logo.jpeg" width="190px" width="50px" alt="" class="img-fluid">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body profile-dropdown mobile-navbar" data-simplebar="" data-simplebar>
+              <ul id="sidebarnav">
+                        <!-- ============================= -->
+                        <!-- Home -->
+                        <!-- ============================= -->
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu"></span>
+                        </li>
+                        <!-- =================== -->
+                        <!-- Dashboard -->
+                        <!-- =================== -->
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="HomeShop.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-user-circle"></i>
+                                </span>
+                                <span class="hide-menu">Home</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="additem.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-aperture"></i>
+                                </span>
+                                <span class="hide-menu">item</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="category.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="order.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-shopping-cart"></i>
+                                </span>
+                                <span class="hide-menu">Order</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link" href="review.html" aria-expanded="false">
+                                <span>
+                                  <i class="ti ti-file-text"></i>
+                                </span>
+                                <span class="hide-menu">Reviw</span>
+                              </a>
+                            </a>
+                        </li>
+                        </ul>
+            </div>
+        </nav>
+    </div>
+        
+    <!--  Import Js Files -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            toggleTheme('dist/css/style-purple.min.css'); // تعيين الثيم الافتراضي إلى النهدي
+        });
+    </script>
+        <script src="../diest/Logout.js"></script>
+
+    <script src="Order.js"></script>
+
+    <script src="dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  core files -->
+    <script src="dist/js/app.min.js"></script>
+    <script src="dist/js/app.init.js"></script>
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/sidebarmenu.js"></script>
+    <script src="dist/js/custom.js"></script>
+    <script src="dist/libs/prismjs/prism.js"></script>
+
+    <!--  current page js files -->
+
+    <script src="dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/datatable/datatable-basic.init.js"></script>
+        <!-- SweetAlert2 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.css" rel="stylesheet">
+
+        <!-- SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+		
+		.hero-content{
+			padding-top: 150px !important;
+           
+		}
+		
+.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none; /* تأكد من أن القيمة هي none */
+}
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+.hero-content {
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+.hero-content .container,
+.hero-content .row,
+.hero-content .col {
+    height: 100%;
+}
+
+.hero-slider .entry-title {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+.hero-slider .btn {
+    margin-top: 45px;
+}
+.btn {
+    color:  #ffff;
+    background-color: #D21312;
+    border-radius: 23px;
+    min-width: 161px;
+    height: 46px;
+    font-family: sans-serif !important;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+}
+
+   
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    max-width: 1110px;
+    bottom: -171px;
+    left: 0;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    visibility: hidden;
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #D21312;
+    transition: all .35s;
+}
+
+.swiper-button-next {
+    right: 15px;
+}
+
+.swiper-button-prev {
+    left: 15px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.swiper-button-next span,
+.swiper-button-prev span {
+    display: block;
+    width: 20px;
+    padding-top: 6px;
+}
+
+.swiper-button-next path,
+.swiper-button-prev path {
+    fill: #fff;
+    align-items: center !important;
+}
+
+.swiper-pagination-bullet {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+    background: transparent;
+    opacity: 1;
+    transition: all .35s;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+    width: 32px;
+}
+
+.swiper-pagination-bullet-active::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    z-index: 99;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        visibility: visible;
+    }
+}
+
+/*
+# Countdown
+--------------------------------*/
+.countdown-holder {
+    margin-right: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block !important;
+}
+
+.countdown-holder label {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 576px) {
+    .hero-slider .entry-title {
+        font-size: 42px;
+    }
+
+    .countdown-holder {
+        margin-right: 24px;
+        font-size: 42px;
+        display: inline-block;
+    }
+
+    .countdown-holder label {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .hero-content {
+        padding-top: 300px;
+    }
+
+    .hero-slider .entry-title {
+        font-size: 72px;
+    }
+
+    .countdown-holder {
+        margin-right: 52px;
+        font-size: 60px;
+    }
+
+    .countdown-holder label {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .hero-content {
+        padding-top: 400px;
+    }
+
+    .swiper-button-next {
+        right: 64px;
+        
+    }
+
+    .swiper-button-prev {
+        left: 64px;
+    }
+}
+/* Modal Styles */
+.user-login {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.LoginModal .close {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.LoginModal .modal-header {
+    border-bottom: none;
+}
+
+.LoginModal .nav-tabs {
+    border: none;
+}
+
+.LoginModal .nav-tabs .nav-item {
+    flex: 1;
+}
+
+.LoginModal .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 15px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.LoginModal .nav-link.active {
+    color: #fff;
+    background-color: #D21312;
+    border-color: #D21312;
+}
+
+.LoginModal .nav-link:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.tab-pane {
+    padding: 20px;
+}
+
+.LoginModal input[type="text"],
+.LoginModal input[type="email"],
+.LoginModal input[type="password"],
+.LoginModal input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+.user-login{
+	padding-top:100px
+}
+
+.LoginModal input[type="text"]:focus,
+.LoginModal input[type="email"]:focus,
+.LoginModal input[type="password"]:focus,
+.LoginModal input[type="file"]:focus {
+    border-color: #D21312;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.LoginModal button {
+    background-color: #D21312;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.LoginModal button:hover {
+    background-color: #5d5e5f;
+}
+
+.LoginModal .transparent-btn {
+    background: transparent;
+    color: #D21312;
+    font-size: 14px;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+
+.LoginModal .transparent-btn:hover {
+    color: #ffffff;
+}
+
+/* Forgot Password Modal */
+#forgotPasswordModal .user-login {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#resetPasswordForm input {
+    margin-bottom: 15px;
+}
+
+#resetPasswordbutton {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+#resetPasswordbutton:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+#passwordMatchMessage {
+    display: none;
+}
+
+/* Styling for form labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+
+   .LoginModal .modal-dialog {
+        max-width: 90%;
+    }
+
+   .LoginModal .user-login {
+        padding: 15px;
+    }
+
+   .LoginModal .nav-tabs .nav-item {
+        width: 25%;
+    }
+
+   .LoginModal .modal-header {
+        padding: 10px;
+    }
+
+  .LoginModal  button {
+        font-size: 14px;
+    }
+
+  .LoginModal  .transparent-btn {
+        font-size: 12px;
+    }
+}
+/* Gradient Button */
+.LoginModal .btn.gradient-bg {
+    background-color: #D21312; /* Base color for fallback */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5', GradientType=1 ); /* For IE6-9 */
+    background-image:  #D21312; /* Gradient for modern browsers */
+    color: #000;
+    border-radius: 30px;
+    padding: 16px 46px;
+    border: 2px solid #fff;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.LoginModal .btn.gradient-bg:hover {
+    background-image: linear-gradient(270deg, #D21312 0%, #2b2a2a 100%);
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/* العامة: التأكد من أن القوائم متناسقة عبر جميع النسخ */
+.LoginModal .language-selector {
+    position: relative;
+}
+
+.LoginModal .language-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px; /* يحدد المسافة بين الأيقونة والقائمة */
+    background-color: #f9f9f9;
+    min-width: 100px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+.LoginModal .language-dropdown a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.LoginModal .language-dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* الأيقونة الخاصة بتغيير اللغة */
+ .icon-header-item {
+    cursor: pointer;
+    color: #fff; /* لون الأيقونة */
+    background-color: black; /* خلفية الأيقونة */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* تأثير على الأيقونة عند التمرير عليها */
+.icon-header-item:hover {
+    background-color: black; /* تغيير اللون عند التمرير */
+}
+
+/* التأكد من أن الـ dropdown يظهر بشكل صحيح في الجوال */
+@media (max-width: 768px) {
+    .language-dropdown {
+        min-width: 120px; /* زيادة العرض قليلاً للأجهزة الصغيرة */
+        right: 0; /* محاذاة إلى اليمين على الأجهزة الصغيرة */
+    }
+
+    .language-dropdown a {
+        padding: 10px 20px;
+    }
+}
+
+/* تخصيص لأيقونات القوائم في الـ mobile و modal */
+@media (max-width: 768px) {
+    .wrap-icon-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrap-icon-header .language-selector {
+        margin-right: 10px;
+    }
+
+    .icon-header-item {
+       font-family: sans-serif;
+        padding: 8px;
+        font-size: 15px;
+    }
+}
+
+/* تخصيص للموبايل - إخفاء القوائم في الجوال حتى يتم التفاعل مع الأيقونة */
+@media (max-width: 768px) {
+    .language-dropdown {
+        top: 40px;
+        right: 0;
+    }
+}

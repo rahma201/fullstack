@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MotoRide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--=========x======================================================================================-->
+ <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../diest/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../diest/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<!--===============================================================================================-->
+	<style>
+
+        .wrap-icon-header {
+            margin-right: 40px !important; /* تحريك الديف 20px إلى اليسار */
+        }.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc; /* لإعطاء الدائرة إطار رفيع */
+}
+
+/* لتنسيق اللون داخل الدائرة إذا كانت خالية من النص */
+.circle:not(:empty) {
+    color: #D3D3D3; /* تغيير النص داخل الدائرة ليظهر بشكل واضح */
+}
+
+    #Cartemty {
+        text-align: center;
+        padding: 60px 0;
+    }
+	th {
+			background-color: #f1f1f1;
+		}
+    .cart-empty-message {
+        background-color: white;
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .cart-empty-message h2 {
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .cart-empty-message p {
+        font-size: 16px;
+        color: #161a1d;
+        margin-bottom: 30px;
+    }
+
+    .btn-shop-now {
+        display: inline-block;
+        background-color: #D21312 !important;
+        color: #D3D3D3;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #CreateOrder {
+        background-color: #D21312;
+		color: white;
+		margin-top: 5px !important;
+    }
+	#CreateOrder:hover {
+        background-color: black;
+		color: #D21312;
+		border: #D21312 2PX solid !important;
+	}
+
+    .btn-shop-now:active {
+        transform: translateY(2px);
+    }
+
+	</style>
+
+</head>
+<body class="animsition">
+	
+	<!-- Header -->
+	<header class="header-v2" id="withLogin">
+    <!-- Header desktop -->
+    <div class="container-menu-desktop trans-03">
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop p-l-45">
+
+                <!-- Logo desktop -->
+                <a href="home.html" class="logo">
+                    <img src="../diest/img/logo.png" alt="IMG-LOGO">
+                </a>
+
+                <!-- Menu desktop -->
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+                        </li>
+                        <li>
+                            <a href="../Events/index.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="About/About.html">About</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m h-full">
+                    <div class="flex-c-m h-full p-l-18 p-r-25 LoginButtonModel" id="LoginButtonModel">
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+                            <i class="login-icon fas fa-sign-in-alt"></i> Login
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Mobile -->
+  <!-- Mobile Menu -->
+<div class="wrap-header-mobile">
+    <div class="logo-mobile">
+        <img src="../diest/img/logo.png" alt="IMG-LOGO">
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="menu-mobile">
+        <ul class="main-menu-m">
+            <li class="active-menu">
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li >
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Mobile Header Icons -->
+    <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+        <!-- Dropdown Button -->
+    <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i> 
+</div>
+
+        <!-- Dropdown Menu -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../maintenance/user/HomeWorkShops.html">Work Shop</a></li>
+            <li><a class="dropdown-item" href="../Events/index.html">Events</a></li>
+            <li><a class="dropdown-item" href="About/About.html">About</a></li>
+</ul>
+    </div>
+
+    <!-- Login Button -->
+  
+</div>
+
+<!-- Mobile Menu Toggle Button -->
+
+
+<!-- Collapsing Navigation Content -->
+<div class="collapse " id="navbarToggleExternalContent">
+    <div class=" p-4 wrap-header-mobile " >
+        <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                        </li> 
+                        <li>
+                            <a href="Shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+                        </li >
+                        <li >
+                            <a href="../Events/index.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="About/About.html">About</a>
+                        </li>
+                        <div class="wrap-icon-header flex-w flex-r-m h-full">
+        <div class="flex-c-m h-full p-l-18 p-r-25 LoginButtonModel" id="LoginButtonModel">
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+                <i class="login-icon fas fa-sign-in-alt"></i> Login
+            </div>
+        </div>
+    </div>
+                    </ul>
+    </div>
+
+    </div>
+
+
+
+
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="main-menu-m">
+            <li class="active-menu">
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li >
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+       
+        <div class="container-search-header">
+            <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                <img src="images/icons/icon-close2.png" alt="CLOSE">
+            </button>
+
+            <form class="wrap-search-header flex-w p-l-15">
+                <button class="flex-c-m trans-04">
+                    <i class="zmdi zmdi-search"></i>
+                </button>
+                <input class="plh3" type="text" name="search" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+	</header>
+
+<!-- Header2 -->
+    <header class="header-v2" style="display: none;" id="withoutLogin">
+    <!-- Header desktop -->
+    <div class="container-menu-desktop trans-03">
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop p-l-45">
+
+                <!-- Logo desktop -->
+                <a href="home.html" class="logo">
+                    <img src="../diest/img/logo.png" alt="IMG-LOGO">
+                </a>
+
+                <!-- Menu desktop -->
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li >
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+                        </li>
+                        <li >
+                            <a href="../Events/index.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="About/About.html">About</a>
+                        </li>
+                        <li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m" id="Cart">
+                 
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" id="getProfile">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </a>
+                    <a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Mobile -->
+    <div class="wrap-header-mobile">
+        <ul class="main-menu">
+            <li >
+                <a href="home.html">Home</a>
+            </li>
+            <li >
+                <a href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li class="active-menu">
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+            <li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+            </li>
+        </ul>
+        <!-- Icon header -->
+        <div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+            
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                <i class="zmdi zmdi-search"></i>
+            </div>
+            <a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti">
+                <i class="zmdi zmdi-shopping-cart"></i>
+            </a>
+            <a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" >
+                <i class="zmdi zmdi-favorite-outline"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="main-menu-m">
+            <li >
+                <a href="home.html">Home</a>
+            </li>
+            <li >
+                <a href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="../maintenance/user/HomeWorkShops.html">Work Shop</a>
+            </li>
+            <li class="active-menu">
+                <a href="../Events/index.html">Events</a>
+            </li>
+            <li>
+                <a href="About/About.html">About</a>
+            </li>
+            <li>
+                            <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+            </li>
+        </ul>
+    </div>
+  </header>
+
+
+	
+
+	<!-- breadcrumb -->
+	<div class="container">
+		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+			<a href="Shop.html" class="stext-109 cl8 hov-cl1 trans-04">
+				Shop
+				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+			</a>
+
+			<span class="stext-109 cl4">
+				Shoping Cart
+			</span>
+		</div>
+	</div>
+		
+
+	<!-- Shoping Cart -->
+		<div class="container">
+			<div class="row Cart" id="Cart" >
+				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
+					<div class="m-l-25 m-r--38 m-lr-0-xl">
+						<div class="wrap-table-shopping-cart">
+							<table class="table-shopping-cart">
+								<tr class="table_head">
+									<th class="column-1">Product</th>
+									<th class="column-1"></th>
+									<th class="column-2">Price</th>
+									<th class="column-3">Size&Color</th>
+									<th class="column-4">Quantity</th>
+									<th class="column-5">Total</th>
+								</tr>
+								<tbody id="ListOfItemInCart"></tbody>
+
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
+					<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+						<h4 class="mtext-109 cl2 p-b-30">
+							Cart Totals
+						</h4>
+
+						<div class="flex-w flex-t bor12 p-b-13">
+							<div class="size-208">
+								<span class="stext-110 cl2">
+									Total:
+								</span>
+							</div>
+
+							<div class="size-209">
+								<span class="mtext-110 cl2" id="TotalPriceOfCart">
+								</span>
+							</div>
+						</div>
+<a id="CreateOrder" class="flex-c-m stext-101 cl0 size-116 bg3 m-t-6 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+							Proceed to Checkout
+						</a>
+						
+						</div>
+
+
+						
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="Cartemty">
+		<div class="cart-empty-message">
+			<h2>Your Cart is Empty</h2>
+			<p>It looks like you haven't added anything to your cart yet.</p>
+			<div class="layer-slick1" data-appear="zoomIn" data-delay="1600">
+				<a href="Shop.html" class="btn-shop-now">Shop Now</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!--===============================================================================================-->	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			$(this).css('position','relative');
+			$(this).css('overflow','hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="ShopJs/ShopingCart.js"></script>
+</body>
+</html>

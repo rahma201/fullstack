@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--  Title -->
+		<title>Motoride</title>
+		<!--  Required Meta Tag -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="handheldfriendly" content="true" />
+		<meta name="MobileOptimized" content="width" />
+
+		<meta name="description" content="Mordenize" />
+		<meta name="author" content="" />
+		<meta name="keywords" content="Mordenize" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!--  Favicon -->
+ 	   <link rel="shortcut icon" type="image/png" href="../../../diest/img/helmet.png" />
+ 		<!-- Owl Carousel  -->
+		<link rel="stylesheet" href="../dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+	    <link href="../../maintenance/dist/css/style.css" rel="stylesheet" />
+		<!-- Core Css -->
+		<link rel="stylesheet" href="../../../diest/css/Dashbordcss.css" />
+	<style>
+		.modal-body .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* المسافة بين الأعمدة */
+}
+
+.modal-body .col-md-6 {
+    flex: 1; /* توزيع الأعمدة بالتساوي */
+    padding: 10px;
+}
+
+.modal-body .img-fluid {
+    max-width: 100%; /* تأكد من أن الصورة تتناسب مع المساحة */
+    height: auto;
+}
+.star-rating {
+  direction: rtl;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+.star {
+  color: #ccc;
+  transition: color 0.2s;
+}
+.star.selected {
+  color: gold;
+}
+
+	</style>
+	</head>
+	
+<body class="animsition">
+    <!-- Preloader -->
+  
+
+	<!-- Cart -->
+	<!-- Slider -->
+	<!-- Navigation Tabs -->
+	<div class="container-fluid">
+
+		<div class="container  mt-4">
+			<!-- Navigation Tabs -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item flex-grow-1" role="presentation">
+					<button class="nav-link active w-100 text-start py-3 fs-5" id="waiting-tab" data-bs-toggle="tab" data-bs-target="#waiting" type="button" role="tab" aria-controls="waiting" aria-selected="true">
+						waiting  maintenance		
+								</button>
+				</li>
+				<li class="nav-item flex-grow-1" role="presentation">
+					<button class="nav-link  w-100 text-start py-3 fs-5" id="Accepted-tab" data-bs-toggle="tab" data-bs-target="#Accepted" type="button" role="tab" aria-controls="Accepted" aria-selected="false">
+						confirm maintenance		
+								</button> 
+				</li>
+				
+				<li class="nav-item flex-grow-1" role="presentation">
+					<button class="nav-link w-100 text-start py-3 fs-5" id="previous-tab" data-bs-toggle="tab" data-bs-target="#previous" type="button" role="tab" aria-controls="previous" aria-selected="false">
+						previous maintenance					</button>
+				</li>
+			</ul>
+
+			<!-- Tab Content -->
+			<div class="tab-content mt-4">
+				<!--Maintenance request Tab -->
+				<div class="tab-pane fade show active" id="waiting" role="tabpanel" aria-labelledby="waiting-tab">
+					<div class="container mt-4">
+
+						<div class="table-responsive">
+							<div class="container-fluid">
+								<div class="card bg-light-info shadow-none position-relative overflow-hidden">
+
+								</div>
+								<div class="widget-content searchable-container list">
+									<!-- --------------------- start Contact ---------------- -->
+									<div class="card card-body">
+										<div class="row">
+											<div class="col-md-4 col-xl-3">
+												<form class="position-relative">
+													<input type="text" class="form-control product-search ps-5" id="input-search" placeholder="Search Contacts..." />
+													<i class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"></i>
+												</form>
+											</div>
+											<div class="col-md-8 col-xl-9 text-end d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
+												<div class="action-btn show-btn" style="display: none">
+													<a href="javascript:void(0)" class="delete-multiple btn-light-danger btn me-2 text-danger d-flex align-items-center font-medium">
+														<i class="ti ti-trash text-danger me-1 fs-5"></i> Delete All Row
+													</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- ---------------------
+							end Contact
+						---------------- -->
+									
+									<div class="card card-body">
+										<div class="table-responsive">
+											<table class="table search-table align-middle text-nowrap" id="waitingTable" >
+												<thead class="header-item">
+														<th>#</th>
+									   			<th>Name</th>
+												<th>date</th>
+												<th>Stuts</th>
+												<th>Action</th>
+												</thead>
+												</thead>
+												<tbody>
+													<!-- start row -->
+													
+													<!-- end row -->
+													<!-- start row -->
+
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+								
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Accepted Tab -->
+				<div class="tab-pane fade"   id="Accepted" role="tabpanel" aria-labelledby="Accepted-tab">
+					<div class="container mt-4">
+						<div class="table-responsive">
+							<div class="container-fluid">
+								<div class="card bg-light-info shadow-none position-relative overflow-hidden">
+
+								</div>
+								<div class="widget-content searchable-container list">
+									<div class="card card-body">
+										<div class="row">
+											<div class="col-md-4 col-xl-3">
+												<form class="position-relative">
+													<input type="text" class="form-control product-search ps-5" id="Accepted-input-search" placeholder="Search Contacts..." />
+													<i class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"></i>
+												</form>
+											</div>
+											<div class="col-md-8 col-xl-9 text-end d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
+												<div class="action-btn show-btn" style="display: none">
+													<a class="delete-multiple btn-light-danger btn me-2 text-danger d-flex align-items-center font-medium">
+														<i class="ti ti-trash text-danger me-1 fs-5"></i> Delete All Row
+													</a>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									
+									
+									<div class="card card-body">
+										<div class="table-responsive">
+											<table class="table search-table align-middle text-nowrap"id="AcceptedTable">
+												<thead class="header-item">
+											
+															<th>#</th>
+									   			<th>Name</th>
+												<th>date</th>
+												<th>Stuts</th>
+												<th>Action</th>
+												</thead>
+												</thead>
+												<tbody>
+												
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+									
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- previous Tab -->
+				<div class="tab-pane fade"  id="previous" role="tabpanel" aria-labelledby="previous-tab">
+					<div class="container mt-4">
+						<div class="table-responsive">
+							<div class="container-fluid">
+								<div class="card bg-light-info shadow-none position-relative overflow-hidden">
+
+								</div>
+								<div class="widget-content searchable-container list">
+									<div class="card card-body">
+										<div class="row">
+											<div class="col-md-4 col-xl-3">
+												<form class="position-relative">
+													<input type="text" class="form-control product-search ps-5" id="previous-input-search" placeholder="Search Contacts..." />
+													<i class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"></i>
+												</form>
+											</div>
+											<div class="col-md-8 col-xl-9 text-end d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
+												<div class="action-btn show-btn" style="display: none">
+													<a class="delete-multiple btn-light-danger btn me-2 text-danger d-flex align-items-center font-medium">
+														<i class="ti ti-trash text-danger me-1 fs-5"></i> Delete All Row
+													</a>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- ---------------------
+							end Contact
+						---------------- -->
+									
+									<div class="card card-body">
+										<div class="table-responsive">
+											<table class="table search-table align-middle text-nowrap"id="previousTable">
+												<thead class="header-item">
+											
+												<th>#</th>
+									   			<th>Name</th>
+												<th>date</th>
+												<th>Stuts</th>
+												<th>Action</th>
+												</thead>
+												<tbody>
+												
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!-- Modal readonly -->
+								
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="dark-transparent sidebartoggler"></div>
+		<div class="dark-transparent sidebartoggler"></div>
+
+	</div>
+
+
+<!-- Modal to show booking details -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookingModalLabel">Booking Maintenance Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row d-flex">
+                    <!-- Left side (form fields) -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="name-booking" class="form-label">Name of Booking</label>
+                            <input type="text" class="form-control" id="name-booking" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="preferred-date" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="preferred-date" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="motorcycle-type" class="form-label">Motorcycle Type</label>
+                            <input type="text" class="form-control" id="motorcycle-type" readonly>
+                        </div>
+  <div class="mb-3">
+                            <label for="maintenance-type" class="form-label">Maintenance Type</label>
+                            <input type="text" class="form-control" id="maintenance-type" readonly>
+                        </div>
+
+               
+                      
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location" readonly>
+                        </div>
+
+                   
+
+                        <div >
+                            <label for="maintenance-price" class="form-label">Maintenance Price</label>
+                            <input type="text" class="form-control" id="maintenance-price" readonly>
+                        </div>
+                    </div>
+
+                    <!-- Right side (image) -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <img src="" alt="Motorcycle Image" id="motorcycle-image" class="img-fluid" style="height: 500px;width: 100%;">
+                        </div>
+                    </div>
+					    <div class="col-md-12 " style="margin-top: 0px !important;">
+                            <label for="customer-note" class="form-label">Customer Note</label>
+                            <textarea class="form-control" id="customer-note" rows="3" readonly></textarea>
+                        </div>
+     <div class="col-md-12">                            <label for="admin-description" class="form-label">Admin Description</label>
+                            <textarea class="form-control" id="admin-description" rows="3" readonly></textarea>
+                        </div>
+                </div>
+				</div>
+				    
+            </div>
+        </div>      </div>
+    </div>
+</div>
+	<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form id="reviewForm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel">Add Review</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="reviewMaintenanceId" name="maintenanceId" />
+        
+          <div class="form-group">
+            <label for="reviewComment">Comment</label>
+            <textarea id="reviewComment" name="comment" class="form-control" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Rating</label>
+            <div id="starRating" class="star-rating">
+              <span data-value="5" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="1" class="star">&#9733;</span>
+            </div>
+            <input type="hidden" id="reviewRating" name="rating" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  	<!-- Modal readonly -->
+				<div class="modal fade" id="viewContactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">View Contact</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<form>
+														<div class="mb-3">
+															<label for="view-c-name" class="form-label">Name</label>
+															<input type="text" class="form-control" id="view-c-name" readonly>
+														</div>
+														<div class="mb-3">
+															<label for="view-c-email" class="form-label">Email</label>
+															<input type="email" class="form-control" id="view-c-email" readonly>
+														</div>
+														<div class="mb-3">
+															<label for="view-c-occupation" class="form-label">Occupation</label>
+															<input type="text" class="form-control" id="view-c-occupation" readonly>
+														</div>
+														<div class="mb-3">
+															<label for="view-c-phone" class="form-label">Phone</label>
+															<input type="text" class="form-control" id="view-c-phone" readonly>
+														</div>
+														<div class="mb-3">
+															<label for="view-c-location" class="form-label">Location</label>
+															<input type="text" class="form-control" id="view-c-location" readonly>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+	<!--===============================================================================================-->
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/bootstrap/js/popper.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/slick/slick.min.js"></script>
+	<script src="../js/slick-custom.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/parallax100/parallax100.js"></script>
+	<script>
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script src="../vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.gallery-lb').each(function () { // the containers for all your galleries
+			$(this).magnificPopup({
+				delegate: 'a', // the selector for gallery item
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				mainClass: 'mfp-fade'
+			});
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="../vendor/isotope/isotope.pkgd.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/sweetalert/sweetalert.min.js"></script>
+
+	<!--===============================================================================================-->
+	<script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function () {
+			$(this).css('position', 'relative');
+			$(this).css('overflow', 'hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function () {
+				ps.update();
+			})
+		});
+	</script>
+
+	<script>
+		const swiper = new Swiper('.category-carousel', {
+			slidesPerView: 4,  // عرض 4 عناصر في نفس الوقت
+			spaceBetween: 20,   // المسافة بين العناصر
+			navigation: {
+				nextEl: '.swiper-next',
+				prevEl: '.swiper-prev',
+			},
+			loop: true,  // التكرار اللانهائي
+		});
+	</script>
+
+	<script src="../js/main.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<script src="../dist/libs/jquery/dist/jquery.min.js"></script>
+	<script src="../dist/libs/simplebar/dist/simplebar.min.js"></script>
+	<script src="../dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+	<script src="../dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../dist/js/datatable/datatable-basic.init.js"></script>
+
+	<script src="../MaintenanceJs/MyMaintenance.js"></script>
+
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MotoRide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<!--===============================================================================================-->
+ <!--=.==============================================================================================-->
+ <link rel="shortcut icon" type="image/png" href="../../diest/img/helmet.png" />
+ <!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../fonts/linearicons-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/slick/slick.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/MagnificPopup/magnific-popup.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="../../diest/css/util.css">
+<link rel="stylesheet" type="text/css" href="../../diest/css/main.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="dist/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<style>
+		a {
+  text-decoration: none !important;
+}
+
+		.circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+		.logo img {
+			width: 150px; /* تعديل الحجم حسب الحاجة */
+			height: auto;
+			border-radius: 15px; /* يجعل الزوايا دائرية */
+			display: block;
+			margin: auto;
+		}
+        
+
+		.btn-primary {
+            background-color: #fff !important;
+
+            border: #ffff !important;
+
+
+		}
+		.wrap-icon-header {
+			margin-right: 40px !important; /* تحريك الديف 20px إلى اليسار */
+		}
+
+		body {
+			color: #000;
+			overflow-x: hidden;
+			height: auto;
+			background-color: #000;
+			background-repeat: no-repeat;
+		}
+		.tab{
+			color: #D21312 !important;
+		}
+
+		   .tab.active{
+			color: white !important;
+			background-color:  #D21312 !important;;
+
+			
+		}
+
+
+		
+	</style>
+</head>
+<body class="animsition">
+
+		<!-- Header -->
+<header class="header-v2">
+    <!-- Header desktop -->
+    <div class="container-menu-desktop trans-03">
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop p-l-45">
+
+                <!-- Logo desktop -->
+                <a href="home.html" class="logo">
+                    <img src="../../diest/img/logo.png" alt="IMG-LOGO">
+                </a>
+
+                <!-- Menu desktop -->
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                         <li>    <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+
+                       
+                    </ul>
+                </div>
+
+           
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Mobile -->
+  <!-- Mobile Menu -->
+<div class="wrap-header-mobile">
+    <div class="logo-mobile">
+        <img src="../../diest/img/logo.png" alt="IMG-LOGO">
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="menu-mobile">
+         <ul class="main-menu">
+                            <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+                       
+                    </ul>
+    </div>
+
+    <!-- Mobile Header Icons -->
+    <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart">
+        <!-- Dropdown Button -->
+    <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i> 
+</div>
+
+        <!-- Dropdown Menu -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../maintenance/user/HomeWorkShops.html">Work Shop</a></li>
+            <li><a class="dropdown-item" href="../Events/index.html">Events</a></li>
+            <li><a class="dropdown-item" href="About/About.html">About</a></li>
+</ul>
+    </div>
+
+    <!-- Login Button -->
+  
+</div>
+
+<!-- Mobile Menu Toggle Button -->
+
+
+<!-- Collapsing Navigation Content -->
+<div class="collapse " id="navbarToggleExternalContent">
+    <div class=" p-4 wrap-header-mobile " >
+         <ul class="main-menu">
+                            <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+                       
+                    </ul>
+    </div>
+
+    </div>
+
+
+
+
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="main-menu">
+                            <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+                       
+                    </ul>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+       
+        <div class="container-search-header">
+            <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                <img src="images/icons/icon-close2.png" alt="CLOSE">
+            </button>
+
+            <form class="wrap-search-header flex-w p-l-15">
+                <button class="flex-c-m trans-04">
+                    <i class="zmdi zmdi-search"></i>
+                </button>
+                <input class="plh3" type="text" name="search" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+	</header>
+
+<!-- Header2 -->
+    <header class="header-v2" style="display: none;" id="withoutLogin">
+    <!-- Header desktop -->
+    <div class="container-menu-desktop trans-03">
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop p-l-45">
+
+                <!-- Logo desktop -->
+                <a href="home.html" class="logo">
+                    <img src="../../diest/img/logo.png" alt="IMG-LOGO">
+                </a>
+
+                <!-- Menu desktop -->
+                <div class="menu-desktop">
+                   <ul class="main-menu">
+                            <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+                        <li>
+                                                        <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m" id="Cart">
+                 
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" id="getProfile">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </a>
+                    <a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Mobile -->
+    <div class="wrap-header-mobile">
+       <ul class="main-menu">
+                            <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+                        <li>
+                                                        <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+                        </li>
+                    </ul>
+        <!-- Icon header -->
+        <div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+            
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                <i class="zmdi zmdi-search"></i>
+            </div>
+            <a href="shoping-cart.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti">
+                <i class="zmdi zmdi-shopping-cart"></i>
+            </a>
+            <a href="Wishlist.html" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" >
+                <i class="zmdi zmdi-favorite-outline"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+         <ul class="main-menu">
+                            <a href="../../SHOP/home.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/Shop.html">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="HomeWorkShops.html">Work Shop</a>
+                        </li>
+						 <li>
+                            <a href="../../Events/index.html">Event</a>
+                        </li>
+
+                        <li>
+                            <a href="../../SHOP/About/About.html">About</a>
+                        </li>
+
+                        <li>
+                                                        <a style="color: white; cursor: pointer;" class="logout-link">Logout</a>
+
+                        </li>
+                    </ul>
+    </div>
+  </header>
+
+	
+	<!-- Cart -->
+	<!-- breadcrumb -->
+	<!-- Product Detail -->
+	<div class="container-fluid">
+
+<div class="container  mt-4">
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs custom-tabs d-flex text-center mb-4" id="myTab" role="tablist">
+				<li class="nav-item flex-fill" role="presentation">
+					<button class="nav-link tab active w-100 py-3 fs-5" id="allNotificationsTab" data-bs-toggle="tab" data-bs-target="#all-content" type="button" role="tab" aria-controls="all-content" aria-selected="true">
+					  All
+					</button>
+				  </li>
+                <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link tab  w-100 py-3 fs-5" id="favoriteNotificationsTab" data-bs-toggle="tab" data-bs-target="#favorite" type="button" role="tab" aria-controls="favorite" aria-selected="false">
+                    Favorite 
+                  </button>
+                </li>
+                <li class="nav-item flex-fill" role="presentation">
+                  <button class="nav-link  tab w-100 py-3 fs-5" id="rejectedNotificationsTab" data-bs-toggle="tab" data-bs-target="#Rejected" type="button" role="tab" aria-controls="Rejected" aria-selected="false">
+                    Rejected
+                  </button>
+                </li>
+              
+              </ul>
+              
+              
+            <!-- Tab Content -->
+            <div class="tab-content mt-4">
+                <!-- Favorite Tab -->
+<div class="tab-pane fade show active" id="all-content" role="tabpanel" aria-labelledby="all-tab">
+  <div class="container mt-4">
+    <div class="row g-3 p-3" id="allNotifications">
+      <!-- الكروت ستضاف هنا مباشرة -->
+    </div>
+  </div>
+</div>
+
+<!-- تبويب Favorite -->
+<div class="tab-pane fade" id="favorite" role="tabpanel" aria-labelledby="favorite-tab">
+  <div class="container mt-4">
+    <div class="row g-3 p-3" id="favoriteNotifications">
+    </div>
+  </div>
+</div>
+
+<!-- تبويب Rejected -->
+<div class="tab-pane fade" id="Rejected" role="tabpanel" aria-labelledby="Rejected-tab">
+  <div class="container mt-4">
+    <div class="row g-3 p-3" id="rejectedNotifications">
+      <!-- الكروت ستضاف هنا -->
+    </div>
+  </div>
+</div>
+
+
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="dark-transparent sidebartoggler"></div>
+        <div class="dark-transparent sidebartoggler"></div>
+
+</div>
+	<!-- Related Products -->
+	<!-- Footer -->
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+
+	<!-- Modal1 -->
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/bootstrap/js/popper.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/slick/slick.min.js"></script>
+	<script src="../js/slick-custom.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/parallax100/parallax100.js"></script>
+	<script>
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script src="../vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.gallery-lb').each(function () { // the containers for all your galleries
+			$(this).magnificPopup({
+				delegate: 'a', // the selector for gallery item
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				mainClass: 'mfp-fade'
+			});
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="../vendor/isotope/isotope.pkgd.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../vendor/sweetalert/sweetalert.min.js"></script>
+
+	<!--===============================================================================================-->
+	<script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function () {
+			$(this).css('position', 'relative');
+			$(this).css('overflow', 'hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function () {
+				ps.update();
+			})
+		});
+	</script>
+
+	<script>
+		const swiper = new Swiper('.category-carousel', {
+			slidesPerView: 4,  // عرض 4 عناصر في نفس الوقت
+			spaceBetween: 20,   // المسافة بين العناصر
+			navigation: {
+				nextEl: '.swiper-next',
+				prevEl: '.swiper-prev',
+			},
+			loop: true,  // التكرار اللانهائي
+		});
+	</script>
+
+	<script src="../js/main.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<script src="../dist/libs/jquery/dist/jquery.min.js"></script>
+	<script src="../dist/libs/simplebar/dist/simplebar.min.js"></script>
+	<script src="../dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+	<script src="../dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../dist/js/datatable/datatable-basic.init.js"></script>
+	<script src="../MaintenanceJs/userNotification.js"></script>
+
+</body>
+</html>

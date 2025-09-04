@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- jQuery -->
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--  Title -->
+    <title>MotoRide</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="MotoRide" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="MotoRide" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />
+    <link rel="stylesheet" href="dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- Prism Js -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/prismjs/themes/prism-okaidia.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+    <!-- --------------------------------------------------- -->
+    <!-- Datatable -->
+    <!-- --------------------------------------------------- -->
+    <link rel="stylesheet" href="dist/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <!-- Core Css -->
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <link rel="stylesheet" href="../diest/css/Dashbordcss.css">
+
+    <style>
+        .items  th {
+            text-align: center;
+          background-color: #C9D6DF  ;
+
+color:black ;
+        }
+
+
+        </style>
+</head>
+<body>
+   <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+    
+      
+</div>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                   <li class="sidebar-item "   >
+                                           <img src="../diest/img/Logo.jpeg" width="220px" />
+
+                           
+                        </li>
+                </ul>
+                <ul class="navbar-nav quick-links d-none d-lg-flex">
+                </ul>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="p-2">
+                        <i class="ti ti-dots fs-7"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                        </a>
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+<a href="#" class="logout-link" title="logout icons">
+                             <img src="../diest/img/logout.png" width="50px" />
+                            </a>
+                      
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--  Mobilenavbar -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobilenavbar" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <nav class="sidebar-nav scroll-sidebar">
+            <div class="offcanvas-header justify-content-between">
+                <img src="dist/images/logos/favicon.ico" alt="" class="img-fluid">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body profile-dropdown mobile-navbar" data-simplebar="" data-simplebar>
+                <ul id="sidebarnav">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="HomeShop.html" aria-expanded="false">
+                            <span>
+                                <i class="ti ti-apps"></i>
+                            </span>
+                            <span class="hide-menu">Home</span>
+                        </a>
+                     
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="Category.js" aria-expanded="false">
+                            <span>
+                                <i class="ti ti-message-dots"></i>
+                            </span>
+                            <span class="hide-menu">Category</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="additem.html" aria-expanded="false">
+                            <span>
+                                <i class="ti ti-calendar"></i>
+                            </span>
+                            <span class="hide-menu">Item</span>
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="order.html" aria-expanded="false">
+                            <span>
+                                <i class="ti ti-shopping-cart"></i>
+                            </span>
+                            <span class="hide-menu">Order</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        <!--  Header End -->
+            <div class="container">
+                <!-- التبويبات الداخلية داخل event -->
+                <ul class="nav nav-tabs" id="eventInnerTabs" role="tablist" style="width: 100%; display: flex;">    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link w-100 active text-start py-3 fs-5" id="event-noreply-tab" data-bs-toggle="tab" data-bs-target="#event-noreply" type="button" role="tab" aria-controls="event-noreply" aria-selected="true">
+    Awaiting Response
+                        </button>
+                    </li>
+                    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link  w-100 text-start py-3 fs-5" id="event-accept-tab" data-bs-toggle="tab" data-bs-target="#event-accept" type="button" role="tab" aria-controls="event-accept" aria-selected="false">
+    
+Approved event
+                                  </button>
+                    </li>
+                    <li class="nav-item flex-grow-1" role="presentation">
+                        <button class="nav-link w-100 text-start py-3 fs-5" id="event-reject-tab" data-bs-toggle="tab" data-bs-target="#event-reject" type="button" role="tab" aria-controls="event-reject" aria-selected="false">
+Decliend event                          </button>
+                    </li>
+                
+                                               </ul>
+    
+    
+                <!-- محتوى التبويبات الداخلية -->
+                <div class="tab-content mt-3">
+                    <!-- acceptance tab -->
+                    <div class="tab-pane fade show active" id="event-accept" role="tabpanel" aria-labelledby="event-accept-tab">
+                        <div class="table-responsive">
+                            <table id="event_accept_table" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                          <th>#</th>
+    <th>Title</th>
+    <th>Start Points</th>
+    <th>End Points</th>
+    <th>
+        Time</th>
+    <th>Max Participation</th>
+    <th>Action</th>
+
+                                </thead>
+                                <tbody>
+                                    <!-- Rows will be added dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+                    <!-- to reject tab -->
+                    <div class="tab-pane fade" id="event-reject" role="tabpanel" aria-labelledby="event-reject-tab">
+                        <div class="table-responsive">
+                            <table id="event_reject_table" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                         <th>#</th>
+    <th>Title</th>
+    <th>Start Points</th>
+    <th>End Points</th>
+    <th>
+        Time</th>
+    <th>Max Participation</th>
+    <th>Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Rows will be added dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+                    <!-- no reply tab -->
+                    <div class="tab-pane fade" id="event-noreply" role="tabpanel" aria-labelledby="event-noreply-tab">
+                        <div class="table-responsive">
+                            <table id="event_noreply_table" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                          <th>#</th>
+    <th>Title</th>
+    <th>Start Points</th>
+    <th>End Points</th>
+    <th>
+        Time</th>
+    <th>Max Participation</th>
+    <th>Action</th>
+    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Rows will be added dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   
+    
+    </div>
+            
+        </div>
+        </div>
+        
+ 
+<!-- Modal for displaying event details -->
+<div class="modal fade" id="eventDetailModal" tabindex="-1" aria-labelledby="eventDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eventDetailModalLabel">Event Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Row for displaying event details -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Title:</strong> <input type="text" id="modalTitle" readonly class="form-control"></p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Start Route:</strong> <input type="text" id="modalStartRouts" readonly class="form-control"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>End Route:</strong> <input type="text" id="modalEndRouts" readonly class="form-control"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Time:</strong> <input type="text" id="modalTime" readonly class="form-control"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Duration:</strong> <input type="number" id="modalDuration" readonly class="form-control"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p><strong>Event Type:</strong> 
+                           
+                            <input type="number" id="modalEventType" readonly class="form-control">
+                        </p>
+                    </div>
+                  
+                    <div class="col-md-3">
+                        <p><strong>Max Participation:</strong> <input type="number" id="modalMaxParticipaion" readonly class="form-control"></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><strong>Price:</strong> <input type="number" id="modalPrice" readonly class="form-control" step="0.01"></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><strong>Is Have Trolly Provider:</strong> 
+                            <input type="checkbox" id="modalTrollyProvider" readonly class="form-check-input">
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                  
+                    <div class="col-md-12">
+                        <p><strong>Description:</strong> <textarea id="modalDescription" readonly class="form-control"></textarea></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- مودال عرض تفاصيل الحدث -->
+<div class="modal" id="infoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Start Points:</strong> <span id="modalStartPoints"></span></p>
+          <p><strong>End Points:</strong> <span id="modalEndPoints"></span></p>
+          <p><strong>Max Participation:</strong> <span id="modalMaxParticipation"></span></p>
+          <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Approve</button>
+          <button type="button" class="btn btn-danger">Reject</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+   
+
+   
+    <!--  Import Js Files -->
+    
+    </script>
+
+    <script src="../Goverment/dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../Goverment/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../Goverment/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  core files -->
+    <script src="dist/js/app.min.js"></script>
+    <script src="dist/js/app.init.js"></script>
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/sidebarmenu.js"></script>
+    <script src="dist/js/custom.js"></script>
+    <script src="dist/libs/prismjs/prism.js"></script>
+
+    <!--  current page js files -->
+
+    <script src="../Goverment/dist/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../Goverment/dist/js/datatable/datatable-basic.init.js"></script>
+        <!-- SweetAlert2 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.css" rel="stylesheet">
+
+        <!-- SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.js"></script>  
+            <script src="../diest/Logout.js"></script>
+
+          <script src="event.js"></script>
+
+</body>
+</html>

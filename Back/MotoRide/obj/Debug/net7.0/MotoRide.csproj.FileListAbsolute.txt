@@ -1,0 +1,442 @@
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.AssemblyReference.cache
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfoInputs.cache
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfo.cs
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.CoreCompileInputs.cache
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\libman.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.exe
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.deps.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.runtimeconfig.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.pdb
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Humanizer.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Cors.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.Cors.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.MotoRide.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.build.MotoRide.props
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MotoRide.props
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MotoRide.props
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\scopedcss\bundle\MotoRide.styles.css
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.Up2Date
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\refint\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.pdb
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.genruntimeconfig.cache
+C:\Users\rania\source\repos\MotoRide\MotoRide\obj\Debug\net7.0\ref\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\libman.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.exe
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.deps.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.runtimeconfig.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.pdb
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Humanizer.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Cors.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.Cors.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.AssemblyReference.cache
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfoInputs.cache
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfo.cs
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.CoreCompileInputs.cache
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.sourcelink.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.MotoRide.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.build.MotoRide.props
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MotoRide.props
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MotoRide.props
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\scopedcss\bundle\MotoRide.styles.css
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.Up2Date
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\refint\MotoRide.dll
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.pdb
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.genruntimeconfig.cache
+C:\Users\rania\source\repos\MotoRide1\MotoRide\MotoRide\obj\Debug\net7.0\ref\MotoRide.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\libman.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.exe
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.deps.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.runtimeconfig.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.pdb
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Cors.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.Cors.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.AssemblyReference.cache
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfoInputs.cache
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfo.cs
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.CoreCompileInputs.cache
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.MotoRide.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.build.MotoRide.props
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MotoRide.props
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MotoRide.props
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\scopedcss\bundle\MotoRide.styles.css
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.CopyComplete
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\refint\MotoRide.dll
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.pdb
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.genruntimeconfig.cache
+C:\Users\Rawan\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\ref\MotoRide.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.Development.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\libman.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.exe
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.deps.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.runtimeconfig.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.pdb
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Core.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Identity.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Humanizer.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Cors.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.Cors.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.CodeDom.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Memory.Data.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.AssemblyReference.cache
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.GeneratedMSBuildEditorConfig.editorconfig
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfoInputs.cache
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfo.cs
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.CoreCompileInputs.cache
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cs
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cache
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.sourcelink.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.build.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.development.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.MotoRide.Microsoft.AspNetCore.StaticWebAssets.props
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.build.MotoRide.props
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MotoRide.props
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MotoRide.props
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.pack.json
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\scopedcss\bundle\MotoRide.styles.css
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.Up2Date
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\refint\MotoRide.dll
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.pdb
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.genruntimeconfig.cache
+C:\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\ref\MotoRide.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\libman.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\appsettings.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.staticwebassets.endpoints.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.exe
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.deps.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.runtimeconfig.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\MotoRide.pdb
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Humanizer.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Cors.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Web.Http.Cors.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.AssemblyInfo.cs
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.sourcelink.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\scopedcss\bundle\MotoRide.styles.css
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.MotoRide.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.MotoRide.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.build.MotoRide.props
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MotoRide.props
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MotoRide.props
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.csproj.Up2Date
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\refint\MotoRide.dll
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.pdb
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\MotoRide.genruntimeconfig.cache
+C:\Users\user\Downloads\MotoRide1 (finally backend)\MotoRide\MotoRide\obj\Debug\net7.0\ref\MotoRide.dll

@@ -1,0 +1,2914 @@
+[
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "AddCategory",
+    "RelativePath": "api/Admain/AddCategoryMaintenances",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "AddEvent",
+    "RelativePath": "api/Admain/AddEvent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddEventDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "AddResponseEventFromGoverments",
+    "RelativePath": "api/Admain/AddResponseEventFromGoverment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddResponseEventFromGovermentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "AddUser",
+    "RelativePath": "api/Admain/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "AllowMointenanceToLogin",
+    "RelativePath": "api/Admain/AllowMaintenanceToLogin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AllowLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "AllowStoreToLogin",
+    "RelativePath": "api/Admain/AllowStoreToLogin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AllowLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "BookingByMaintnanece",
+    "RelativePath": "api/Admain/BookingByMaintnanece",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "BookingInMonthByMaintnanece",
+    "RelativePath": "api/Admain/BookingInMonthByMaintnanece",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "BookingInYearByMaintenance",
+    "RelativePath": "api/Admain/BookingInYearByMaintenance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "countBooking",
+    "RelativePath": "api/Admain/countBooking",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "countEvent",
+    "RelativePath": "api/Admain/countEvent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "countOrders",
+    "RelativePath": "api/Admain/countOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "countUser",
+    "RelativePath": "api/Admain/countUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "DeleteCategoryMaintenances",
+    "RelativePath": "api/Admain/DeleteCategoryMaintenances/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "DeleteReviewByAdmain",
+    "RelativePath": "api/Admain/DeleteReviewByAdmain",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.DeleteRviewByAdmainDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "DeleteReviewMaintenanceByAdmain",
+    "RelativePath": "api/Admain/DeleteReviewMaintenanceByAdmain",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DeleteReviewMaintenanceByAdmainDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllAcceptResponseEventFromGoverments",
+    "RelativePath": "api/Admain/GetAllAcceptResponseEventFromGoverments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllBookingConfrimed",
+    "RelativePath": "api/Admain/GetAllBooking",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllEventDoesNotSendToGoverments",
+    "RelativePath": "api/Admain/GetAllEventDoesNotSendToGoverments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllEventWaitResponseFromGoverments",
+    "RelativePath": "api/Admain/GetAllEventWaitResponseFromGoverments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllGovernment",
+    "RelativePath": "api/Admain/GetAllGovernment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllMaintanceAccept",
+    "RelativePath": "api/Admain/GetAllMaintanceAccept",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllMaintanceNotReplay",
+    "RelativePath": "api/Admain/GetAllMaintanceNotReplay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllMaintanceReject",
+    "RelativePath": "api/Admain/GetAllMaintanceReject",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllNewEvents",
+    "RelativePath": "api/Admain/GetAllNewEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllOldEvents",
+    "RelativePath": "api/Admain/GetAllOldEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllOrder",
+    "RelativePath": "api/Admain/GetAllOrder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllRejectResponseEventFromGoverments",
+    "RelativePath": "api/Admain/GetAllRejectResponseEventFromGoverments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllStoreAccept",
+    "RelativePath": "api/Admain/GetAllStoreAccept",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllStoreNotResponse",
+    "RelativePath": "api/Admain/GetAllStoreNotResponse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllStoreReject",
+    "RelativePath": "api/Admain/GetAllStoreReject",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetAllUserJoinEvents",
+    "RelativePath": "api/Admain/GetAllUserJoinEvents/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetDeleteReviewbyAdmain",
+    "RelativePath": "api/Admain/GetDeleteReviewbyAdmain",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetDeleteReviewMaintenancebyAdmain",
+    "RelativePath": "api/Admain/GetDeleteReviewMaintenancebyAdmain",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetEventById",
+    "RelativePath": "api/Admain/GetEventById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "GetOrderDetails",
+    "RelativePath": "api/Admain/GetOrderDetails/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "JoinEvents",
+    "RelativePath": "api/Admain/JoinEvents",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.TiketsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "OrdersByShop",
+    "RelativePath": "api/Admain/OrdersByShop",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "OrdersInMonthByShop",
+    "RelativePath": "api/Admain/OrdersInMonthByShop",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "OrdersInYearByShop",
+    "RelativePath": "api/Admain/OrdersInYearByShop",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "SendEventToGoverments",
+    "RelativePath": "api/Admain/SendEventToGoverments",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.AdmainController",
+    "Method": "UpdateCategoryMaintenances",
+    "RelativePath": "api/Admain/UpdateCategoryMaintenances",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "MotoRide.Dto.CategoryMaintenanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddBooking",
+    "RelativePath": "api/Customer/AddBooking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerNote",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BikeType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddCart",
+    "RelativePath": "api/Customer/AddCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddCartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddItemInCart",
+    "RelativePath": "api/Customer/AddItemInCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddCartItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddNotificationFavourite",
+    "RelativePath": "api/Customer/AddNotificationFavourite/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddOrder",
+    "RelativePath": "api/Customer/AddOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddResponseforNotificationBookingFromCustomer",
+    "RelativePath": "api/Customer/AddResponseforNotificationBookingFromCustomer",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.UpdateNotificationBookingMaintenanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddReview",
+    "RelativePath": "api/Customer/AddReview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddReviewMaintenance",
+    "RelativePath": "api/Customer/AddReviewMaintenance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddReviewMaintenanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddSpecificBooking",
+    "RelativePath": "api/Customer/AddSpecificBooking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerNote",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BikeType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "AddWishList",
+    "RelativePath": "api/Customer/AddWishList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddWishListDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "DeleteCart",
+    "RelativePath": "api/Customer/DeleteCart/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "DeleteItemInCart",
+    "RelativePath": "api/Customer/DeleteItemInCart/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "DeleteNotificationFavourite",
+    "RelativePath": "api/Customer/DeleteNotificationFavourite/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "DeleteOrder",
+    "RelativePath": "api/Customer/DeleteOrder/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "DeleteWishList",
+    "RelativePath": "api/Customer/DeleteWishList/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetCustomerProfile",
+    "RelativePath": "api/Customer/editeCustomerProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.UpdateCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "FilteringMotorcycle",
+    "RelativePath": "api/Customer/FilteringMotorcycle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortby",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "color",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "mileage",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "FilteringProduct",
+    "RelativePath": "api/Customer/FilteringProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortby",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "color",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllBookingAcceptforCustomer",
+    "RelativePath": "api/Customer/GetAllBookingAcceptforCustomer/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllBookingnotConfirmforCustomer",
+    "RelativePath": "api/Customer/GetAllBookingnotConfirmforCustomer/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllBookingNotReplyforCustomer",
+    "RelativePath": "api/Customer/GetAllBookingNotReplyforCustomer/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllBookingPreviousforCustomer",
+    "RelativePath": "api/Customer/GetAllBookingPreviousforCustomer/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllMotorcycle",
+    "RelativePath": "api/Customer/GetAllMotorcycle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllMotorcycle",
+    "RelativePath": "api/Customer/GetAllMotorcycle/${storeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "storeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllNewMotorcycle",
+    "RelativePath": "api/Customer/GetAllNewMotorcycle/${storeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "storeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllNotificationfavouriteCustomer",
+    "RelativePath": "api/Customer/GetAllNotificationfavouriteCustomer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllNotificationNotReplayCustomer",
+    "RelativePath": "api/Customer/GetAllNotificationNotReplayCustomer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllNotificationRejectCustomer",
+    "RelativePath": "api/Customer/GetAllNotificationRejectCustomer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllOrderforUser",
+    "RelativePath": "api/Customer/GetAllOrderforUser/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/Customer/GetAllProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/Customer/GetAllProduct/${storeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "storeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetAllUsedMotorcycle",
+    "RelativePath": "api/Customer/GetAllUsedMotorcycle/${storeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "storeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetBooking",
+    "RelativePath": "api/Customer/GetBooking/{bookingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetCart",
+    "RelativePath": "api/Customer/GetCart/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetCartByCustomerId",
+    "RelativePath": "api/Customer/GetCartByCustomerId/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetCustomerProfile",
+    "RelativePath": "api/Customer/GetCustomerProfile/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetItemsInCart",
+    "RelativePath": "api/Customer/GetItemsInCart/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetMotorcycle",
+    "RelativePath": "api/Customer/GetMotorcycle/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetNotificationBookingMaintenance",
+    "RelativePath": "api/Customer/GetNotificationBookingMaintenance/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetOrder",
+    "RelativePath": "api/Customer/GetOrder/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetOrderDetails",
+    "RelativePath": "api/Customer/GetOrderDetails/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetProduct",
+    "RelativePath": "api/Customer/GetProduct/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetProductbyCategory",
+    "RelativePath": "api/Customer/GetProductbyCategory/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "GetWishList",
+    "RelativePath": "api/Customer/GetWishList/${customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "SearchMotorcycle",
+    "RelativePath": "api/Customer/SearchMotorcycle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "SearchProduct",
+    "RelativePath": "api/Customer/SearchProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "TopMostPopularityMaintenance",
+    "RelativePath": "api/Customer/TopMostPopularityMaintenance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "TopMostPopularityMotorcycle",
+    "RelativePath": "api/Customer/TopMostPopularityMotorcycle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "TopMostPopularityProduct",
+    "RelativePath": "api/Customer/TopMostPopularityProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.CustomerController",
+    "Method": "UpdateOrder",
+    "RelativePath": "api/Customer/UpdateOrder",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.UpdateOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "AddNotificationBookingMaintenance",
+    "RelativePath": "api/Maintenance/AddNotificationBookingMaintenance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddNotificationBookingMaintenanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetCountMaintenanceInDay",
+    "RelativePath": "api/Maintenance/CountMaintenanceInDay/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetCountMaintenanceInYear",
+    "RelativePath": "api/Maintenance/CountMaintenanceInYear/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "DeleteReviewMaintenanceByMaintenance",
+    "RelativePath": "api/Maintenance/DeleteReviewMaintenanceByMaintenance",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DeleteReviewMaintenanceByMaintenanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllBookingAcceptforMantaince",
+    "RelativePath": "api/Maintenance/GetAllBookingAcceptforMantaince/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllBookingNotReplyforMantaince",
+    "RelativePath": "api/Maintenance/GetAllBookingNotReplyforMantaince/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllBookingRejectforMantaince",
+    "RelativePath": "api/Maintenance/GetAllBookingRejectforMantaince/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllMaintance",
+    "RelativePath": "api/Maintenance/GetAllMaintance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllNotificationBookingMaintenanceByMaintenance",
+    "RelativePath": "api/Maintenance/GetAllNotificationBookingMaintenanceByMaintenance/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllNotificationRejectCustomerForMaintenance",
+    "RelativePath": "api/Maintenance/GetAllNotificationRejectCustomerForMaintenance/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetAllServicesForMaintance",
+    "RelativePath": "api/Maintenance/GetAllServicesForMaintance/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetProfileMaintance",
+    "RelativePath": "api/Maintenance/GetProfileMaintance/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetWorkHourseByMaintanceId",
+    "RelativePath": "api/Maintenance/GetWorkHourseByMaintanceId/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetHowManyBooking",
+    "RelativePath": "api/Maintenance/HowManyBookings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetHowManyBookingReject",
+    "RelativePath": "api/Maintenance/HowManyBookingsReject/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetMaintenanceStats",
+    "RelativePath": "api/Maintenance/MaintenanceStats/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetMonthlyAchievements",
+    "RelativePath": "api/Maintenance/MonthlyAchievements/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "GetTopCustomers",
+    "RelativePath": "api/Maintenance/TopCustomers/{maintenanceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maintenanceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INTEGRATEDAPI.Shared.ServiceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "UpdateProfileMaintance",
+    "RelativePath": "api/Maintenance/UpdateProfileMaintance",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.UpdateMaintanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.MaintenanceController",
+    "Method": "UpdateWorkHourse",
+    "RelativePath": "api/Maintenance/UpdateWorkHourse",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.UpdateWorkHourseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllCategoryMaintenances",
+    "RelativePath": "api/Shared/GetAllCategoryMaintenances",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllCategoryProduct",
+    "RelativePath": "api/Shared/GetAllCategoryProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllCategoryProductByShop",
+    "RelativePath": "api/Shared/GetAllCategoryProductByShop/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllMaintance",
+    "RelativePath": "api/Shared/GetAllMaintance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllMaintanceByCategory",
+    "RelativePath": "api/Shared/GetAllMaintanceByCategory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllReviewForThisMoto",
+    "RelativePath": "api/Shared/GetAllReviewForThisMoto/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllReviewForThisProd",
+    "RelativePath": "api/Shared/GetAllReviewForThisProd/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetAllShop",
+    "RelativePath": "api/Shared/GetAllShop",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Shared/GetCategory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetDeleteReview",
+    "RelativePath": "api/Shared/GetDeleteReview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.GetDeleteStoreDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetDeleteReviewMaintenance",
+    "RelativePath": "api/Shared/GetDeleteReviewMaintenance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "GetDeleteReviewMaintenanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetReviewByShop",
+    "RelativePath": "api/Shared/GetReviewByShop/${shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "motorcycleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "GetReviewMaintenance",
+    "RelativePath": "api/Shared/GetReviewMaintenance/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "Login",
+    "RelativePath": "api/Shared/Login",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "LoginGoverment",
+    "RelativePath": "api/Shared/LoginGoverment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "Logout",
+    "RelativePath": "api/Shared/Logout",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "RegisterCustomer",
+    "RelativePath": "api/Shared/RegisterCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.AddCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "RegisterMaintenance",
+    "RelativePath": "api/Shared/RegisterMaintenance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaintenanceName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Iamgelicense",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "RegisterOwnerShop",
+    "RelativePath": "api/Shared/RegisterOwnerShop",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Iamgelicense",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Shared/ResetPassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pass",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "SearchMaintenance",
+    "RelativePath": "api/Shared/SearchMaintenance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.SharedController",
+    "Method": "TopProductSalyes",
+    "RelativePath": "api/Shared/TopProductSalyes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "AddCategoryProduct",
+    "RelativePath": "api/ShopOwner/AddCategoryProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sc",
+        "Type": "MotoRide.Dto.CategoryProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "AddMotorcycle",
+    "RelativePath": "api/ShopOwner/AddMotorcycle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Colors",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "EngineType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mileage",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Condition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StockQuantity",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StoreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "images",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "AddProduct",
+    "RelativePath": "api/ShopOwner/AddProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sizes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Colors",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryProductId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StoreId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "images",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "CountMotorcycle",
+    "RelativePath": "api/ShopOwner/CountMotorcycle/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "CountProduct",
+    "RelativePath": "api/ShopOwner/CountProduct/{shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "CountProductAndCategory",
+    "RelativePath": "api/ShopOwner/CountProductAndCategory/{shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "countSalesByShopId",
+    "RelativePath": "api/ShopOwner/CountSalesByShopId/{shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "DeleteCategoryProduct",
+    "RelativePath": "api/ShopOwner/DeleteCategoryProduct/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "DeleteMotorcycle",
+    "RelativePath": "api/ShopOwner/DeleteMotorcycle/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/ShopOwner/DeleteProduct/${id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "DeleteReviewByStore",
+    "RelativePath": "api/ShopOwner/DeleteReviewByStore",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRide.Dto.DeleteRviewByStoreDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetAllOrderForthisShop",
+    "RelativePath": "api/ShopOwner/GetAllOrderForthisShop/${orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetAllOrderNotReceivedByShop",
+    "RelativePath": "api/ShopOwner/GetAllOrderNotReceivedByShop/${shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetAllOrderReceivedByShop",
+    "RelativePath": "api/ShopOwner/GetAllOrderReceivedByShop/${shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetCategoryProduct",
+    "RelativePath": "api/ShopOwner/GetCategoryProduct/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetItemOrderNotReceivedByShop",
+    "RelativePath": "api/ShopOwner/GetItemOrderNotReceivedByShop/${orderId}/${shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetItemOrderReceivedByShop",
+    "RelativePath": "api/ShopOwner/GetItemOrderReceivedByShop/${orderId}/${shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetMotorcycleByShop",
+    "RelativePath": "api/ShopOwner/GetMotocyleByShop/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetOrderByIdForthisShop",
+    "RelativePath": "api/ShopOwner/GetOrderByIdForthisShop/${orderId}/${shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetProductByShop",
+    "RelativePath": "api/ShopOwner/GetProductByShop/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "GetYearlySalesAsync",
+    "RelativePath": "api/ShopOwner/GetYearlySalesAsync/{shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "MonthMotorcycleSalyes",
+    "RelativePath": "api/ShopOwner/MonthMotorcycleSalyes/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "Salyes",
+    "RelativePath": "api/ShopOwner/Salyes/{shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "TopMotorcycleSalyes",
+    "RelativePath": "api/ShopOwner/TopMotorcycleSalyes/{shopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shopId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "TopProductSalyes",
+    "RelativePath": "api/ShopOwner/TopProductSalyes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "UpdateCategoryProduct",
+    "RelativePath": "api/ShopOwner/UpdateCategoryProduct",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sc",
+        "Type": "MotoRide.Dto.UpdateCategoryProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "UpdateMotorcycle",
+    "RelativePath": "api/ShopOwner/UpdateMotorcycle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MotorcycleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Colors",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "EngineType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mileage",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Condition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StockQuantity",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StoreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "images",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/ShopOwner/UpdateProduct",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sizes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Colors",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "StoreId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryProductId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "images",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "UpdateStautsOrder",
+    "RelativePath": "api/ShopOwner/UpdateStautsOrder",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.List\u00601[[MotoRide.Dto.UpdateStautsOrderDto, MotoRide, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRide.Controllers.ShopOwnerController",
+    "Method": "YearMotorcycleSalyes",
+    "RelativePath": "api/ShopOwner/YearMotorcycleSalyes/${id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

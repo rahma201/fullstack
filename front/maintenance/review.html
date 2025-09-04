@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Title -->
+	<title>MotoRide</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../diest/img/helmet.png" />
+        <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="../diest/css/Dashbordcss.css" />
+
+    <!-- Core Css -->
+    <link   rel="stylesheet" href="dist/css/style.min.css" />
+    <style>
+        .review-card {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background: white;
+        }
+
+        .dislike-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: red  !important;
+            cursor: pointer;                  background: white !important;
+
+        }
+
+            .dislike-btn:hover {
+                color: darkred  !important;
+                  background: white !important;
+            }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="../diest/img/helmet.png" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+               
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar scroll-sidebar" data-simplebar>
+                     <ul id="sidebarnav">
+                            <li class="sidebar-item ">
+                                           <img src="../diest/img/Logo.jpeg" width="220px" />
+
+                           
+                        </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="WorkShop.html" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-user-circle"></i>
+                                    </span>
+                                    <span class="hide-menu">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="CalenderWorkShop.html" aria-expanded="false">
+                                    <span class="d-flex">
+                                        <i class="ti ti-topology-star-3"></i>
+                                    </span>
+                                    <span class="hide-menu">Calender</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="BookingMaintenance.html" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-aperture"></i>
+                                    </span>
+                                    <span class="hide-menu">maintenance</span>
+                                </a>
+                            </li>
+                             <li class="sidebar-item">
+                            <a class="sidebar-link" href="review.html" aria-expanded="false">
+                                <span>
+                                  <i class="ti ti-file-text"></i>
+                                </span>
+                                <span class="hide-menu">Reviw</span>
+                              </a>
+                            </a>
+                        </li>
+                            </ul>
+                </nav>
+
+</div>
+            <!-- End Sidebar navigation -->
+   
+    <!-- End Sidebar scroll-->
+    </aside> 
+</div>
+            
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                    <h1>
+                    <img src="../diest/img/Logo.jpeg" width="220px" />
+                    </h1>
+
+                </ul>
+                <ul class="navbar-nav quick-links d-none d-lg-flex">
+                </ul>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="p-2">
+                        <i class="ti ti-dots fs-7"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                            <i class="ti ti-align-justified fs-7"></i>
+                        </a>
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+
+                      
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+   
+        <!--  Header End -->
+
+
+    </div>
+
+    <div class="container" style="width: 90% !important;padding-left: 170PX;" id="reviewCard">
+    
+    </div>
+    
+    
+    
+    
+
+        <!-- Dislike Modal -->
+       
+    
+    </div>
+
+    <div class="dark-transparent sidebartoggler"></div>
+    <div class="dark-transparent sidebartoggler"></div>
+    </div> <div class="modal fade" id="dislikeModal" tabindex="-1" aria-labelledby="dislikeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dislikeModalLabel">Reason for Dislike</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea id="dislikeReason" class="form-control" rows="4" placeholder="Enter your reason..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger save-dislike">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--  Shopping Cart -->
+    <div class="offcanvas offcanvas-end shopping-cart" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header py-4">
+            <h5 class="offcanvas-title fs-5 fw-semibold" id="offcanvasRightLabel">Shopping Cart</h5>
+            <span class="badge bg-primary rounded-4 px-3 py-1 lh-sm">5 new</span>
+        </div>
+        <div class="offcanvas-body h-100 px-4 pt-0" data-simplebar>
+            <ul class="mb-0">
+                <li class="pb-7">
+                    <div class="d-flex align-items-center">
+                        <img src="dist/images/products/product-1.jpg" width="95" height="75" class="rounded-1 me-9 flex-shrink-0" alt="" />
+                        <div>
+                            <h6 class="mb-1">Supreme toys cooker</h6>
+                            <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
+                                <div class="input-group input-group-sm w-50">
+                                    <button class="btn border-0 round-20 minus p-0 bg-light-success text-success " type="button" id="add1"> - </button>
+                                    <input type="text" class="form-control round-20 bg-transparent text-muted fs-2 border-0  text-center qty" placeholder="" aria-label="Example text with button addon" aria-describedby="add1" value="1" />
+                                    <button class="btn text-success bg-light-success  p-0 round-20 border-0 add" type="button" id="addo2"> + </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pb-7">
+                    <div class="d-flex align-items-center">
+                        <img src="dist/images/products/product-2.jpg" width="95" height="75" class="rounded-1 me-9 flex-shrink-0" alt="" />
+                        <div>
+                            <h6 class="mb-1">Supreme toys cooker</h6>
+                            <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
+                                <div class="input-group input-group-sm w-50">
+                                    <button class="btn border-0 round-20 minus p-0 bg-light-success text-success " type="button" id="add2"> - </button>
+                                    <input type="text" class="form-control round-20 bg-transparent text-muted fs-2 border-0  text-center qty" placeholder="" aria-label="Example text with button addon" aria-describedby="add2" value="1" />
+                                    <button class="btn text-success bg-light-success  p-0 round-20 border-0 add" type="button" id="addon34"> + </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pb-7">
+                    <div class="d-flex align-items-center">
+                        <img src="dist/images/products/product-3.jpg" width="95" height="75" class="rounded-1 me-9 flex-shrink-0" alt="" />
+                        <div>
+                            <h6 class="mb-1">Supreme toys cooker</h6>
+                            <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <h6 class="fs-2 fw-semibold mb-0 text-muted">$250</h6>
+                                <div class="input-group input-group-sm w-50">
+                                    <button class="btn border-0 round-20 minus p-0 bg-light-success text-success " type="button" id="add3"> - </button>
+                                    <input type="text" class="form-control round-20 bg-transparent text-muted fs-2 border-0  text-center qty" placeholder="" aria-label="Example text with button addon" aria-describedby="add3" value="1" />
+                                    <button class="btn text-success bg-light-success  p-0 round-20 border-0 add" type="button" id="addon3"> + </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="align-bottom">
+                <div class="d-flex align-items-center pb-7">
+                    <span class="text-dark fs-3">Sub Total</span>
+                    <div class="ms-auto">
+                        <span class="text-dark fw-semibold fs-3">$2530</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pb-7">
+                    <span class="text-dark fs-3">Total</span>
+                    <div class="ms-auto">
+                        <span class="text-dark fw-semibold fs-3">$6830</span>
+                    </div>
+                </div>
+                <a href="./eco-checkout.html" class="btn btn-outline-primary w-100">Go to shopping cart</a>
+            </div>
+        </div>
+    </div>
+
+   <!--  Mobilenavbar -->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobilenavbar" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <nav class="sidebar-nav scroll-sidebar">
+            <div class="offcanvas-header justify-content-between">
+                <img src="../diest/img/Logo.jpeg" width="190px" width="50px" alt="" class="img-fluid">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body profile-dropdown mobile-navbar" data-simplebar="" data-simplebar>
+               <ul id="sidebarnav">
+                           
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="WorkShop.html" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-user-circle"></i>
+                                    </span>
+                                    <span class="hide-menu">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="CalenderWorkShop.html" aria-expanded="false">
+                                    <span class="d-flex">
+                                        <i class="ti ti-topology-star-3"></i>
+                                    </span>
+                                    <span class="hide-menu">Calender</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="BookingMaintenance.html" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-aperture"></i>
+                                    </span>
+                                    <span class="hide-menu">maintenance</span>
+                                </a>
+                            </li>
+                             <li class="sidebar-item">
+                            <a class="sidebar-link" href="review.html" aria-expanded="false">
+                                <span>
+                                  <i class="ti ti-file-text"></i>
+                                </span>
+                                <span class="hide-menu">Reviw</span>
+                              </a>
+                            </a>
+                        </li>
+                            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--  Search Bar -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content rounded-1">
+                <div class="modal-header border-bottom">
+                    <input type="search" class="form-control fs-3" placeholder="Search here" id="search" />
+                    <span data-bs-dismiss="modal" class="lh-1 cursor-pointer">
+                        <i class="ti ti-x fs-5 ms-3"></i>
+                    </span>
+                </div>
+                <div class="modal-body message-body" data-simplebar="">
+                    <h5 class="mb-0 fs-5 p-1">Quick Page Links</h5>
+                    <ul class="list mb-0 py-2">
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Modern</span>
+                                <span class="fs-3 text-muted d-block">/dashboards/dashboard1</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Dashboard</span>
+                                <span class="fs-3 text-muted d-block">/dashboards/dashboard2</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Contacts</span>
+                                <span class="fs-3 text-muted d-block">/apps/contacts</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Posts</span>
+                                <span class="fs-3 text-muted d-block">/apps/blog/posts</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Detail</span>
+                                <span class="fs-3 text-muted d-block">/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Shop</span>
+                                <span class="fs-3 text-muted d-block">/apps/ecommerce/shop</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Modern</span>
+                                <span class="fs-3 text-muted d-block">/dashboards/dashboard1</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Dashboard</span>
+                                <span class="fs-3 text-muted d-block">/dashboards/dashboard2</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Contacts</span>
+                                <span class="fs-3 text-muted d-block">/apps/contacts</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Posts</span>
+                                <span class="fs-3 text-muted d-block">/apps/blog/posts</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Detail</span>
+                                <span class="fs-3 text-muted d-block">/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
+                            </a>
+                        </li>
+                        <li class="p-1 mb-1 bg-hover-light-black">
+                            <a href="#">
+                                <span class="fs-3 text-black fw-normal d-block">Shop</span>
+                                <span class="fs-3 text-muted d-block">/apps/ecommerce/shop</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    <script>
+            $(document).ready(function () {
+                $(".save-dislike").click(function () {
+                    var reason = $("#dislikeReason").val().trim();
+                    if (reason === "") {
+                        alert("Please enter a reason!");
+                    } else {
+                        alert("Your reason has been saved: " + reason);
+                        $("#dislikeModal").modal('hide');
+                    }
+                });
+            });
+        </script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.min.js"></script>
+    <script src="dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  core files -->
+    <script src="dist/js/app.min.js"></script>
+    <script src="dist/js/app.init.js"></script>
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/sidebarmenu.js"></script>
+    <script src="dist/js/custom.js"></script>
+    <!--  current page js files -->
+    <script src="MaintenanceJs/review.js"></script>
+</body>
+</html>

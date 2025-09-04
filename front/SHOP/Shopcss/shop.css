@@ -1,0 +1,153 @@
+
+/* إضافة المسافة من اليمين واليسار */
+.container-lg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.panel-filter ,.wrap-filter{
+    color:black !important;
+}
+/* تغيير شكل العنصر ليكون مربع ويظهر أربعة معًا */
+.category-carousel .swiper-slide {
+    width: calc(25% - 20px); /* عرض العنصر الواحد بنسبة 25% مع المسافة بين العناصر */
+    margin-right: 20px; /* مسافة بين العناصر */
+}
+
+.category-item {
+    padding: 20px;
+    background-color:#D21312;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+    /* تأثير عند مرور الفأرة */
+    .category-item:hover {
+        background-color: #f5f5f5;
+        color: #D21312; /* اللون النهدي الفاتح */
+    }
+    .loveicon:hover {
+        background-color: black;
+        color: #D21312; /* اللون النهدي الفاتح */
+    }
+/* تحسين مظهر الأزرار */
+.swiper-prev, .swiper-next {
+    font-size: 20px;
+    color: #ffffff;
+}
+/* إذا كنت تستخدم صورة */
+.login-icon-img {
+    width: 84px; /* الحجم المناسب للصورة */
+    height: 84px;
+}
+
+.swiper-prev:hover, .swiper-next:hover {
+    color: D21312; /* تغيير اللون عند التفاعل مع الأزرار */
+}
+.hov-cl1:hover {
+    color: #D21312 !important; /* تغيير اللون عند التفاعل مع الأزرار */
+}
+.card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: 200px;
+    height: 80px;
+    background-color:#D21312;
+    color: #f5f5f5;
+    padding: 20px;
+    margin-right: 30px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+}
+
+    .card::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        right: -15px;
+        background:#f5f5f5;
+        color: black;
+        height: 220px;
+        width: 25px;
+        border-radius: 32px;
+        transform: scale(1);
+        transform-origin: 50% 50%;
+        transition: transform 0.25s ease-out;
+    }
+
+    .card:hover::before {
+        transition-delay: 0.2s;
+        transform: scale(40);
+    }
+
+    .card:hover {
+        color: white;
+    }
+    .card:hover::before {
+        transition-delay: 0.2s;
+        transform: scale(40);
+    }
+.stext-106 :active{
+color: #D21312;
+
+}
+
+    .card:hover {
+        color: #D21312;
+    }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px; /* حجم صغير */
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0;
+    line-height: 1;
+}
+
+/* باقي تنسيق المودال كما هو */
+.main {
+    position: relative;
+}
+
+.signup, .login {
+    position: relative;
+    /* باقي التنسيق للنماذج */
+}
+/* إذا كنت تستخدم صورة */
+.login-icon-img {
+    width: 84px; /* الحجم المناسب للصورة */
+    height: 84px;
+}
+
+.card p {
+    padding: 10px 0;
+}
+
+.quickView{
+cursor: pointer;
+}
+.logo img {
+    width: 150px; /* تعديل الحجم حسب الحاجة */
+    height: auto;
+    border-radius: 15px; /* يجعل الزوايا دائرية */
+    display: block;
+    margin: auto;
+}
+
+.wrap-icon-header {
+    margin-right: 40px !important; /* تحريك الديف 20px إلى اليسار */
+}
+ .zmdi-caret-right:hover {
+    color: #D21312; /* اللون النهدي الفاتح */
+    transition: color 0.3s ease; /* تأثير انتقال اللون */   
+ }

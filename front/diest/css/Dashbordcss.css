@@ -1,0 +1,240 @@
+ body{
+       font-size: medium  !important;  
+       font-weight: bold;
+        font-family: 'Comfortaa', sans-serif; /* استخدم الخط الذي ترغب به هنا */
+        }
+.button {
+    background-color: #D21312 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.navbar-toggler:hover i{
+    color: #f2f3f4 !important;
+}
+  .btn-eventdetils:hover i{
+    color: #f2f3f4 !important;
+}
+.button:hover {
+    background-color: #f2f3f4 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    color: #D21312 !important;
+}
+button:focus,button:hover,button:visited , button:active, button:focus-visible,.nav-link.active {
+    background-color: #D21312 !important;
+    border: none !important;
+    color: white !important;
+    cursor: pointer !important;
+}
+
+ a:hover, a:focus {
+    color: #D21312 !important;
+    background-color:#f2f3f4 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+.modal-header{
+    background-color:#C9D6DF  !important;
+ border-top-right-radius: 5px !important;
+ border-top-left-radius: 5px !important;
+
+ border-bottom:5px solid black !important;
+    cursor: pointer !important;
+}
+.modal-title, .hide-menu{
+    color: black !important;
+    
+}
+.btn-close{
+    color: black !important;
+    cursor: pointer !important;
+}
+.btn-close i{
+
+    color: black !important;
+    cursor: pointer !important;
+}
+.btn-close:hover i{
+    background-color: white !important;
+
+    color: black !important;
+    cursor: pointer !important;
+}
+.btn-close:hover{
+    background-color: #C9D6DF !important;
+
+    color: black !important;
+    cursor: pointer !important;
+}
+.blackFont, a {
+    color: black !important;
+}
+a{
+    background-color: white !important;
+
+}
+i{
+    color: #D21312 !important;
+}
+.btn-info ,.btn-secondary{
+    background-color:#52616B  !important;
+    border: none !important;
+
+    cursor: pointer !important;
+    color: black !important;
+}
+.btn-success{
+    background-color: #f5e3e3 !important;
+    color: #D21312 !important;
+border: 0px;
+}
+.btn-success:hover{
+    background-color: #F0F5F9 !important;
+    color: #D21312 !important;
+    border:3px solid black !important;
+
+}
+.swal2-confirm{
+ background-color: black !important;
+    color: #f3f8fd !important;
+}
+input:focus
+{ background-color: #F0F5F9 !important;
+    border:3px solid black !important;
+
+}
+.swal2-confirm:hover{
+ background-color: rgb(243, 98, 98) !important;
+    color: #f3f8fd !important;
+}
+.btn-primary{
+    background-color: black !important;
+    border: none !important;
+    cursor: pointer !important;
+    color: white !important;
+}
+.btn-primary i ,.btn-danger i,.btn-info i{
+
+    color: white !important;
+}
+.btn-danger{
+    border: none !important;
+    background-color: #D21312 !important;
+
+    cursor: pointer !important;
+    color: white !important;
+}
+.btn-danger:hover, .btn-info:hover, .btn-primary:hover {
+    border: none !important;
+    background-color: #F0F5F9 !important;
+    color: #D21312 !important;
+ 
+} 
+.btn-danger:hover i, .btn-info:hover i, .btn-primary:hover i{
+    border: none !important;
+    color: #D21312 !important;
+ 
+} 
+.btnModel-danger:hover{
+    background-color: #F0F5F9 !important;
+    color: #D21312 !important;
+    border: #D21312 2PX solid !important;
+}
+.btnModel-danger{
+    background-color: #D21312 !important;
+    color: #F0F5F9  !important;
+}
+.btnModel-success:hover {
+background-color: #F0F5F9 !important;
+color: #bf3838 !important;
+border: #bf3838 2PX solid !important;
+
+
+}
+.swal2-cancel:hover{
+    background-color: white !important;
+    color: #bf3838 !important;
+    
+    
+    }
+.btnModel-success{
+    background-color: #3876BF !important;
+    color: #F0F5F9 !important;
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.btn-review{
+    background-color: white !important;
+    color: #D21312 !important;
+}
+.btn-review:hover i{
+    color:white!important;
+    
+}
+.sidebar-item{
+    background-color: white !important;
+}
+.swal2-confirm .swal2-styled{
+    background-color: #000000 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.wal2-cancel{
+    background-color: white !important;
+    color: #D21312 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.wal2-confirm:hover{
+    background-color: #F0F5F9 !important;
+    color: #D21312 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.wal2-cancel:hover{
+    background-color: #F0F5F9 !important;
+    color: #D21312 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+li span{
+    font-size:large;
+  }
+  .ti{
+    width:30px;
+  }
+.fa-solid{
+   font-size:large;
+   padding: 5px;   
+}
+li .fa-solid{
+   font-size: medium !important;
+}
+
+ .left-sidebar {
+    width: 75px !important;
+}
+
+ .left-sidebar:hover {
+    width: 270px !important;
+}
+
