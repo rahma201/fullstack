@@ -15,6 +15,7 @@ services:
   back:
     build:
       context: ./Back/MotoRide
+      dockerfile: Dockerfile
     container_name: moto-back
     ports:
       - "5000:5000"
@@ -26,8 +27,9 @@ services:
   front:
     build:
       context: ./front
+      dockerfile: Dockerfile
     container_name: moto-front
     ports:
-      - "8080:8080"
+      - "80:80"
     depends_on:
       - back
