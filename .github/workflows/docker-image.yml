@@ -48,7 +48,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./Front              # مسار المجلد الصحيح
-          file: ./Front/Dockerfile      # مسار Dockerfile
+          file: ./front/Dockerfile      # مسار Dockerfile
           push: true
           tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
