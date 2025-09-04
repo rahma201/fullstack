@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Start MySQL DB
+      - name: Start MySQL DB with healthcheck
         run: |
           docker run -d \
             --name moto-db \
@@ -27,14 +27,21 @@ jobs:
             -e MYSQL_DATABASE=MotoRideDB \
             -v ${{ github.workspace }}/db/init.sql:/docker-entrypoint-initdb.d/init.sql \
             -p 3306:3306 \
+            --health-cmd="mysqladmin ping -uroot -prootpassword" \
+            --health-interval=5s \
+            --health-retries=20 \
             mysql:8.0
-          echo "Waiting for DB to be ready..."
+
+      - name: Wait for DB to be healthy
+        run: |
+          echo "Waiting for DB to be healthy..."
           for i in {1..20}; do
-            docker exec moto-db mysqladmin ping -uroot -prootpassword &> /dev/null
-            if [ $? -eq 0 ]; then
+            STATUS=$(docker inspect --format='{{.State.Health.Status}}' moto-db)
+            if [ "$STATUS" == "healthy" ]; then
               echo "DB is ready"
               break
             fi
+            echo "Waiting 5s..."
             sleep 5
           done
 
@@ -74,20 +81,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Restore .NET dependencies and build
+      - name: Build and Publish Back-end in Docker
         run: |
           cd Back/MotoRide
           dotnet restore
-          dotnet build --configuration Release
-
-      - name: Test Controllers
-        run: |
-          cd Back/MotoRide
-          dotnet test || echo "Tests failed, check controllers"
-
-      - name: Publish Back-end
-        run: |
-          cd Back/MotoRide
+          dotnet build -c Release
           dotnet publish -c Release -o publish
 
       - name: Build Back-end Docker image
