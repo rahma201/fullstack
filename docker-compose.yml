@@ -25,7 +25,7 @@ services:
 
   front:
     build:
-      context: ./Front
+      context: ./front
     container_name: moto-front
     ports:
       - "8080:8080"
