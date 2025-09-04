@@ -4,22 +4,22 @@ FROM nginx:alpine
 # ضع مجلد العمل داخل Nginx
 WORKDIR /usr/share/nginx/html
 
-# احذف أي ملفات افتراضية موجودة
+# احذف أي ملفات افتراضية
 RUN rm -rf ./*
 
-# انسخ كل الملفات من مشروع الفرونت
+# انسخ كل ملفات مشروع الفرونت
 COPY . .
 
-# تعيين الـ Index الرئيسي
-RUN echo "index index.html;" >> /etc/nginx/conf.d/default.conf
-
-# إذا كانت SPA، أضف إعادة التوجيه لكل المسارات إلى index.html
+# أنشئ ملف الكونفيغ داخل Dockerfile مباشرة
 RUN echo 'server { \
     listen 80; \
     root /usr/share/nginx/html; \
     index index.html; \
     location / { \
         try_files $uri /index.html; \
+    } \
+    location ~* \.(?:css|js|jpg|jpeg|gif|png|svg|ico|woff2?|ttf|eot)$ { \
+        try_files $uri =404; \
     } \
 }' > /etc/nginx/conf.d/default.conf
 
