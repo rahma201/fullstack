@@ -1,118 +1,71 @@
-name: Fullstack CI/CD
+name: CI/CD Fullstack
 
 on:
   push:
     branches:
       - main
 
-env:
-  BACK_IMAGE: rahmashelbayeh/moto-back
-  FRONT_IMAGE: rahmashelbayeh/moto-front
-  TAG: ${{ github.run_id }}
-
 jobs:
-
-  db_stage:
-    name: Start Database
+  build-back:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Start MySQL DB with healthcheck
-        run: |
-          docker run -d \
-            --name moto-db \
-            -e MYSQL_ROOT_PASSWORD=rootpassword \
-            -e MYSQL_DATABASE=MotoRideDB \
-            -v ${{ github.workspace }}/db/init.sql:/docker-entrypoint-initdb.d/init.sql \
-            -p 3306:3306 \
-            --health-cmd="mysqladmin ping -uroot -prootpassword" \
-            --health-interval=5s \
-            --health-retries=20 \
-            mysql:8.0
-
-      - name: Wait for DB to be healthy
-        run: |
-          echo "Waiting for DB to be healthy..."
-          for i in {1..20}; do
-            STATUS=$(docker inspect --format='{{.State.Health.Status}}' moto-db)
-            if [ "$STATUS" == "healthy" ]; then
-              echo "DB is ready"
-              break
-            fi
-            echo "Waiting 5s..."
-            sleep 5
-          done
-
-  front_stage:
-    name: Build Front-end
-    runs-on: ubuntu-latest
-    needs: db_stage
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Log in to Docker Hub
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Front-end Docker image
-        uses: docker/build-push-action@v5
+      - name: Build and push Back-end
+        uses: docker/build-push-action@v4
         with:
-          context: ./front/Events           # المسار الصحيح للفرونت
-          file: ./front/Events/Dockerfile
+          context: ./fullstack/Back
+          file: ./fullstack/Back/Dockerfile
           push: true
-          tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+          tags: rahmashelbayeh/moto-back:${{ github.run_id }}
 
-  back_stage:
-    name: Build Back-end
+  build-front:
     runs-on: ubuntu-latest
-    needs: front_stage
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Log in to Docker Hub
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Back-end Docker image
-        uses: docker/build-push-action@v5
+      - name: Build and push Front-end
+        uses: docker/build-push-action@v4
         with:
-          context: ./Back                    # context = Back
-          file: ./Back/Dockerfile            # Dockerfile موجود داخل Back
+          context: ./fullstack/front/Event
+          file: ./fullstack/front/Event/Dockerfile
           push: true
-          tags: ${{ env.BACK_IMAGE }}:${{ env.TAG }}
+          tags: rahmashelbayeh/moto-front:${{ github.run_id }}
 
-  deploy_stage:
-    name: Deploy Fullstack
+  deploy:
     runs-on: ubuntu-latest
-    needs: back_stage
+    needs: [build-back, build-front]
     steps:
-      - name: SSH into server and deploy
+      - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: ${{ secrets.SERVER_IP }}
+          host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            # إنشاء شبكة موحدة إذا لم تكن موجودة
-            docker network inspect moto-net >/dev/null 2>&1 || docker network create moto-net
-
             echo "Stopping old containers..."
             docker rm -f moto-back moto-front || true
 
             echo "Pulling latest images..."
-            docker pull ${{ env.BACK_IMAGE }}:${{ env.TAG }}
-            docker pull ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+            docker pull rahmashelbayeh/moto-back:${{ github.run_id }}
+            docker pull rahmashelbayeh/moto-front:${{ github.run_id }}
 
             echo "Starting Front-end..."
-            docker run -d --restart unless-stopped --net moto-net -p 80:80 --name moto-front ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+            docker run -d --restart unless-stopped --network moto-net -p 80:80 --name moto-front rahmashelbayeh/moto-front:${{ github.run_id }}
 
             echo "Starting Back-end..."
-            docker run -d --restart unless-stopped --net moto-net -p 5000:5000 --name moto-back ${{ env.BACK_IMAGE }}:${{ env.TAG }}
+            docker run -d --restart unless-stopped --network moto-net -p 5000:5000 --name moto-back rahmashelbayeh/moto-back:${{ github.run_id }}
