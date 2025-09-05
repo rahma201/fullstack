@@ -2,21 +2,23 @@ FROM nginx:alpine
 
 WORKDIR /usr/share/nginx/html
 
-# حذف الملفات الافتراضية
+# حذف الملفات الافتراضية في Nginx
 RUN rm -rf ./*
 
-# نسخ ملفات الواجهة (front-end) إلى مجلد Nginx
+# نسخ ملفات الواجهة (front-end) إلى الحاوية
 COPY . .
 
-# إعداد ملف الكونفيج الخاص بـ Nginx داخل الصورة
+# إعداد ملف config الخاص بـ Nginx ليعيد التوجيه للجذر إلى /SHOP/Shop.html
 RUN echo 'server { \
     listen 80; \
     root /usr/share/nginx/html; \
-    index index.html; \
-    location / { \
-        try_files $uri /index.html; \
+    location = / { \
+        return 302 /SHOP/Shop.html; \
     } \
-    location ~* \\.(?:css|js|jpg|jpeg|gif|png|svg|ico|woff2?|ttf|eot)$ { \
+    location / { \
+        try_files $uri $uri/ /index.html; \
+    } \
+    location ~* \\\.(?:css|js|jpg|jpeg|gif|png|svg|ico|woff2?|ttf|eot)$ { \
         try_files $uri =404; \
     } \
 }' > /etc/nginx/conf.d/default.conf
