@@ -11,33 +11,33 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql  # ربط سكربت التهيئة لقاعدة البيانات
     networks:
       - moto-net
 
   # 2️⃣ خدمة Back-end
   back:
     build:
-      context: ./Back/MotoRide  # المسار الصحيح لمجلد Back-end
-      dockerfile: Dockerfile
+      context: ./Back/MotoRide  # تحديد المسار إلى مجلد Back-end حيث يوجد الـ Dockerfile
+      dockerfile: Dockerfile     # اسم Dockerfile داخل المجلد
     container_name: moto-back
     ports:
-      - "5000:5000"
+      - "5000:5000"  # ربط المنفذ 5000 من الحاوية إلى المضيف
     depends_on:
       - db  # يعتمد على قاعدة البيانات
     environment:
-      ConnectionStrings__DefaultConnection: "Server=moto-db;Database=MotoRideDB;User=root;Password=rootpassword;"
+      ConnectionStrings__DefaultConnection: "Server=moto-db;Database=MotoRideDB;User=root;Password=rootpassword;"  # إعداد الاتصال بقاعدة البيانات
     networks:
       - moto-net
 
   # 3️⃣ خدمة Front-end
   front:
     build:
-      context: ./front  # المسار الصحيح لمجلد Front-end
-      dockerfile: Dockerfile
+      context: ./front  # تحديد المسار إلى مجلد Front-end حيث يوجد الـ Dockerfile
+      dockerfile: Dockerfile     # اسم Dockerfile داخل المجلد
     container_name: moto-front
     ports:
-      - "80:80"
+      - "80:80"  # ربط المنفذ 80 من الحاوية إلى المضيف
     depends_on:
       - back  # يعتمد على Back-end
     networks:
