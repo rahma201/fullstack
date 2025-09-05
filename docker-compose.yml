@@ -22,7 +22,7 @@ services:
       dockerfile: Dockerfile
     container_name: moto-back
     ports:
-      - "8080:8080"
+      - "5000:5000"
     depends_on:
       - db
     environment:
