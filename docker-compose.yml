@@ -35,21 +35,9 @@ services:
       context: ./front
       dockerfile: Dockerfile
     container_name: moto-front
-    expose:
-      - "80"
-    depends_on:
-      - back
-    networks:
-      - moto-net
-
-  nginx:
-    build:
-      context: ./nginx
-    container_name: moto-nginx
     ports:
-      - "80:80"
+      - "80:80"            # افتح البورت 80 على المضيف
     depends_on:
-      - front
       - back
     networks:
       - moto-net
