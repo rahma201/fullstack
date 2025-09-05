@@ -8,19 +8,19 @@ on:
 env:
   BACK_IMAGE: rahmashelbayeh/moto-back
   FRONT_IMAGE: rahmashelbayeh/moto-front
-  TAG: ${{ github.run_number }}-${{ github.sha }}
+  TAG: ${{ github.run_id }}
 
 jobs:
 
-  # 1️⃣ Database Stage
+  # 1️⃣ Database Stage (CI)
   db_stage:
-    name: Start MySQL Database
+    name: Start Database (MySQL for CI)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Start MySQL container
+      - name: Run MySQL container (test only)
         run: |
           docker run -d \
             --name moto-db \
@@ -28,22 +28,20 @@ jobs:
             -e MYSQL_DATABASE=MotoRideDB \
             -p 3306:3306 \
             -v ${{ github.workspace }}/db/init.sql:/docker-entrypoint-initdb.d/init.sql \
+            --health-cmd="mysqladmin ping -uroot -prootpassword" \
+            --health-interval=10s \
+            --health-retries=10 \
             mysql:8.0
+          echo "Waiting for DB to be healthy..."
+          sleep 30
 
-          echo "Waiting for MySQL to be ready..."
-          until docker exec moto-db mysqladmin ping -uroot -prootpassword --silent; do
-            echo "Waiting for MySQL..."
-            sleep 5
-          done
-          echo "MySQL is ready."
-
-  # 2️⃣ Build Frontend
+  # 2️⃣ Front-end Stage
   front_stage:
-    name: Build & Push Frontend
+    name: Build Front-end
     runs-on: ubuntu-latest
     needs: db_stage
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Log in to Docker Hub
@@ -52,7 +50,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build & Push Frontend Image
+      - name: Build Front-end Docker image
         uses: docker/build-push-action@v5
         with:
           context: ./front
@@ -60,13 +58,13 @@ jobs:
           push: true
           tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
 
-  # 3️⃣ Build Backend
+  # 3️⃣ Back-end Stage
   back_stage:
-    name: Build & Push Backend
+    name: Build Back-end
     runs-on: ubuntu-latest
     needs: front_stage
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Log in to Docker Hub
@@ -75,7 +73,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build & Push Backend Image
+      - name: Build Back-end Docker image
         uses: docker/build-push-action@v5
         with:
           context: ./Back
@@ -83,26 +81,26 @@ jobs:
           push: true
           tags: ${{ env.BACK_IMAGE }}:${{ env.TAG }}
 
-  # 4️⃣ Deploy to Server
+  # 4️⃣ Deploy Stage
   deploy_stage:
-    name: Deploy to Server
+    name: Deploy Fullstack to Server
     runs-on: ubuntu-latest
     needs: back_stage
     steps:
-      - name: SSH & Deploy
+      - name: SSH into server and deploy
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            echo "Creating docker network if not exists..."
+            echo "Create network if not exists..."
             docker network inspect moto-net >/dev/null 2>&1 || docker network create moto-net
 
             echo "Stopping old containers..."
             docker rm -f moto-db moto-back moto-front || true
 
-            echo "Starting MySQL container..."
+            echo "Starting Database..."
             docker run -d --restart unless-stopped \
               --network moto-net \
               --name moto-db \
@@ -112,21 +110,20 @@ jobs:
               mysql:8.0
 
             echo "Pulling latest images..."
-            docker pull ${{ env.BACK_IMAGE }}:${{ env.TAG }}
             docker pull ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+            docker pull ${{ env.BACK_IMAGE }}:${{ env.TAG }}
 
-            echo "Starting Backend on port 5000..."
+            echo "Starting Front-end..."
             docker run -d --restart unless-stopped \
               --network moto-net \
-              --name moto-back \
-              -p 5000:5000 \
+              -p 80:80 \
+              --name moto-front \
+              ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+
+            echo "Starting Back-end..."
+            docker run -d --restart unless-stopped \
+              --network moto-net \
               -e ASPNETCORE_URLS=http://0.0.0.0:5000 \
               -e ConnectionStrings__DefaultConnection="Server=moto-db;Port=3306;Database=MotoRideDB;User=root;Password=rootpassword;" \
-              ${{ env.BACK_IMAGE }}:${{ env.TAG }}
-
-            echo "Starting Frontend on port 80..."
-            docker run -d --restart unless-stopped \
-              --network moto-net \
-              --name moto-front \
-              -p 80:80 \
-              ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+              -p 5000:5000 \
+              --name moto-back \
