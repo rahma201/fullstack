@@ -28,7 +28,8 @@ services:
     environment:
       ConnectionStrings__DefaultConnection: "Server=moto-db;Database=MotoRideDB;User=root;Password=rootpassword;"
     volumes:
-      - ./Back/MotoRide/Images:/app/Images   # ربط مجلد الصور لمسار /app/Images داخل الحاوية
+      # ربط مجلد الصور (Images) داخل المشروع مع مسار التطبيق في الحاوية
+      - ./Back/MotoRide/Images:/app/Images
     networks:
       - moto-net
 
@@ -45,6 +46,7 @@ services:
     networks:
       - moto-net
 
+# 🔗 تعريف الشبكة المشتركة بين الحاويات
 networks:
   moto-net:
     driver: bridge
