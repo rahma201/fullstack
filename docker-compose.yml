@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # 1️⃣ خدمة قاعدة البيانات (MySQL)
   db:
     image: mysql:8.0
     container_name: moto-db
@@ -15,38 +14,46 @@ services:
     networks:
       - moto-net
 
-  # 2️⃣ خدمة Back-end
   back:
     build:
       context: ./Back
       dockerfile: Dockerfile
     container_name: moto-back
-    ports:
-      - "5000:5000"
+    expose:
+      - "5000"
     depends_on:
       - db
     environment:
       ConnectionStrings__DefaultConnection: "Server=moto-db;Database=MotoRideDB;User=root;Password=rootpassword;"
     volumes:
-      # ربط مجلد الصور (Images) داخل المشروع مع مسار التطبيق في الحاوية
       - ./Back/MotoRide/Images:/app/Images
     networks:
       - moto-net
 
-  # 3️⃣ خدمة Front-end
   front:
     build:
       context: ./front
       dockerfile: Dockerfile
     container_name: moto-front
-    ports:
-      - "80:80"
+    expose:
+      - "80"
     depends_on:
       - back
     networks:
       - moto-net
 
-# 🔗 تعريف الشبكة المشتركة بين الحاويات
+  nginx:
+    build:
+      context: ./nginx
+    container_name: moto-nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - front
+      - back
+    networks:
+      - moto-net
+
 networks:
   moto-net:
     driver: bridge
