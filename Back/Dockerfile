@@ -9,6 +9,7 @@ WORKDIR /src
 
 COPY ["MotoRide.sln", "./"]
 COPY ["MotoRide/", "MotoRide/"]
+COPY ./Images /app/Images  # إضافة المجلد Images
 
 RUN dotnet restore "MotoRide/MotoRide.csproj"
 RUN dotnet build "MotoRide/MotoRide.csproj" -c Release -o /app/build
