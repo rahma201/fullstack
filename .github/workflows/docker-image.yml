@@ -32,8 +32,16 @@ jobs:
             --health-interval=10s \
             --health-retries=10 \
             mysql:8.0
+          
           echo "Waiting for DB to be healthy..."
-          sleep 30
+          for i in {1..10}; do
+            if docker inspect --format='{{json .State.Health.Status}}' moto-db | grep -q "healthy"; then
+              echo "Database is healthy!"
+              break
+            fi
+            echo "Waiting for database to become healthy..."
+            sleep 5
+          done
 
   # 2️⃣ Front-end Stage
   front_stage:
@@ -53,10 +61,12 @@ jobs:
       - name: Build Front-end Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./front/Events
+          context: ./front
           file: ./front/Events/Dockerfile
           push: true
-          tags: ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+          tags: |
+            ${{ env.FRONT_IMAGE }}:${{ env.TAG }}
+            ${{ env.FRONT_IMAGE }}:latest
 
   # 3️⃣ Back-end Stage
   back_stage:
@@ -79,7 +89,9 @@ jobs:
           context: ./Back
           file: ./Back/Dockerfile
           push: true
-          tags: ${{ env.BACK_IMAGE }}:${{ env.TAG }}
+          tags: |
+            ${{ env.BACK_IMAGE }}:${{ env.TAG }}
+            ${{ env.BACK_IMAGE }}:latest
 
   # 4️⃣ Deploy Stage
   deploy_stage:
