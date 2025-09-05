@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+  # 1️⃣ خدمة قاعدة البيانات (MySQL)
   db:
     image: mysql:8.0
     container_name: moto-db
@@ -11,25 +12,38 @@ services:
       - "3306:3306"
     volumes:
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - moto-net
 
+  # 2️⃣ خدمة Back-end
   back:
     build:
-      context: ./Back/MotoRide
+      context: ./Back/MotoRide  # المسار الصحيح لمجلد Back-end
       dockerfile: Dockerfile
     container_name: moto-back
     ports:
       - "5000:5000"
     depends_on:
-      - db
+      - db  # يعتمد على قاعدة البيانات
     environment:
-      ConnectionStrings__DefaultConnection: "Server=db;Database=MotoRideDB;User=root;Password=rootpassword;"
+      ConnectionStrings__DefaultConnection: "Server=moto-db;Database=MotoRideDB;User=root;Password=rootpassword;"
+    networks:
+      - moto-net
 
+  # 3️⃣ خدمة Front-end
   front:
     build:
-      context: ./front
+      context: ./front  # المسار الصحيح لمجلد Front-end
       dockerfile: Dockerfile
     container_name: moto-front
     ports:
       - "80:80"
     depends_on:
-      - back
+      - back  # يعتمد على Back-end
+    networks:
+      - moto-net
+
+# تعريف الشبكة بين الحاويات
+networks:
+  moto-net:
+    driver: bridge
