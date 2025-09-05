@@ -127,3 +127,4 @@ jobs:
               -e ConnectionStrings__DefaultConnection="Server=moto-db;Port=3306;Database=MotoRideDB;User=root;Password=rootpassword;" \
               -p 5000:5000 \
               --name moto-back \
+              ${{ env.BACK_IMAGE }}:${{ env.TAG }}
